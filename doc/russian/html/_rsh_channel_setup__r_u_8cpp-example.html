@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: RshChannelSetup_RU.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RshChannelSetup_RU.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Пример настройки аналоговых каналов.</p>
+<div class="fragment"><div class="line"><span class="comment">//каждая структура инициализации, унаследованная от  RshInitADC имеет список каналов, состоящий из 32 объектов RshChannel</span></div>
+<div class="line"><a name="_a0"></a><a class="code" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a> initStucture;</div>
+<div class="line"></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//Выбор канала для настройки осуществеляется с помощью индекса (нумерация начинается с нуля)</span></div>
+<div class="line">initStucture.<a name="a1"></a><a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].gain = 1; <span class="comment">//установка коэффициента усиления</span></div>
+<div class="line"></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].adjustment = 0.0; <span class="comment">// аппаратная подстройка уровня входного сигнала не используется</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">/*Другие параметры канала настраиваются с помощью флагов в поле RshChannel::control.</span></div>
+<div class="line"><span class="comment"></span></div>
+<div class="line"><span class="comment">Все управляющие флаги перечислены в списке  RshChannel::Control</span></div>
+<div class="line"><span class="comment">Некоторые из них имеют нулевое значение - это дефолтные параметры:</span></div>
+<div class="line"><span class="comment">NotUsed - канал не будет использоваться при сборе данных</span></div>
+<div class="line"><span class="comment">NoSynchro   - канал не будет использоваться в качестве источника синхронизации</span></div>
+<div class="line"><span class="comment">Resist1MOhm - входное сопротивление канала - 1МОм</span></div>
+<div class="line"><span class="comment">DC - открытый вход</span></div>
+<div class="line"><span class="comment"></span></div>
+<div class="line"><span class="comment">Когда создается объект RshChannel, поле control имеет значение ноль,</span></div>
+<div class="line"><span class="comment">таким образом, устанавливаются дефолтные параметры перечисленные выше.</span></div>
+<div class="line"><span class="comment"></span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].control = 0;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">Эта операция является избыточной, т.к. она выполняется в конструкторе класса RshChannel.</span></div>
+<div class="line"><span class="comment">Тем не менее, ее можно выполнять в дальнейшем, для сброса настроек канала.</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//альтернативный вариант (аналог трех предыдущих вызовов)</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].SetDefaultPatameters();</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//канал будет использоваться при сборе</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].SetUsed();</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//альтернативный вариант:</span></div>
+<div class="line"><span class="comment">//initStucture.channels[0].control |= RshChannel::Used;</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">сопротивление входа - 1МОм</span></div>
+<div class="line"><span class="comment">избыточная и, по сути, бессмысленная (т.к. RshChannel::Resist1MOhm == 0) операция,</span></div>
+<div class="line"><span class="comment">но она делает код более читаемым.</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].control |= <a name="a2"></a><a class="code" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ac05972ba126b882a9c3a13ad31cfa14a" title="Установить входное сопротивление канала 1МОм ">RshChannel::Resist1MOhm</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//альтернативный вариант:</span></div>
+<div class="line"><span class="comment">//initStucture.channels[0].SetResist1MOhm();</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//вход закрытый</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].control |= <a name="a3"></a><a class="code" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ae07c02266bb6316aef1e935eb085b169" title="Установить состояние входа &quot;закрытый&quot;. ">RshChannel::AC</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//альтернативный вариант:</span></div>
+<div class="line"><span class="comment">//initStucture.channels[0].SetInputAC();</span></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//второй канал</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[1].SetUsed();</div>
+<div class="line"></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[1].SetResist1MOhm(<span class="keyword">false</span>);</div>
+<div class="line"><span class="comment">//initStucture.channels[1].SetResist50Ohm(); //то же самое</span></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//используем его в качестве источника синхронизации (не забывайте про установку нужного варианта запуска в поле RshInitADC::startType)</span></div>
+<div class="line">initStucture.channels[1].SetSynchro(<span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//можно копировать настройки одного канала на другой</span></div>
+<div class="line">initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[2] = initStucture.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0];</div>
+</div><!-- fragment --> </div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

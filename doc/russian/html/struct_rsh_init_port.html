@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура RshInitPort</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="struct_rsh_init_port-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура RshInitPort</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Операции с цифровым портом  
+ <a href="struct_rsh_init_port.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_init_port_8h_source.html">RshInitPort.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RshInitPort:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_port__inherit__graph.png" border="0" usemap="#_rsh_init_port_inherit__map" alt="Inheritance graph"/></div>
+<map name="_rsh_init_port_inherit__map" id="_rsh_init_port_inherit__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="5,6,125,34"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RshInitPort:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_port__coll__graph.png" border="0" usemap="#_rsh_init_port_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_init_port_coll__map" id="_rsh_init_port_coll__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="101,99,221,127"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a3ab27305314c08f116b18c8d5837eb04"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04">OperationType</a> { <a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04ac26019916a94cdc554e96153cfd554db">Read</a> = 0x0, 
+<a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04af78630ea90758efdd57b850f2469b2e1">Write</a> = 0x1, 
+<a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04ad6291f1424e0f69407fc580dd8cfe50e">WriteAND</a> = 0x2, 
+<a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04addf7d3ba3f043366f27b4f776a164058">WriteOR</a> = 0x3
+ }</td></tr>
+<tr class="memdesc:a3ab27305314c08f116b18c8d5837eb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список операций  <a href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04">Подробнее...</a><br/></td></tr>
+<tr class="separator:a3ab27305314c08f116b18c8d5837eb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abe21307c740b98d5cfdfabe0a726db83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#abe21307c740b98d5cfdfabe0a726db83">RshInitPort</a> ()</td></tr>
+<tr class="separator:abe21307c740b98d5cfdfabe0a726db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded4c1fd07bb6e0ece52fd4b4bbc1b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#aded4c1fd07bb6e0ece52fd4b4bbc1b04">RshInitPort</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> address, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> operation=<a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04ac26019916a94cdc554e96153cfd554db">RshInitPort::Read</a>, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> value=0x0)</td></tr>
+<tr class="separator:aded4c1fd07bb6e0ece52fd4b4bbc1b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c531dd2dcfadd99f4cc7b06e930087b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#a2c531dd2dcfadd99f4cc7b06e930087b">RshInitPort</a> (<a class="el" href="struct_rsh_init_port.html">RshInitPort</a> const &amp;obj)</td></tr>
+<tr class="separator:a2c531dd2dcfadd99f4cc7b06e930087b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5350895a485cfbc7c5d73f07c538ceab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#a5350895a485cfbc7c5d73f07c538ceab">operator=</a> (const <a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;obj)</td></tr>
+<tr class="separator:a5350895a485cfbc7c5d73f07c538ceab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d1430b26f3406cd01a1a59f8c20f26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#ad2d1430b26f3406cd01a1a59f8c20f26">operator==</a> (<a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;obj) const </td></tr>
+<tr class="separator:ad2d1430b26f3406cd01a1a59f8c20f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa945da1fbfff6f810238df06e25de91e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#aa945da1fbfff6f810238df06e25de91e">operator!=</a> (<a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;obj) const </td></tr>
+<tr class="separator:aa945da1fbfff6f810238df06e25de91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#af965550d2b72863db870e01894846350">RshBaseType</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11da92056d50bfe18f306587535477d7bfe7">rshTypeUndefined</a>, const size_t typeSize=sizeof(<a class="el" href="struct_rsh_base_type.html">RshBaseType</a>))</td></tr>
+<tr class="memdesc:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#af965550d2b72863db870e01894846350">Подробнее...</a><br/></td></tr>
+<tr class="separator:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a79c78fcf2b560f843c84303098c524c2">GetTypeName</a> () const </td></tr>
+<tr class="separator:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a68212d5614da8de88600c8291586f638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#a68212d5614da8de88600c8291586f638">operationType</a></td></tr>
+<tr class="memdesc:a68212d5614da8de88600c8291586f638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняемая операция  <a href="#a68212d5614da8de88600c8291586f638">Подробнее...</a><br/></td></tr>
+<tr class="separator:a68212d5614da8de88600c8291586f638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7b18142eb442a696ed4f04ef0b363d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#aaa7b18142eb442a696ed4f04ef0b363d">portAddress</a></td></tr>
+<tr class="memdesc:aaa7b18142eb442a696ed4f04ef0b363d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адрес цифрового порта  <a href="#aaa7b18142eb442a696ed4f04ef0b363d">Подробнее...</a><br/></td></tr>
+<tr class="separator:aaa7b18142eb442a696ed4f04ef0b363d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce415825c859090b24c64ef72ddb46d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d">portValue</a></td></tr>
+<tr class="memdesc:a8ce415825c859090b24c64ef72ddb46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние порта  <a href="#a8ce415825c859090b24c64ef72ddb46d">Подробнее...</a><br/></td></tr>
+<tr class="separator:a8ce415825c859090b24c64ef72ddb46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#acb736f830c5d916de275eabf81127066">_typeSize</a></td></tr>
+<tr class="memdesc:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер структуры данных или класса.  <a href="#acb736f830c5d916de275eabf81127066">Подробнее...</a><br/></td></tr>
+<tr class="separator:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a0993279e21dd4e2c15d0f8d0ebba76be">_type</a></td></tr>
+<tr class="memdesc:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор типа данных.  <a href="#a0993279e21dd4e2c15d0f8d0ebba76be">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:ac34cc9a5cc1132268f838d6163ef9e71"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_port.html#ac34cc9a5cc1132268f838d6163ef9e71">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;obj)</td></tr>
+<tr class="separator:ac34cc9a5cc1132268f838d6163ef9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a350c4aea57828295b090ad6863f2c385">GetTypeName</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> typeCode)</td></tr>
+<tr class="memdesc:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение названия типа данных.  <a href="#a350c4aea57828295b090ad6863f2c385">Подробнее...</a><br/></td></tr>
+<tr class="separator:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Операции с цифровым портом </p>
+<p>Данная структура используется для записи и чтения данных из цифрового порта устройства. Соответствующие капс-коды: <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a9b7f3987af00b135e1b3c6db726ffc09" title="Устройство имеет цифровые линии для ввода (вывода) данных ">RSH_CAPS_DEVICE_HAS_DIGITAL_PORT</a> и <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a64b485141c3711ba52383ba4990f3620" title="Структура инициализации RshInitPort поддерживается библиотекой абстракции. ">RSH_CAPS_SOFT_INIT_PORT</a>. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#_a26">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#_a26">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#_a26">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#_a26">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#_a26">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#_a26">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#_a26">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#_a26">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#_a26">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#_a26">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#_a26">Leonardo2_Port.cpp</a> и <a class="el" href="_python__port_8cpp-example.html#_a23">Python_Port.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a3ab27305314c08f116b18c8d5837eb04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04">RshInitPort::OperationType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список операций </p>
+<p>Используйте коды операций из данного списка, чтобы задать действие, которое необходимо выполнить с цифровыми портом.<br/>
+ Код операции нужно записать в поле <a class="el" href="struct_rsh_init_port.html#a68212d5614da8de88600c8291586f638" title="Выполняемая операция ">RshInitPort::operationType</a> структуры инициализации. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a3ab27305314c08f116b18c8d5837eb04ac26019916a94cdc554e96153cfd554db"></a>Read</em>&nbsp;</td><td class="fielddoc">
+<p>Чтение данных из цифрового порта </p>
+<p>Чтение состояния цифрового порта. Полученные данные будут помещены в поле <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d" title="Состояние порта ">RshInitPort::portValue</a>. Если разрядность порта меньше 32, используется младшая часть переменной.<br/>
+ Например, если порт имеет 8 линий, данные будут находиться в младшем байте поля <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d" title="Состояние порта ">RshInitPort::portValue</a> после успешного выполнения операции чтения (вызов метода <a class="el" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">IRshDevice::Init()</a> ). </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3ab27305314c08f116b18c8d5837eb04af78630ea90758efdd57b850f2469b2e1"></a>Write</em>&nbsp;</td><td class="fielddoc">
+<p>Запись в цифровой порт </p>
+<p>Значение, указанное в поле <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d" title="Состояние порта ">RshInitPort::portValue</a>, будет выведено в цифровой порт.<br/>
+ Если количество линий цифрового порта меньше, чем разрядность <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d" title="Состояние порта ">RshInitPort::portValue</a> (32 бита), используется младшая часть. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3ab27305314c08f116b18c8d5837eb04ad6291f1424e0f69407fc580dd8cfe50e"></a>WriteAND</em>&nbsp;</td><td class="fielddoc">
+<p>Обновить состояние цифрового порта по "И". </p>
+<p>Данная операция состоит из двух частей:<br/>
+ Сначала, будет прочитано текущее состояние цифрового порта. Далее, полученно значение будет объединено по "И" (логическая побитовая операция) со значением, переданным в поле <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d" title="Состояние порта ">RshInitPort::portValue</a> структуры инициализации. Результат операции будет записан в цифровой порт. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a3ab27305314c08f116b18c8d5837eb04addf7d3ba3f043366f27b4f776a164058"></a>WriteOR</em>&nbsp;</td><td class="fielddoc">
+<p>Обновить состояние цифрового порта по "ИЛИ". </p>
+<p>Данная операция состоит из двух частей:<br/>
+ Сначала, будет прочитано текущее состояние цифрового порта. Далее, полученно значение будет объединено по "ИЛИ" (логическая побитовая операция) со значением, переданным в поле <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d" title="Состояние порта ">RshInitPort::portValue</a> структуры инициализации. Результат операции будет записан в цифровой порт. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="abe21307c740b98d5cfdfabe0a726db83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitPort::RshInitPort </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aded4c1fd07bb6e0ece52fd4b4bbc1b04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitPort::RshInitPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>operation</em> = <code><a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04ac26019916a94cdc554e96153cfd554db">RshInitPort::Read</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>value</em> = <code>0x0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c531dd2dcfadd99f4cc7b06e930087b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitPort::RshInitPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_port.html">RshInitPort</a> const &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_port.html#a68212d5614da8de88600c8291586f638">operationType</a>, <a class="el" href="struct_rsh_init_port.html#aaa7b18142eb442a696ed4f04ef0b363d">portAddress</a> и <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d">portValue</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aa945da1fbfff6f810238df06e25de91e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitPort::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_port.html#ad2d1430b26f3406cd01a1a59f8c20f26">operator==()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_port_aa945da1fbfff6f810238df06e25de91e_cgraph.png" border="0" usemap="#struct_rsh_init_port_aa945da1fbfff6f810238df06e25de91e_cgraph" alt=""/></div>
+<map name="struct_rsh_init_port_aa945da1fbfff6f810238df06e25de91e_cgraph" id="struct_rsh_init_port_aa945da1fbfff6f810238df06e25de91e_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_port.html#ad2d1430b26f3406cd01a1a59f8c20f26" title="RshInitPort::operator==" alt="" coords="246,5,445,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5350895a485cfbc7c5d73f07c538ceab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp; RshInitPort::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_port.html#a68212d5614da8de88600c8291586f638">operationType</a>, <a class="el" href="struct_rsh_init_port.html#aaa7b18142eb442a696ed4f04ef0b363d">portAddress</a> и <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d">portValue</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2d1430b26f3406cd01a1a59f8c20f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitPort::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_port.html#a68212d5614da8de88600c8291586f638">operationType</a>, <a class="el" href="struct_rsh_init_port.html#aaa7b18142eb442a696ed4f04ef0b363d">portAddress</a> и <a class="el" href="struct_rsh_init_port.html#a8ce415825c859090b24c64ef72ddb46d">portValue</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_port.html#aa945da1fbfff6f810238df06e25de91e">operator!=()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_port_ad2d1430b26f3406cd01a1a59f8c20f26_icgraph.png" border="0" usemap="#struct_rsh_init_port_ad2d1430b26f3406cd01a1a59f8c20f26_icgraph" alt=""/></div>
+<map name="struct_rsh_init_port_ad2d1430b26f3406cd01a1a59f8c20f26_icgraph" id="struct_rsh_init_port_ad2d1430b26f3406cd01a1a59f8c20f26_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_port.html#aa945da1fbfff6f810238df06e25de91e" title="RshInitPort::operator!=" alt="" coords="253,5,445,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="ac34cc9a5cc1132268f838d6163ef9e71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_port.html">RshInitPort</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a68212d5614da8de88600c8291586f638"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitPort::operationType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняемая операция </p>
+<p>Действие (чтение, запись и т.д.) которое необходимое выполнить. Список доступных операций - в перечислении <a class="el" href="struct_rsh_init_port.html#a3ab27305314c08f116b18c8d5837eb04" title="Список операций ">RshInitPort::OperationType</a>. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a27">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a27">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a27">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a27">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a27">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a27">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a27">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a27">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a27">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a27">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a27">Leonardo2_Port.cpp</a> и <a class="el" href="_python__port_8cpp-example.html#a24">Python_Port.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_port_8cpp.html#ac34cc9a5cc1132268f838d6163ef9e71">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_port.html#a5350895a485cfbc7c5d73f07c538ceab">operator=()</a>, <a class="el" href="struct_rsh_init_port.html#ad2d1430b26f3406cd01a1a59f8c20f26">operator==()</a> и <a class="el" href="struct_rsh_init_port.html#a2c531dd2dcfadd99f4cc7b06e930087b">RshInitPort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa7b18142eb442a696ed4f04ef0b363d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitPort::portAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Адрес цифрового порта </p>
+<p>Данное поле определяет адрес порта, который будет использован для вывполения операции чтения/записи.<br/>
+ Список доступных адресов можно получить, используя метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">IRshDevice::Get()</a>. Смотрите описание структуры <a class="el" href="struct_rsh_board_port_info.html" title="Информация о цифровых портах устройства ">RshBoardPortInfo</a> и примеры. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a29">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a29">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a29">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a29">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a29">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a29">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a29">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a29">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a29">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a29">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a29">Leonardo2_Port.cpp</a> и <a class="el" href="_python__port_8cpp-example.html#a26">Python_Port.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_port_8cpp.html#ac34cc9a5cc1132268f838d6163ef9e71">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_port.html#a5350895a485cfbc7c5d73f07c538ceab">operator=()</a>, <a class="el" href="struct_rsh_init_port.html#ad2d1430b26f3406cd01a1a59f8c20f26">operator==()</a> и <a class="el" href="struct_rsh_init_port.html#a2c531dd2dcfadd99f4cc7b06e930087b">RshInitPort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ce415825c859090b24c64ef72ddb46d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitPort::portValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Состояние порта </p>
+<p>Значение, которое нужно записать в порт, либо результат операции чтения данных.<br/>
+ Если разрядность цифрового порта меньше, чем размер переменной (32 бита), используeтся младшая часть.<br/>
+ Для 8ми битных цифровых портов, например, данные будут находитсья в младшем байте. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a30">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a30">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a30">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a30">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a30">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a30">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a30">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a30">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a30">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a30">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a30">Leonardo2_Port.cpp</a> и <a class="el" href="_python__port_8cpp-example.html#a27">Python_Port.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_port_8cpp.html#ac34cc9a5cc1132268f838d6163ef9e71">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_port.html#a5350895a485cfbc7c5d73f07c538ceab">operator=()</a>, <a class="el" href="struct_rsh_init_port.html#ad2d1430b26f3406cd01a1a59f8c20f26">operator==()</a> и <a class="el" href="struct_rsh_init_port.html#a2c531dd2dcfadd99f4cc7b06e930087b">RshInitPort()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_port_8h_source.html">RshInitPort.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_port_8cpp.html">RshInitPort.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:34. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

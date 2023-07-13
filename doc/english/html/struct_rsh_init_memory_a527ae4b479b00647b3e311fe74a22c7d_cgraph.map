@@ -1,0 +1,4 @@
+<map id="RshInitMemory::IsSingleFreqModeActive" name="RshInitMemory::IsSingleFreqModeActive">
+<area shape="rect" id="node2" href="$struct_rsh_init_memory.html#ab817a60b0cbfe0d5c13e611981e853ae" title="Check RshInitMemory::FreqDouble flag. " alt="" coords="283,5,517,49"/>
+<area shape="rect" id="node3" href="$struct_rsh_init_memory.html#af4d6cd7849efc2f88d361ef9c657073e" title="Check RshInitMemory::FreqQuadro flag. " alt="" coords="281,73,519,117"/>
+</map>

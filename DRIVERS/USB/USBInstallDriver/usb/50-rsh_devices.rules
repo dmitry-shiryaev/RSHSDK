@@ -1,0 +1,14 @@
+#LA20USB
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c373", PROGRAM="/usr/local/bin/device_namer c373", SYMLINK="RSH/%c", GROUP="users", MODE="0666"
+#LA50USB
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c376", PROGRAM="/usr/local/bin/device_namer c376", SYMLINK="RSH/%c", GROUP="users", MODE="0666"
+#LA2USB
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c371", PROGRAM="/usr/local/bin/device_namer c371", SYMLINK="RSH/%c", GROUP="users", MODE="0666"
+#SIRIUS
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c389", PROGRAM="/usr/local/bin/device_namer c389", SYMLINK="RSH/%c", GROUP="users", MODE="0666"
+#LAN10_12USB
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c379", PROGRAM="/usr/local/bin/device_namer c379", SYMLINK="RSH/%c", GROUP="users", MODE="0666"
+#LAI24USB
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c372", PROGRAM="/usr/local/bin/device_namer c372", SYMLINK="RSH/%c", GROUP="users", MODE="0666"
+#GSPF053USB
+KERNEL=="lausb*", ATTRS{idVendor}=="534b", ATTRS{idProduct}=="c35f", PROGRAM="/usr/local/bin/device_namer c35f", SYMLINK="RSH/%c", GROUP="users", MODE="0666"

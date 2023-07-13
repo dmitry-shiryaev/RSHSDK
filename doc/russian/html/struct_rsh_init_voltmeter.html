@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура RshInitVoltmeter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="struct_rsh_init_voltmeter-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура RshInitVoltmeter</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Cтруктура инициализации для вольтметров типа B7-78.  
+ <a href="struct_rsh_init_voltmeter.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_init_voltmeter_8h_source.html">RshInitVoltmeter.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RshInitVoltmeter:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_voltmeter__inherit__graph.png" border="0" usemap="#_rsh_init_voltmeter_inherit__map" alt="Inheritance graph"/></div>
+<map name="_rsh_init_voltmeter_inherit__map" id="_rsh_init_voltmeter_inherit__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="16,6,136,34"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RshInitVoltmeter:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_voltmeter__coll__graph.png" border="0" usemap="#_rsh_init_voltmeter_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_init_voltmeter_coll__map" id="_rsh_init_voltmeter_coll__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="101,99,221,127"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a30976372b934a854604126b6c5fa24a9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a30976372b934a854604126b6c5fa24a9">StartType</a> { <a class="el" href="struct_rsh_init_voltmeter.html#a30976372b934a854604126b6c5fa24a9ab884fc03921baab6884f522c02467b12">Program</a> = 0x0
+ }</td></tr>
+<tr class="memdesc:a30976372b934a854604126b6c5fa24a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы запуска  <a href="struct_rsh_init_voltmeter.html#a30976372b934a854604126b6c5fa24a9">Подробнее...</a><br/></td></tr>
+<tr class="separator:a30976372b934a854604126b6c5fa24a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355ef72de5746c5472d3298aa9e24f43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43">Control</a> { <a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43aa76daec1c672e677c7f15b543d3b9b4e">VoltageDC</a> = 0x0, 
+<a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43adcd64f06d1020bd46a751285f0075f98">VoltageAC</a> = 0x1, 
+<a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43a817b59b413c8e4c1b882948a46efa69f">CurrentDC</a> = 0x2, 
+<a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43a10acbb938b78b0a779fee6f5899f0edf">CurrentAC</a> = 0x4
+ }</td></tr>
+<tr class="memdesc:a355ef72de5746c5472d3298aa9e24f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режимы работы  <a href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43">Подробнее...</a><br/></td></tr>
+<tr class="separator:a355ef72de5746c5472d3298aa9e24f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a0321cd6f9829e54853b9d398d0e494a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a0321cd6f9829e54853b9d398d0e494a9">RshInitVoltmeter</a> ()</td></tr>
+<tr class="separator:a0321cd6f9829e54853b9d398d0e494a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1219ac5b3f734561507ab491255e55a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#ad1219ac5b3f734561507ab491255e55a">RshInitVoltmeter</a> (<a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> const &amp;obj)</td></tr>
+<tr class="separator:ad1219ac5b3f734561507ab491255e55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc861f9d14bda65976262513de0bdf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#aacc861f9d14bda65976262513de0bdf9">operator=</a> (const <a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;obj)</td></tr>
+<tr class="separator:aacc861f9d14bda65976262513de0bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5ed43e4a2000eae6a42ceedde64612"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612">operator==</a> (<a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;obj) const </td></tr>
+<tr class="separator:a9a5ed43e4a2000eae6a42ceedde64612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fcbbb097d1b1538a7a48168050456c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#af0fcbbb097d1b1538a7a48168050456c">operator!=</a> (<a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;obj) const </td></tr>
+<tr class="separator:af0fcbbb097d1b1538a7a48168050456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#af965550d2b72863db870e01894846350">RshBaseType</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11da92056d50bfe18f306587535477d7bfe7">rshTypeUndefined</a>, const size_t typeSize=sizeof(<a class="el" href="struct_rsh_base_type.html">RshBaseType</a>))</td></tr>
+<tr class="memdesc:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#af965550d2b72863db870e01894846350">Подробнее...</a><br/></td></tr>
+<tr class="separator:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a79c78fcf2b560f843c84303098c524c2">GetTypeName</a> () const </td></tr>
+<tr class="separator:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aaec9bbf5b47eb53c34759b6abe18e148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#aaec9bbf5b47eb53c34759b6abe18e148">startType</a></td></tr>
+<tr class="memdesc:aaec9bbf5b47eb53c34759b6abe18e148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип запуска  <a href="#aaec9bbf5b47eb53c34759b6abe18e148">Подробнее...</a><br/></td></tr>
+<tr class="separator:aaec9bbf5b47eb53c34759b6abe18e148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c89c6c39a811ff5043c0dc6d7118e75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a1c89c6c39a811ff5043c0dc6d7118e75">bufferSize</a></td></tr>
+<tr class="memdesc:a1c89c6c39a811ff5043c0dc6d7118e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер буфера  <a href="#a1c89c6c39a811ff5043c0dc6d7118e75">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1c89c6c39a811ff5043c0dc6d7118e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f9e6dc5c9faf6977f08176354d10f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#ae6f9e6dc5c9faf6977f08176354d10f4">filter</a></td></tr>
+<tr class="memdesc:ae6f9e6dc5c9faf6977f08176354d10f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фильтр  <a href="#ae6f9e6dc5c9faf6977f08176354d10f4">Подробнее...</a><br/></td></tr>
+<tr class="separator:ae6f9e6dc5c9faf6977f08176354d10f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723cd8451093fe42ad8d65856f2b1cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a723cd8451093fe42ad8d65856f2b1cf5">control</a></td></tr>
+<tr class="memdesc:a723cd8451093fe42ad8d65856f2b1cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим работы вольтметра  <a href="#a723cd8451093fe42ad8d65856f2b1cf5">Подробнее...</a><br/></td></tr>
+<tr class="separator:a723cd8451093fe42ad8d65856f2b1cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#acb736f830c5d916de275eabf81127066">_typeSize</a></td></tr>
+<tr class="memdesc:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер структуры данных или класса.  <a href="#acb736f830c5d916de275eabf81127066">Подробнее...</a><br/></td></tr>
+<tr class="separator:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a0993279e21dd4e2c15d0f8d0ebba76be">_type</a></td></tr>
+<tr class="memdesc:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор типа данных.  <a href="#a0993279e21dd4e2c15d0f8d0ebba76be">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a2ff64df1945892b6c0a0ba978a311eb7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_voltmeter.html#a2ff64df1945892b6c0a0ba978a311eb7">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;obj)</td></tr>
+<tr class="separator:a2ff64df1945892b6c0a0ba978a311eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a350c4aea57828295b090ad6863f2c385">GetTypeName</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> typeCode)</td></tr>
+<tr class="memdesc:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение названия типа данных.  <a href="#a350c4aea57828295b090ad6863f2c385">Подробнее...</a><br/></td></tr>
+<tr class="separator:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Cтруктура инициализации для вольтметров типа B7-78. </p>
+<p>Вольтметр управляется через USB порт, используется стандартный VISA драйвер для него.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Необходимо сделать:</a></b></dt><dd>Рефакторинг</dd></dl>
+</div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a355ef72de5746c5472d3298aa9e24f43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43">RshInitVoltmeter::Control</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Режимы работы </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a355ef72de5746c5472d3298aa9e24f43aa76daec1c672e677c7f15b543d3b9b4e"></a>VoltageDC</em>&nbsp;</td><td class="fielddoc">
+<p>Измерение постоянного напряжения </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a355ef72de5746c5472d3298aa9e24f43adcd64f06d1020bd46a751285f0075f98"></a>VoltageAC</em>&nbsp;</td><td class="fielddoc">
+<p>Измерение переменного напряжения </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a355ef72de5746c5472d3298aa9e24f43a817b59b413c8e4c1b882948a46efa69f"></a>CurrentDC</em>&nbsp;</td><td class="fielddoc">
+<p>Измерение постоянного тока </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a355ef72de5746c5472d3298aa9e24f43a10acbb938b78b0a779fee6f5899f0edf"></a>CurrentAC</em>&nbsp;</td><td class="fielddoc">
+<p>Измерение переменного тока </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a30976372b934a854604126b6c5fa24a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_rsh_init_voltmeter.html#a30976372b934a854604126b6c5fa24a9">RshInitVoltmeter::StartType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Способы запуска </p>
+<p>На текущий момент одно допустимое значение, программный запуск. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a30976372b934a854604126b6c5fa24a9ab884fc03921baab6884f522c02467b12"></a>Program</em>&nbsp;</td><td class="fielddoc">
+<p>Программный запуск </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a0321cd6f9829e54853b9d398d0e494a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitVoltmeter::RshInitVoltmeter </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_voltmeter.html#a1c89c6c39a811ff5043c0dc6d7118e75">bufferSize</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a723cd8451093fe42ad8d65856f2b1cf5">control</a>, <a class="el" href="struct_rsh_init_voltmeter.html#ae6f9e6dc5c9faf6977f08176354d10f4">filter</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a30976372b934a854604126b6c5fa24a9ab884fc03921baab6884f522c02467b12">Program</a>, <a class="el" href="struct_rsh_init_voltmeter.html#aaec9bbf5b47eb53c34759b6abe18e148">startType</a> и <a class="el" href="struct_rsh_init_voltmeter.html#a355ef72de5746c5472d3298aa9e24f43aa76daec1c672e677c7f15b543d3b9b4e">VoltageDC</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1219ac5b3f734561507ab491255e55a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitVoltmeter::RshInitVoltmeter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> const &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_voltmeter.html#a1c89c6c39a811ff5043c0dc6d7118e75">bufferSize</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a723cd8451093fe42ad8d65856f2b1cf5">control</a>, <a class="el" href="struct_rsh_init_voltmeter.html#ae6f9e6dc5c9faf6977f08176354d10f4">filter</a> и <a class="el" href="struct_rsh_init_voltmeter.html#aaec9bbf5b47eb53c34759b6abe18e148">startType</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="af0fcbbb097d1b1538a7a48168050456c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitVoltmeter::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612">operator==()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_voltmeter_af0fcbbb097d1b1538a7a48168050456c_cgraph.png" border="0" usemap="#struct_rsh_init_voltmeter_af0fcbbb097d1b1538a7a48168050456c_cgraph" alt=""/></div>
+<map name="struct_rsh_init_voltmeter_af0fcbbb097d1b1538a7a48168050456c_cgraph" id="struct_rsh_init_voltmeter_af0fcbbb097d1b1538a7a48168050456c_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612" title="RshInitVoltmeter::operator==" alt="" coords="288,5,531,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aacc861f9d14bda65976262513de0bdf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp; RshInitVoltmeter::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_voltmeter.html#a1c89c6c39a811ff5043c0dc6d7118e75">bufferSize</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a723cd8451093fe42ad8d65856f2b1cf5">control</a>, <a class="el" href="struct_rsh_init_voltmeter.html#ae6f9e6dc5c9faf6977f08176354d10f4">filter</a> и <a class="el" href="struct_rsh_init_voltmeter.html#aaec9bbf5b47eb53c34759b6abe18e148">startType</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a5ed43e4a2000eae6a42ceedde64612"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitVoltmeter::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_voltmeter.html#a1c89c6c39a811ff5043c0dc6d7118e75">bufferSize</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a723cd8451093fe42ad8d65856f2b1cf5">control</a>, <a class="el" href="struct_rsh_init_voltmeter.html#ae6f9e6dc5c9faf6977f08176354d10f4">filter</a> и <a class="el" href="struct_rsh_init_voltmeter.html#aaec9bbf5b47eb53c34759b6abe18e148">startType</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_voltmeter.html#af0fcbbb097d1b1538a7a48168050456c">operator!=()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_voltmeter_a9a5ed43e4a2000eae6a42ceedde64612_icgraph.png" border="0" usemap="#struct_rsh_init_voltmeter_a9a5ed43e4a2000eae6a42ceedde64612_icgraph" alt=""/></div>
+<map name="struct_rsh_init_voltmeter_a9a5ed43e4a2000eae6a42ceedde64612_icgraph" id="struct_rsh_init_voltmeter_a9a5ed43e4a2000eae6a42ceedde64612_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_voltmeter.html#af0fcbbb097d1b1538a7a48168050456c" title="RshInitVoltmeter::operator!=" alt="" coords="296,5,531,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a2ff64df1945892b6c0a0ba978a311eb7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_voltmeter.html">RshInitVoltmeter</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a1c89c6c39a811ff5043c0dc6d7118e75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitVoltmeter::bufferSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Размер буфера </p>
+<p>Размер буфера в отсчетах. </p>
+
+<p>Используется в <a class="el" href="_rsh_init_voltmeter_8cpp.html#a2ff64df1945892b6c0a0ba978a311eb7">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#aacc861f9d14bda65976262513de0bdf9">operator=()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612">operator==()</a> и <a class="el" href="struct_rsh_init_voltmeter.html#a0321cd6f9829e54853b9d398d0e494a9">RshInitVoltmeter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a723cd8451093fe42ad8d65856f2b1cf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitVoltmeter::control</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Режим работы вольтметра </p>
+<p>Внутренняя команда: "&lt;bFUNC&lt;/b&gt;" Допустимые значения собраны в перечислении Control </p>
+
+<p>Используется в <a class="el" href="_rsh_init_voltmeter_8cpp.html#a2ff64df1945892b6c0a0ba978a311eb7">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#aacc861f9d14bda65976262513de0bdf9">operator=()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612">operator==()</a> и <a class="el" href="struct_rsh_init_voltmeter.html#a0321cd6f9829e54853b9d398d0e494a9">RshInitVoltmeter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6f9e6dc5c9faf6977f08176354d10f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitVoltmeter::filter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фильтр </p>
+<p>Внутренняя команда: "&lt;b&gt;DET:BAND&lt;/b&gt;" Допустимые значения: 3, 20, 200 (значение по умолчанию) </p>
+
+<p>Используется в <a class="el" href="_rsh_init_voltmeter_8cpp.html#a2ff64df1945892b6c0a0ba978a311eb7">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#aacc861f9d14bda65976262513de0bdf9">operator=()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612">operator==()</a> и <a class="el" href="struct_rsh_init_voltmeter.html#a0321cd6f9829e54853b9d398d0e494a9">RshInitVoltmeter()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaec9bbf5b47eb53c34759b6abe18e148"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitVoltmeter::startType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип запуска </p>
+<p>В настоящий момент, доступно только одно значение - программный запуск. </p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_voltmeter.html#aacc861f9d14bda65976262513de0bdf9">operator=()</a>, <a class="el" href="struct_rsh_init_voltmeter.html#a9a5ed43e4a2000eae6a42ceedde64612">operator==()</a> и <a class="el" href="struct_rsh_init_voltmeter.html#a0321cd6f9829e54853b9d398d0e494a9">RshInitVoltmeter()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_voltmeter_8h_source.html">RshInitVoltmeter.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_voltmeter_8cpp.html">RshInitVoltmeter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:34. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

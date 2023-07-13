@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Класс RshError</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="class_rsh_error-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс RshError</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Набор методов для формирования сообщений об ошибках.  
+ <a href="class_rsh_error.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_error_8h_source.html">RshError.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:ac424f8a12661746e1f70a438f88a4998"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998">GetSystemErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, wchar_t *str, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> maxLength)</td></tr>
+<tr class="memdesc:ac424f8a12661746e1f70a438f88a4998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение описания по системному коду ошибки в формате UTF-16.  <a href="#ac424f8a12661746e1f70a438f88a4998">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac424f8a12661746e1f70a438f88a4998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f5c39abeb13a14c4b25d402109cec1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a91f5c39abeb13a14c4b25d402109cec1">GetSystemErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, char *str, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> maxLength)</td></tr>
+<tr class="memdesc:a91f5c39abeb13a14c4b25d402109cec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение описания по системному коду ошибки.  <a href="#a91f5c39abeb13a14c4b25d402109cec1">Подробнее...</a><br/></td></tr>
+<tr class="separator:a91f5c39abeb13a14c4b25d402109cec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d50987c5e703ee6184e146c3e3616a0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a7d50987c5e703ee6184e146c3e3616a0">GetSystemErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, std::string &amp;str)</td></tr>
+<tr class="separator:a7d50987c5e703ee6184e146c3e3616a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016c6f5fcb86db028338fff12ee768f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a016c6f5fcb86db028338fff12ee768f2">GetSystemErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, std::wstring &amp;str)</td></tr>
+<tr class="separator:a016c6f5fcb86db028338fff12ee768f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cfc9cfab2c91bd75861e7bd7ff6748"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748">GetErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, wchar_t *str, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> maxLength, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a> language=<a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a>)</td></tr>
+<tr class="memdesc:a53cfc9cfab2c91bd75861e7bd7ff6748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение сообщения об ошибке по коду из Rsh Api в формате UTF-16.  <a href="#a53cfc9cfab2c91bd75861e7bd7ff6748">Подробнее...</a><br/></td></tr>
+<tr class="separator:a53cfc9cfab2c91bd75861e7bd7ff6748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b115f2fe476b03890e0aa08daf93b6b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a0b115f2fe476b03890e0aa08daf93b6b">GetErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, char *str, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> maxLength, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a> language=<a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a>)</td></tr>
+<tr class="memdesc:a0b115f2fe476b03890e0aa08daf93b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение сообщения об ошибке по коду из Rsh Api.  <a href="#a0b115f2fe476b03890e0aa08daf93b6b">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0b115f2fe476b03890e0aa08daf93b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2fe2750e1caece4045a62dd99c7828"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#afd2fe2750e1caece4045a62dd99c7828">GetErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, std::wstring &amp;str, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a> language=<a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a>)</td></tr>
+<tr class="separator:afd2fe2750e1caece4045a62dd99c7828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59831d48c37ee0b74583324095c9c216"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a59831d48c37ee0b74583324095c9c216">GetErrorDescription</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, std::string &amp;str, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a> language=<a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a>)</td></tr>
+<tr class="separator:a59831d48c37ee0b74583324095c9c216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c98fe129c6ec053e444fafda0b4916"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a66c98fe129c6ec053e444fafda0b4916">PrintError</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a> language=<a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a>, bool includeSystemErrorInfo=false)</td></tr>
+<tr class="memdesc:a66c98fe129c6ec053e444fafda0b4916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Печать описания ошибки.  <a href="#a66c98fe129c6ec053e444fafda0b4916">Подробнее...</a><br/></td></tr>
+<tr class="separator:a66c98fe129c6ec053e444fafda0b4916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac581afd6d367035bdc00853a074888"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888">PrintErrorDebug</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, const wchar_t *message, bool includeSystemErrorInfo=false)</td></tr>
+<tr class="memdesc:abac581afd6d367035bdc00853a074888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Печать отладочного сообщения.  <a href="#abac581afd6d367035bdc00853a074888">Подробнее...</a><br/></td></tr>
+<tr class="separator:abac581afd6d367035bdc00853a074888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362dbb495cf4c842ea10a9a5597bbd8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_error.html#a362dbb495cf4c842ea10a9a5597bbd8d">PrintErrorDebug</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> error, const char *message, bool includeSystemErrorInfo=false)</td></tr>
+<tr class="separator:a362dbb495cf4c842ea10a9a5597bbd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Набор методов для формирования сообщений об ошибках. </p>
+<p>Используя данный класс можно получить сообщения об ошибках на основе кодов Rsh Api (<a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261" title="Коды ошибок, возвращаемые различными методами Rsh API. ">RSH_STATUS</a>), а также системных кодах ошибок. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a53cfc9cfab2c91bd75861e7bd7ff6748"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wchar_t *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>maxLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение сообщения об ошибке по коду из Rsh Api в формате UTF-16. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>Код ошибки.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>Указатель на буфер (строку), в который будет помещено описание ошибки</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxLength</td><td>Максимальная длина сообщения об ошибке (фактически, размер выделенной памяти для буфера <b>str</b>).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Одна из констант списка <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1" title="Список языков. ">RSH_LANGUAGE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки</dd></dl>
+<p>Используя данный метод можно получить детальное описание ошибки по ее коду.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Параметр <b>error</b> маскируется с 0xFFFF0000, поэтому можно передавать в этот метод коды ошибок, возвращаемые различными функциями Rsh Api.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261" title="Коды ошибок, возвращаемые различными методами Rsh API. ">RSH_STATUS</a> | <a class="el" href="_rsh_error__r_u_8cpp-example.html">Пример использования </a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html#a9">RshError_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a4423391a9cbc8ae5f812b2cd71b42ce4">RSH_API_MEMORY_COPYERROR</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261aadd651ead9c9ef2ed3618cf5842c1abb">RSH_API_PARAMETER_INVALID</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a75483c7f46de7a56f46ce7eaaed1d5f3">RSH_API_PARAMETER_ZEROADDRESS</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+<p>Используется в <a class="el" href="class_rsh_error.html#a59831d48c37ee0b74583324095c9c216">GetErrorDescription()</a>, <a class="el" href="class_rsh_error.html#a66c98fe129c6ec053e444fafda0b4916">PrintError()</a> и <a class="el" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888">PrintErrorDebug()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a53cfc9cfab2c91bd75861e7bd7ff6748_icgraph.png" border="0" usemap="#class_rsh_error_a53cfc9cfab2c91bd75861e7bd7ff6748_icgraph" alt=""/></div>
+<map name="class_rsh_error_a53cfc9cfab2c91bd75861e7bd7ff6748_icgraph" id="class_rsh_error_a53cfc9cfab2c91bd75861e7bd7ff6748_icgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a59831d48c37ee0b74583324095c9c216" title="RshError::GetErrorDescription" alt="" coords="294,5,533,33"/><area shape="rect" id="node3" href="class_rsh_error.html#a66c98fe129c6ec053e444fafda0b4916" title="Печать описания ошибки. " alt="" coords="331,57,495,85"/><area shape="rect" id="node4" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888" title="Печать отладочного сообщения. " alt="" coords="308,109,519,137"/><area shape="rect" id="node5" href="class_rsh_error.html#a362dbb495cf4c842ea10a9a5597bbd8d" title="RshError::PrintErrorDebug" alt="" coords="581,109,792,137"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b115f2fe476b03890e0aa08daf93b6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>maxLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение сообщения об ошибке по коду из Rsh Api. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>Код ошибки.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>Указатель на буфер (строку), в который будет помещено описание ошибки</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxLength</td><td>Максимальная длина сообщения об ошибке (фактически, размер выделенной памяти для буфера <b>str</b>).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Одна из констант списка <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1" title="Список языков. ">RSH_LANGUAGE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки</dd></dl>
+<p>Используя данный метод можно получить детальное описание ошибки по ее коду.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Параметр <b>error</b> маскируется с 0xFFFF0000, поэтому можно передавать в этот метод коды ошибок, возвращаемые различными функциями Rsh Api.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261" title="Коды ошибок, возвращаемые различными методами Rsh API. ">RSH_STATUS</a> | <a class="el" href="_rsh_error__r_u_8cpp-example.html">Пример использования </a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Необходимо сделать:</a></b></dt><dd>Linux версия данного метода, возможно, имеет проблемы с кодировкой (проверить)</dd></dl>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748">GetErrorDescription()</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a4423391a9cbc8ae5f812b2cd71b42ce4">RSH_API_MEMORY_COPYERROR</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261aadd651ead9c9ef2ed3618cf5842c1abb">RSH_API_PARAMETER_INVALID</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a75483c7f46de7a56f46ce7eaaed1d5f3">RSH_API_PARAMETER_ZEROADDRESS</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a0b115f2fe476b03890e0aa08daf93b6b_cgraph.png" border="0" usemap="#class_rsh_error_a0b115f2fe476b03890e0aa08daf93b6b_cgraph" alt=""/></div>
+<map name="class_rsh_error_a0b115f2fe476b03890e0aa08daf93b6b_cgraph" id="class_rsh_error_a0b115f2fe476b03890e0aa08daf93b6b_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748" title="Получение сообщения об ошибке по коду из Rsh Api в формате UTF&#45;16. " alt="" coords="294,5,533,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afd2fe2750e1caece4045a62dd99c7828"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a>, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a70b311fb65472d89d02916720de1c713">RSH_LANGUAGE_RUSSIAN</a> и <a class="el" href="_rsh_macro_8h.html#abcf322e2baf726b1e61ba86314e54c45">rshUTF16</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59831d48c37ee0b74583324095c9c216"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748">GetErrorDescription()</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a59831d48c37ee0b74583324095c9c216_cgraph.png" border="0" usemap="#class_rsh_error_a59831d48c37ee0b74583324095c9c216_cgraph" alt=""/></div>
+<map name="class_rsh_error_a59831d48c37ee0b74583324095c9c216_cgraph" id="class_rsh_error_a59831d48c37ee0b74583324095c9c216_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748" title="Получение сообщения об ошибке по коду из Rsh Api в формате UTF&#45;16. " alt="" coords="294,5,533,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac424f8a12661746e1f70a438f88a4998"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetSystemErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wchar_t *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>maxLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение описания по системному коду ошибки в формате UTF-16. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>Системный код ошибки.<br/>
+ Можно передать <b>errno</b> (для Linux) или GetLastError() (для Windows)</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>Указатель на буфер (строку), в который будет помещено описание ошибки</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxLength</td><td>Максимальная длина сообщения об ошибке (фактически, размер выделенной памяти для буфера <b>str</b>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки</dd></dl>
+<p>Для формирования сообщения по коду ошибки используется вызов системной функции (зависит от операционной системы). Результат этого вызова возвращается в формате UTF-16.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Параметр <b>error</b> маскируется с 0xFFFF, поэтому можно передавать в этот метод коды ошибок, возвращаемые различными функциями Rsh Api.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html">Пример использования </a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html#a3">RshError_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a4423391a9cbc8ae5f812b2cd71b42ce4">RSH_API_MEMORY_COPYERROR</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261aadd651ead9c9ef2ed3618cf5842c1abb">RSH_API_PARAMETER_INVALID</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a75483c7f46de7a56f46ce7eaaed1d5f3">RSH_API_PARAMETER_ZEROADDRESS</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+<p>Используется в <a class="el" href="class_rsh_error.html#a7d50987c5e703ee6184e146c3e3616a0">GetSystemErrorDescription()</a>, <a class="el" href="class_rsh_error.html#a66c98fe129c6ec053e444fafda0b4916">PrintError()</a> и <a class="el" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888">PrintErrorDebug()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_ac424f8a12661746e1f70a438f88a4998_icgraph.png" border="0" usemap="#class_rsh_error_ac424f8a12661746e1f70a438f88a4998_icgraph" alt=""/></div>
+<map name="class_rsh_error_ac424f8a12661746e1f70a438f88a4998_icgraph" id="class_rsh_error_ac424f8a12661746e1f70a438f88a4998_icgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a7d50987c5e703ee6184e146c3e3616a0" title="RshError::GetSystemError\lDescription" alt="" coords="270,5,485,49"/><area shape="rect" id="node3" href="class_rsh_error.html#a66c98fe129c6ec053e444fafda0b4916" title="Печать описания ошибки. " alt="" coords="295,73,459,101"/><area shape="rect" id="node4" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888" title="Печать отладочного сообщения. " alt="" coords="272,125,483,153"/><area shape="rect" id="node5" href="class_rsh_error.html#a362dbb495cf4c842ea10a9a5597bbd8d" title="RshError::PrintErrorDebug" alt="" coords="533,125,744,153"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a91f5c39abeb13a14c4b25d402109cec1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetSystemErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>maxLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение описания по системному коду ошибки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>Системный код ошибки.<br/>
+ Можно передать <b>errno</b> (для Linux) или GetLastError() (для Windows)</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>Указатель на буфер (строку), в который будет помещено описание ошибки</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxLength</td><td>Максимальная длина сообщения об ошибке (фактически, размер выделенной памяти для буфера <b>str</b>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки</dd></dl>
+<p>Для формирования сообщения по коду ошибки используется вызов системной функции (зависит от операционной системы). Результат этого вызова возвращается в формате ANSI.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Параметр <b>error</b> маскируется с 0xFFFF, поэтому можно передавать в этот метод коды ошибок, возвращаемые различными функциями Rsh Api.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html">Пример использования </a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Необходимо сделать:</a></b></dt><dd>Linux версия данного метода, возможно, имеет проблемы с кодировкой (проверить)</dd></dl>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998">GetSystemErrorDescription()</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a4423391a9cbc8ae5f812b2cd71b42ce4">RSH_API_MEMORY_COPYERROR</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261aadd651ead9c9ef2ed3618cf5842c1abb">RSH_API_PARAMETER_INVALID</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a75483c7f46de7a56f46ce7eaaed1d5f3">RSH_API_PARAMETER_ZEROADDRESS</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a91f5c39abeb13a14c4b25d402109cec1_cgraph.png" border="0" usemap="#class_rsh_error_a91f5c39abeb13a14c4b25d402109cec1_cgraph" alt=""/></div>
+<map name="class_rsh_error_a91f5c39abeb13a14c4b25d402109cec1_cgraph" id="class_rsh_error_a91f5c39abeb13a14c4b25d402109cec1_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998" title="Получение описания по системному коду ошибки в формате UTF&#45;16. " alt="" coords="270,5,485,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d50987c5e703ee6184e146c3e3616a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetSystemErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998">GetSystemErrorDescription()</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a7d50987c5e703ee6184e146c3e3616a0_cgraph.png" border="0" usemap="#class_rsh_error_a7d50987c5e703ee6184e146c3e3616a0_cgraph" alt=""/></div>
+<map name="class_rsh_error_a7d50987c5e703ee6184e146c3e3616a0_cgraph" id="class_rsh_error_a7d50987c5e703ee6184e146c3e3616a0_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998" title="Получение описания по системному коду ошибки в формате UTF&#45;16. " alt="" coords="270,5,485,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a016c6f5fcb86db028338fff12ee768f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshError::GetSystemErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="_rsh_def_chk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261ae4a68bb81ea84207d0794f6641b42676">RSH_API_FUNCTION_ERRORHAPPEND</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66c98fe129c6ec053e444fafda0b4916"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshError::PrintError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1">RSH_LANGUAGE</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code><a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeSystemErrorInfo</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Печать описания ошибки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>Код ошибки, полученный в результате вызова функций из Rsh Api.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">language</td><td>Одна из констант списка <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1" title="Список языков. ">RSH_LANGUAGE</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">includeSystemErrorInfo</td><td>Если данный флаг установлен (true), дополнительно будет напечатана информация о системном коде ошибки.<br/>
+ Чтобы данный флаг сработал, в младшем слове параметра <b>error</b> должен содержаться системный код ошибки (error &amp; 0xFFFF != 0).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Данный метод используется для вывода детального сообщения об ошибке в стандартный поток вывода.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Системные сообщения об ошибках иногда не могут быть переведены на язык, отличный от дефолтного в системе. В этом случае параметр <b>language</b> будет проигнорирован.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html">Пример использования </a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#a2">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#a2">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a2">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a2">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a2">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a2">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a2">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a2">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a2">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a2">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a2">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a2">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a2">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a2">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a2">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a2">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a2">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a2">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a2">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a2">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a2">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a2">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a2">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a2">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a2">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a2">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a2">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a2">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a2">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a2">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a2">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a2">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a2">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a2">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a2">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a2">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a2">Leonardo2_Port.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a2">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a1">Python_Continuous.cpp</a>, <a class="el" href="_python__port_8cpp-example.html#a1">Python_Port.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a2">Python_StartStop.cpp</a>, <a class="el" href="_rsh_error__r_u_8cpp-example.html#a0">RshError_RU.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a2">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748">GetErrorDescription()</a>, <a class="el" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998">GetSystemErrorDescription()</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a70b311fb65472d89d02916720de1c713">RSH_LANGUAGE_RUSSIAN</a> и <a class="el" href="_rsh_macro_8h.html#abcf322e2baf726b1e61ba86314e54c45">rshUTF16</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a66c98fe129c6ec053e444fafda0b4916_cgraph.png" border="0" usemap="#class_rsh_error_a66c98fe129c6ec053e444fafda0b4916_cgraph" alt=""/></div>
+<map name="class_rsh_error_a66c98fe129c6ec053e444fafda0b4916_cgraph" id="class_rsh_error_a66c98fe129c6ec053e444fafda0b4916_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748" title="Получение сообщения об ошибке по коду из Rsh Api в формате UTF&#45;16. " alt="" coords="219,5,458,33"/><area shape="rect" id="node3" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998" title="Получение описания по системному коду ошибки в формате UTF&#45;16. " alt="" coords="231,57,446,101"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abac581afd6d367035bdc00853a074888"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshError::PrintErrorDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeSystemErrorInfo</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Печать отладочного сообщения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>Код ошибки, полученный в результате вызова функций из Rsh Api.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>Описание параметра message.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">includeSystemErrorInfo</td><td>Если данный флаг установлен (true), дополнительно будет напечатана информация о системном коде ошибки.<br/>
+ Чтобы данный флаг сработал, в младшем слове параметра <b>error</b> должен содержаться системный код ошибки (error &amp; 0xFFFF != 0).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Данный метод является аналогом метода <a class="el" href="class_rsh_error.html#a66c98fe129c6ec053e444fafda0b4916" title="Печать описания ошибки. ">PrintError()</a>, со следующими отличиями: </p>
+<ul>
+<li>При выводе сообщений всегда используется английский язык. </li>
+<li>Можно передать дополнительную строку, которая будет напечатана вместе с описанием ошибки.</li>
+</ul>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html">Пример использования </a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_error__r_u_8cpp-example.html#a8">RshError_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748">GetErrorDescription()</a>, <a class="el" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998">GetSystemErrorDescription()</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>, <a class="el" href="_rsh_consts___language_8h.html#a7c042683362edf1c0ec43813b6929dd1a303af417c94cb12e2567b69dc37bc71d">RSH_LANGUAGE_ENGLISH</a> и <a class="el" href="_rsh_macro_8h.html#abcf322e2baf726b1e61ba86314e54c45">rshUTF16</a>.</p>
+
+<p>Используется в <a class="el" href="class_rsh_error.html#a362dbb495cf4c842ea10a9a5597bbd8d">PrintErrorDebug()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_abac581afd6d367035bdc00853a074888_cgraph.png" border="0" usemap="#class_rsh_error_abac581afd6d367035bdc00853a074888_cgraph" alt=""/></div>
+<map name="class_rsh_error_abac581afd6d367035bdc00853a074888_cgraph" id="class_rsh_error_abac581afd6d367035bdc00853a074888_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748" title="Получение сообщения об ошибке по коду из Rsh Api в формате UTF&#45;16. " alt="" coords="265,5,503,33"/><area shape="rect" id="node3" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998" title="Получение описания по системному коду ошибки в формате UTF&#45;16. " alt="" coords="277,57,491,101"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_abac581afd6d367035bdc00853a074888_icgraph.png" border="0" usemap="#class_rsh_error_abac581afd6d367035bdc00853a074888_icgraph" alt=""/></div>
+<map name="class_rsh_error_abac581afd6d367035bdc00853a074888_icgraph" id="class_rsh_error_abac581afd6d367035bdc00853a074888_icgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#a362dbb495cf4c842ea10a9a5597bbd8d" title="RshError::PrintErrorDebug" alt="" coords="264,5,475,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a362dbb495cf4c842ea10a9a5597bbd8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshError::PrintErrorDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeSystemErrorInfo</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888">PrintErrorDebug()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_error_a362dbb495cf4c842ea10a9a5597bbd8d_cgraph.png" border="0" usemap="#class_rsh_error_a362dbb495cf4c842ea10a9a5597bbd8d_cgraph" alt=""/></div>
+<map name="class_rsh_error_a362dbb495cf4c842ea10a9a5597bbd8d_cgraph" id="class_rsh_error_a362dbb495cf4c842ea10a9a5597bbd8d_cgraph">
+<area shape="rect" id="node2" href="class_rsh_error.html#abac581afd6d367035bdc00853a074888" title="Печать отладочного сообщения. " alt="" coords="264,35,475,63"/><area shape="rect" id="node3" href="class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748" title="Получение сообщения об ошибке по коду из Rsh Api в формате UTF&#45;16. " alt="" coords="523,5,762,33"/><area shape="rect" id="node4" href="class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998" title="Получение описания по системному коду ошибки в формате UTF&#45;16. " alt="" coords="535,57,750,101"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_error_8h_source.html">RshError.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_error_8cpp.html">RshError.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:33. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: RshBufferType_STL_RU.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RshBufferType_STL_RU.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Использование алгоритмов STL с <a class="el" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RshBufferType</a>.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_rsh_buffer_type_8h.html" title="Класс RshBufferType и связанные с ним типы данных. ">RshBufferType.h</a>&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//Функтор-генератор &quot;степени двойки&quot;</span></div>
+<div class="line"><span class="keyword">struct </span>c_poweroftwo {</div>
+<div class="line">  <span class="keywordtype">int</span> current;</div>
+<div class="line">  c_poweroftwo() {current=0;}</div>
+<div class="line">  <span class="keywordtype">int</span> operator()() {<span class="keywordflow">return</span> 1 &lt;&lt; current++;}</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//целочисленный буфер RshBufferType  с размером m_psize = 10</span></div>
+<div class="line"><a name="_a0"></a><a class="code" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RSH_BUFFER_U16</a> buffer(10);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//Заполним буфер случайными числами </span></div>
+<div class="line"><span class="comment">//Вызов данной функции также меняет актуальный размер буфера , m_size  будет равным 10 после вызова</span></div>
+<div class="line"><span class="comment">//buffer.end() указывает на конец актуальной части буфера (m_size+1), а не физической (m_psize)+1.</span></div>
+<div class="line"><a name="a1"></a><a class="code" href="_rsh_functions_8cpp.html#a9d971b3c8ffb1f658b8e860518378ebd" title="Заполнение буфера случайными числами. ">RshFillBufferWithRandomNumbers</a>(buffer);</div>
+<div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Buffer filled with random numbers:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">std::cout &lt;&lt; buffer &lt;&lt; std::endl;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//поиск первого элемента в буфере, значение которого больше 10000, ипользуя метод STL</span></div>
+<div class="line"><span class="comment">//вместо RSH_BUFFER_U16::value_type можно использовать просто U16</span></div>
+<div class="line">std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Find value greater than 10000:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a class="code" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4" title="Iterator type. Pointer to data stored in container is used, because RshBufferType is array based...">RSH_BUFFER_U16::iterator</a> it = std::find_if(buffer.begin(), buffer.end(), std::bind2nd(std::greater&lt;RSH_BUFFER_U16::value_type&gt;(), 10000));</div>
+<div class="line"><span class="keywordflow">if</span>( it != buffer.end())</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Found value greater than 10000 at position &quot;</span> &lt;&lt; it - buffer.begin() &lt;&lt; <span class="stringliteral">&quot;, value = &quot;</span> &lt;&lt; *it &lt;&lt; std::endl;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//заполнение буфера степенями двойки</span></div>
+<div class="line">c_poweroftwo PowerOfTwo;</div>
+<div class="line">std::generate(buffer.begin(), buffer.end(), PowerOfTwo);</div>
+<div class="line"></div>
+<div class="line">std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Buffer filled with powers of two:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">std::cout &lt;&lt; buffer &lt;&lt; std::endl;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//замена всех элементов, значение которых меньше 80,  на 80</span></div>
+<div class="line">std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Replace all values less than 80 with 80&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">std::replace_if(buffer.begin(), buffer.end(), std::bind2nd(std::less&lt;U16&gt;(), 80), 80);</div>
+<div class="line"></div>
+<div class="line">std::cout &lt;&lt; buffer &lt;&lt; std::endl;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//удаление дубликатов из буфера</span></div>
+<div class="line">std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Remove duplicates from buffer&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">it = std::unique(buffer.begin(), buffer.end() );</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//Изменение размера (std::unique не меняет размер буфера, просто переставляет ненужные элементы в конец)</span></div>
+<div class="line"><span class="keywordtype">size_t</span> newSize = it - buffer.begin();</div>
+<div class="line">buffer.SetSize(newSize);</div>
+<div class="line"></div>
+<div class="line">std::cout &lt;&lt; buffer &lt;&lt; std::endl;</div>
+</div><!-- fragment --> </div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

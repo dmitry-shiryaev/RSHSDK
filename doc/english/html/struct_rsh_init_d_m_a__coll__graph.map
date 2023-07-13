@@ -1,0 +1,7 @@
+<map id="RshInitDMA" name="RshInitDMA">
+<area shape="rect" id="node2" href="$struct_rsh_init_a_d_c.html" title="Base initialization structure for ADC devices. " alt="" coords="365,443,467,471"/>
+<area shape="rect" id="node3" href="$struct_rsh_base_type.html" title="Base class for all other SDK classes. " alt="" coords="583,99,703,127"/>
+<area shape="rect" id="node8" href="$class_rsh_buffer_type.html" title="RshBufferType\&lt; RshChannel,\l rshBufferTypeChannel \&gt;" alt="" coords="462,334,697,378"/>
+<area shape="rect" id="node9" href="$struct_rsh_channel.html" title="Analog channel parameters. " alt="" coords="445,209,552,237"/>
+<area shape="rect" id="node10" href="$class_rsh_buffer_type.html" title="Template class for buffer construction. " alt="" coords="627,209,880,237"/>
+</map>

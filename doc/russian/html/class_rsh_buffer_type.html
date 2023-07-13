@@ -1,0 +1,1586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Шаблон класса RshBufferType&lt; T, dataCode &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_rsh_buffer_type-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса RshBufferType&lt; T, dataCode &gt;</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Шаблонный класс для конструирования буферов данных.  
+ <a href="class_rsh_buffer_type.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_buffer_type_8h_source.html">RshBufferType.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RshBufferType&lt; T, dataCode &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_buffer_type__inherit__graph.png" border="0" usemap="#_rsh_buffer_type_3_01_t_00_01data_code_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_rsh_buffer_type_3_01_t_00_01data_code_01_4_inherit__map" id="_rsh_buffer_type_3_01_t_00_01data_code_01_4_inherit__map">
+<area shape="rect" id="node3" href="class_rsh_buffer_type.html" title="RshBufferType\&lt; RshChannel,\l rshBufferTypeChannel \&gt;" alt="" coords="699,5,935,49"/><area shape="rect" id="node4" href="class_rsh_buffer_type.html" title="RshBufferType\&lt; RshPortInfo,\l rshBufferTypePortInfo \&gt;" alt="" coords="700,73,935,117"/><area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="5,47,125,75"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RshBufferType&lt; T, dataCode &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_buffer_type__coll__graph.png" border="0" usemap="#_rsh_buffer_type_3_01_t_00_01data_code_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_buffer_type_3_01_t_00_01data_code_01_4_coll__map" id="_rsh_buffer_type_3_01_t_00_01data_code_01_4_coll__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="101,99,221,127"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:aeef120506d393de5c4ab6b18d87fe20f"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#aeef120506d393de5c4ab6b18d87fe20f">value_type</a></td></tr>
+<tr class="memdesc:aeef120506d393de5c4ab6b18d87fe20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container data type.  <a href="#aeef120506d393de5c4ab6b18d87fe20f">Подробнее...</a><br/></td></tr>
+<tr class="separator:aeef120506d393de5c4ab6b18d87fe20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9837b0cb11fe36c19f2f2f9c87f82c"><td class="memItemLeft" align="right" valign="top">typedef T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a7d9837b0cb11fe36c19f2f2f9c87f82c">reference</a></td></tr>
+<tr class="memdesc:a7d9837b0cb11fe36c19f2f2f9c87f82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to data type.  <a href="#a7d9837b0cb11fe36c19f2f2f9c87f82c">Подробнее...</a><br/></td></tr>
+<tr class="separator:a7d9837b0cb11fe36c19f2f2f9c87f82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120ef357a2af014d5702dd924a770f1a"><td class="memItemLeft" align="right" valign="top">typedef const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a120ef357a2af014d5702dd924a770f1a">const_reference</a></td></tr>
+<tr class="memdesc:a120ef357a2af014d5702dd924a770f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">const reference to data type  <a href="#a120ef357a2af014d5702dd924a770f1a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a120ef357a2af014d5702dd924a770f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8eafe0549e6ea64de70333f58b766b4"><td class="memItemLeft" align="right" valign="top">typedef T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4">iterator</a></td></tr>
+<tr class="memdesc:ae8eafe0549e6ea64de70333f58b766b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator type. Pointer to data stored in container is used, because <a class="el" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RshBufferType</a> is array based.  <a href="#ae8eafe0549e6ea64de70333f58b766b4">Подробнее...</a><br/></td></tr>
+<tr class="separator:ae8eafe0549e6ea64de70333f58b766b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac344b63bdba5427830e0c10c7c7094ad"><td class="memItemLeft" align="right" valign="top">typedef const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ac344b63bdba5427830e0c10c7c7094ad">const_iterator</a></td></tr>
+<tr class="memdesc:ac344b63bdba5427830e0c10c7c7094ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">const iterator type  <a href="#ac344b63bdba5427830e0c10c7c7094ad">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac344b63bdba5427830e0c10c7c7094ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e01e2dea723787fb19f5252ccb04c6"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a57e01e2dea723787fb19f5252ccb04c6">size_type</a></td></tr>
+<tr class="memdesc:a57e01e2dea723787fb19f5252ccb04c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">size type  <a href="#a57e01e2dea723787fb19f5252ccb04c6">Подробнее...</a><br/></td></tr>
+<tr class="separator:a57e01e2dea723787fb19f5252ccb04c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfed579f4d28e253c1c3e1d45df155e"><td class="memItemLeft" align="right" valign="top">typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a9cfed579f4d28e253c1c3e1d45df155e">difference_type</a></td></tr>
+<tr class="memdesc:a9cfed579f4d28e253c1c3e1d45df155e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ptrdiff type  <a href="#a9cfed579f4d28e253c1c3e1d45df155e">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9cfed579f4d28e253c1c3e1d45df155e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac44d777b365ca4f4b34683fa36d6c8f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ac44d777b365ca4f4b34683fa36d6c8f8">begin</a> ()</td></tr>
+<tr class="memdesc:ac44d777b365ca4f4b34683fa36d6c8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_rsh_buffer_type.html#ac44d777b365ca4f4b34683fa36d6c8f8" title="begin() method. Just return internal array pointer. ">begin()</a> method. Just return internal array pointer.  <a href="#ac44d777b365ca4f4b34683fa36d6c8f8">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac44d777b365ca4f4b34683fa36d6c8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4ac053afa5a13ad8124f2b3008590b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html#ac344b63bdba5427830e0c10c7c7094ad">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a6e4ac053afa5a13ad8124f2b3008590b">begin</a> () const </td></tr>
+<tr class="memdesc:a6e4ac053afa5a13ad8124f2b3008590b"><td class="mdescLeft">&#160;</td><td class="mdescRight">const <a class="el" href="class_rsh_buffer_type.html#ac44d777b365ca4f4b34683fa36d6c8f8" title="begin() method. Just return internal array pointer. ">begin()</a> method. Just return internal array pointer.  <a href="#a6e4ac053afa5a13ad8124f2b3008590b">Подробнее...</a><br/></td></tr>
+<tr class="separator:a6e4ac053afa5a13ad8124f2b3008590b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4438cc5d11fc0c774f3f01f48bdc14b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#af4438cc5d11fc0c774f3f01f48bdc14b">end</a> ()</td></tr>
+<tr class="memdesc:af4438cc5d11fc0c774f3f01f48bdc14b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_rsh_buffer_type.html#af4438cc5d11fc0c774f3f01f48bdc14b" title="end() method. Return pointer to one-after-last element. ">end()</a> method. Return pointer to one-after-last element.  <a href="#af4438cc5d11fc0c774f3f01f48bdc14b">Подробнее...</a><br/></td></tr>
+<tr class="separator:af4438cc5d11fc0c774f3f01f48bdc14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5252866cf7807416f7511c92d7b9301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html#ac344b63bdba5427830e0c10c7c7094ad">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ae5252866cf7807416f7511c92d7b9301">end</a> () const </td></tr>
+<tr class="memdesc:ae5252866cf7807416f7511c92d7b9301"><td class="mdescLeft">&#160;</td><td class="mdescRight">const <a class="el" href="class_rsh_buffer_type.html#af4438cc5d11fc0c774f3f01f48bdc14b" title="end() method. Return pointer to one-after-last element. ">end()</a> method. Return pointer to one-after-last element.  <a href="#ae5252866cf7807416f7511c92d7b9301">Подробнее...</a><br/></td></tr>
+<tr class="separator:ae5252866cf7807416f7511c92d7b9301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d02b9f4420045e3c67eaf1c276afbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html#a57e01e2dea723787fb19f5252ccb04c6">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb">size</a> () const </td></tr>
+<tr class="memdesc:a07d02b9f4420045e3c67eaf1c276afbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container size. Number of actual elements. Same as <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">Size()</a>, used for STL compatibility only.  <a href="#a07d02b9f4420045e3c67eaf1c276afbb">Подробнее...</a><br/></td></tr>
+<tr class="separator:a07d02b9f4420045e3c67eaf1c276afbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9212c240e9a6bcb6110e30d6f841c965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html#a57e01e2dea723787fb19f5252ccb04c6">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a9212c240e9a6bcb6110e30d6f841c965">max_size</a> () const </td></tr>
+<tr class="memdesc:a9212c240e9a6bcb6110e30d6f841c965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of elements container can hold. Same as <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">PSize()</a>, used for STL compatibility only. We are not implementing "on the fly" allocation as std::vector, for example.  <a href="#a9212c240e9a6bcb6110e30d6f841c965">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9212c240e9a6bcb6110e30d6f841c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177718860a204c3c4552917de1d7eb7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a177718860a204c3c4552917de1d7eb7c">empty</a> () const </td></tr>
+<tr class="memdesc:a177718860a204c3c4552917de1d7eb7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is container empty? Used for STL compatibility.  <a href="#a177718860a204c3c4552917de1d7eb7c">Подробнее...</a><br/></td></tr>
+<tr class="separator:a177718860a204c3c4552917de1d7eb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdce42e2dc66f4e49d0f4336b7bf8bbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#afdce42e2dc66f4e49d0f4336b7bf8bbe">swap</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj)</td></tr>
+<tr class="memdesc:afdce42e2dc66f4e49d0f4336b7bf8bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap values of two containers.  <a href="#afdce42e2dc66f4e49d0f4336b7bf8bbe">Подробнее...</a><br/></td></tr>
+<tr class="separator:afdce42e2dc66f4e49d0f4336b7bf8bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf7faab91689728ebc672b74ce5eab1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a8cf7faab91689728ebc672b74ce5eab1">RshBufferType</a> (size_t bufferSize=32)</td></tr>
+<tr class="memdesc:a8cf7faab91689728ebc672b74ce5eab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a8cf7faab91689728ebc672b74ce5eab1">Подробнее...</a><br/></td></tr>
+<tr class="separator:a8cf7faab91689728ebc672b74ce5eab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e7ed8c2c6a4db22c0ae7222ee36602"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a02e7ed8c2c6a4db22c0ae7222ee36602">RshBufferType</a> (const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj)</td></tr>
+<tr class="memdesc:a02e7ed8c2c6a4db22c0ae7222ee36602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a02e7ed8c2c6a4db22c0ae7222ee36602">Подробнее...</a><br/></td></tr>
+<tr class="separator:a02e7ed8c2c6a4db22c0ae7222ee36602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b316d47a8b1a00aef524032cd340aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a75b316d47a8b1a00aef524032cd340aa">~RshBufferType</a> ()</td></tr>
+<tr class="memdesc:a75b316d47a8b1a00aef524032cd340aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructror.  <a href="#a75b316d47a8b1a00aef524032cd340aa">Подробнее...</a><br/></td></tr>
+<tr class="separator:a75b316d47a8b1a00aef524032cd340aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf89018b24772907e3246ca3f105be6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#aaf89018b24772907e3246ca3f105be6b">Allocate</a> (size_t bufferSize=32)</td></tr>
+<tr class="memdesc:aaf89018b24772907e3246ca3f105be6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделение памяти для данных буфера  <a href="#aaf89018b24772907e3246ca3f105be6b">Подробнее...</a><br/></td></tr>
+<tr class="separator:aaf89018b24772907e3246ca3f105be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af2115b8d89da7172c435eb509aa446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a9af2115b8d89da7172c435eb509aa446">Copy</a> (const T *iptr, size_t psize, size_t <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb">size</a>=0)</td></tr>
+<tr class="memdesc:a9af2115b8d89da7172c435eb509aa446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирование данных в буфер из указанной области памяти  <a href="#a9af2115b8d89da7172c435eb509aa446">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9af2115b8d89da7172c435eb509aa446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cd7e2ee6dc32ead98dc2c5cd66abc8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a91cd7e2ee6dc32ead98dc2c5cd66abc8">CopyTo</a> (T *iptr, size_t iptrSize) const </td></tr>
+<tr class="memdesc:a91cd7e2ee6dc32ead98dc2c5cd66abc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирование данных из буфера в область памяти.  <a href="#a91cd7e2ee6dc32ead98dc2c5cd66abc8">Подробнее...</a><br/></td></tr>
+<tr class="separator:a91cd7e2ee6dc32ead98dc2c5cd66abc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7403f968121331f82131870fe07ffe51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a7403f968121331f82131870fe07ffe51">Copy</a> (const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;srcBuffer)</td></tr>
+<tr class="memdesc:a7403f968121331f82131870fe07ffe51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирование данных из другого буфера того же типа  <a href="#a7403f968121331f82131870fe07ffe51">Подробнее...</a><br/></td></tr>
+<tr class="separator:a7403f968121331f82131870fe07ffe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af697e312b9b63a7b40c0770b73261459"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#af697e312b9b63a7b40c0770b73261459">SortAscending</a> ()</td></tr>
+<tr class="memdesc:af697e312b9b63a7b40c0770b73261459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка буфера по возрастанию.  <a href="#af697e312b9b63a7b40c0770b73261459">Подробнее...</a><br/></td></tr>
+<tr class="separator:af697e312b9b63a7b40c0770b73261459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6fefcd0397a6357529d6ee41b997c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a8a6fefcd0397a6357529d6ee41b997c2">SortDescending</a> ()</td></tr>
+<tr class="memdesc:a8a6fefcd0397a6357529d6ee41b997c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка буфера по убыванию.  <a href="#a8a6fefcd0397a6357529d6ee41b997c2">Подробнее...</a><br/></td></tr>
+<tr class="separator:a8a6fefcd0397a6357529d6ee41b997c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1906f156b23e76df71b4c98fdff8c8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a1906f156b23e76df71b4c98fdff8c8a7">Print</a> (size_t <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb">size</a>=0) const </td></tr>
+<tr class="memdesc:a1906f156b23e76df71b4c98fdff8c8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Печать содержимого буфер в стандартный поток вывода.  <a href="#a1906f156b23e76df71b4c98fdff8c8a7">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1906f156b23e76df71b4c98fdff8c8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7791a28bdb280e4514fc5c4bd520394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ac7791a28bdb280e4514fc5c4bd520394">WriteBufferToFile</a> (const char *fileName, size_t elements=0) const </td></tr>
+<tr class="memdesc:ac7791a28bdb280e4514fc5c4bd520394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись содержимого буфера в файл (актуальный размер)  <a href="#ac7791a28bdb280e4514fc5c4bd520394">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac7791a28bdb280e4514fc5c4bd520394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdf499146df43678a01a089b28756aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#adfdf499146df43678a01a089b28756aa">WriteBufferToFile</a> (const std::string &amp;fileName, size_t elements=0) const </td></tr>
+<tr class="separator:adfdf499146df43678a01a089b28756aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc066f608bb715daeea86c74207b0dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a1dc066f608bb715daeea86c74207b0dc">WriteBufferToFile</a> (const wchar_t *fileName, size_t elements=0) const </td></tr>
+<tr class="separator:a1dc066f608bb715daeea86c74207b0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7219dd1cc72c3dbf56ab9c4c8a96207"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ab7219dd1cc72c3dbf56ab9c4c8a96207">WriteBufferToFile</a> (const std::wstring &amp;fileName, size_t elements=0) const </td></tr>
+<tr class="separator:ab7219dd1cc72c3dbf56ab9c4c8a96207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac1135fa20f01fa01ff018ad0b5b1b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a1ac1135fa20f01fa01ff018ad0b5b1b0">ReadBufferFromFile</a> (const char *fileName, size_t elements=0)</td></tr>
+<tr class="memdesc:a1ac1135fa20f01fa01ff018ad0b5b1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заполнение буфера данными из файла  <a href="#a1ac1135fa20f01fa01ff018ad0b5b1b0">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1ac1135fa20f01fa01ff018ad0b5b1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac207fec5671d4ce165c34334b4c74e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ac207fec5671d4ce165c34334b4c74e93">ReadBufferFromFile</a> (const std::string &amp;fileName, size_t elements=0)</td></tr>
+<tr class="separator:ac207fec5671d4ce165c34334b4c74e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7124b00d956178cfdc06e46704e2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a0a7124b00d956178cfdc06e46704e2e4">ReadBufferFromFile</a> (const wchar_t *fileName, size_t elements=0)</td></tr>
+<tr class="separator:a0a7124b00d956178cfdc06e46704e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af408f868d4e76cde3d08bbdd0c67cb75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#af408f868d4e76cde3d08bbdd0c67cb75">ReadBufferFromFile</a> (const std::wstring &amp;fileName, size_t elements=0)</td></tr>
+<tr class="separator:af408f868d4e76cde3d08bbdd0c67cb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a24f9aa83552f4ae33522879ae81a8f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a9a24f9aa83552f4ae33522879ae81a8f">ByteSize</a> () const </td></tr>
+<tr class="memdesc:a9a24f9aa83552f4ae33522879ae81a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение размера актуальной части данных в буфере.  <a href="#a9a24f9aa83552f4ae33522879ae81a8f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9a24f9aa83552f4ae33522879ae81a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2763708deb01a25e32147efca4d73a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a7b2763708deb01a25e32147efca4d73a">BytePSize</a> () const </td></tr>
+<tr class="memdesc:a7b2763708deb01a25e32147efca4d73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение реального размера буфера в байтах.  <a href="#a7b2763708deb01a25e32147efca4d73a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a7b2763708deb01a25e32147efca4d73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710517b89257c94cb20c240ae98b4b68"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a710517b89257c94cb20c240ae98b4b68">TypeSize</a> () const </td></tr>
+<tr class="memdesc:a710517b89257c94cb20c240ae98b4b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение размера элемента в буфере  <a href="#a710517b89257c94cb20c240ae98b4b68">Подробнее...</a><br/></td></tr>
+<tr class="separator:a710517b89257c94cb20c240ae98b4b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab295a287ef7a1bde6b5732ef2cb6c97e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e">Size</a> () const </td></tr>
+<tr class="memdesc:ab295a287ef7a1bde6b5732ef2cb6c97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество элементов в буфере (актуальный размер).  <a href="#ab295a287ef7a1bde6b5732ef2cb6c97e">Подробнее...</a><br/></td></tr>
+<tr class="separator:ab295a287ef7a1bde6b5732ef2cb6c97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaafd74e39e8ae442767e40d2f4ed6afd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd">PSize</a> () const </td></tr>
+<tr class="memdesc:aaafd74e39e8ae442767e40d2f4ed6afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение реального размера буфера в элементах.  <a href="#aaafd74e39e8ae442767e40d2f4ed6afd">Подробнее...</a><br/></td></tr>
+<tr class="separator:aaafd74e39e8ae442767e40d2f4ed6afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b1fe59f1408b084153bc45829c1677"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a77b1fe59f1408b084153bc45829c1677">operator[]</a> (size_t i)</td></tr>
+<tr class="separator:a77b1fe59f1408b084153bc45829c1677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb30e05f909a4a27172613d8163a90a7"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#acb30e05f909a4a27172613d8163a90a7">operator[]</a> (size_t i) const </td></tr>
+<tr class="separator:acb30e05f909a4a27172613d8163a90a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb3c332c9e876cad3b0382feb1f94d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a9fb3c332c9e876cad3b0382feb1f94d4">Clear</a> ()</td></tr>
+<tr class="memdesc:a9fb3c332c9e876cad3b0382feb1f94d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присваивает полю <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb" title="Container size. Number of actual elements. Same as Size(), used for STL compatibility only...">RshBufferType::size</a> нулевое значение.  <a href="#a9fb3c332c9e876cad3b0382feb1f94d4">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9fb3c332c9e876cad3b0382feb1f94d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7f57a0fe8b206ecfcd99af8d130832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a7b7f57a0fe8b206ecfcd99af8d130832">SetSize</a> (size_t <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb">size</a>)</td></tr>
+<tr class="memdesc:a7b7f57a0fe8b206ecfcd99af8d130832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка действительного размера массива  <a href="#a7b7f57a0fe8b206ecfcd99af8d130832">Подробнее...</a><br/></td></tr>
+<tr class="separator:a7b7f57a0fe8b206ecfcd99af8d130832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec50910911aba8ad411b3eb1cb6f6c0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#aec50910911aba8ad411b3eb1cb6f6c0a">operator=</a> (const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj)</td></tr>
+<tr class="separator:aec50910911aba8ad411b3eb1cb6f6c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe968cb99c8451a912a7423b84c7f58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#aefe968cb99c8451a912a7423b84c7f58">operator==</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj) const </td></tr>
+<tr class="separator:aefe968cb99c8451a912a7423b84c7f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab94146a4ada1bd42944471c6d65229"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a5ab94146a4ada1bd42944471c6d65229">operator!=</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj) const </td></tr>
+<tr class="separator:a5ab94146a4ada1bd42944471c6d65229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd683a6d50aec20b6239b907503ba7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a5cd683a6d50aec20b6239b907503ba7e">operator&lt;</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj) const </td></tr>
+<tr class="separator:a5cd683a6d50aec20b6239b907503ba7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c76525192a19d8bef754e474d68308"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#aa9c76525192a19d8bef754e474d68308">operator&gt;</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj) const </td></tr>
+<tr class="separator:aa9c76525192a19d8bef754e474d68308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a548d3330a8d0c0615a0f3b9299dbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a41a548d3330a8d0c0615a0f3b9299dbc">operator&lt;=</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj) const </td></tr>
+<tr class="separator:a41a548d3330a8d0c0615a0f3b9299dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e08da26f374617f08fc2d152b76ee19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a5e08da26f374617f08fc2d152b76ee19">operator&gt;=</a> (<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj) const </td></tr>
+<tr class="separator:a5e08da26f374617f08fc2d152b76ee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f3edc432c5648a898ba35b54f70a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a51f3edc432c5648a898ba35b54f70a10">PushBack</a> (T obj)</td></tr>
+<tr class="memdesc:a51f3edc432c5648a898ba35b54f70a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление элемента в буфер.  <a href="#a51f3edc432c5648a898ba35b54f70a10">Подробнее...</a><br/></td></tr>
+<tr class="separator:a51f3edc432c5648a898ba35b54f70a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#af965550d2b72863db870e01894846350">RshBaseType</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11da92056d50bfe18f306587535477d7bfe7">rshTypeUndefined</a>, const size_t typeSize=sizeof(<a class="el" href="struct_rsh_base_type.html">RshBaseType</a>))</td></tr>
+<tr class="memdesc:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#af965550d2b72863db870e01894846350">Подробнее...</a><br/></td></tr>
+<tr class="separator:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a79c78fcf2b560f843c84303098c524c2">GetTypeName</a> () const </td></tr>
+<tr class="separator:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a736f485e21c19f5f232e8fa061af4258"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">ptr</a></td></tr>
+<tr class="memdesc:a736f485e21c19f5f232e8fa061af4258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на выделнную для данных память.  <a href="#a736f485e21c19f5f232e8fa061af4258">Подробнее...</a><br/></td></tr>
+<tr class="separator:a736f485e21c19f5f232e8fa061af4258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#acb736f830c5d916de275eabf81127066">_typeSize</a></td></tr>
+<tr class="memdesc:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер структуры данных или класса.  <a href="#acb736f830c5d916de275eabf81127066">Подробнее...</a><br/></td></tr>
+<tr class="separator:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a0993279e21dd4e2c15d0f8d0ebba76be">_type</a></td></tr>
+<tr class="memdesc:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор типа данных.  <a href="#a0993279e21dd4e2c15d0f8d0ebba76be">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a716172d73007d8eda03c67d9b8d9f56f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_buffer_type.html#a716172d73007d8eda03c67d9b8d9f56f">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;obj)</td></tr>
+<tr class="memdesc:a716172d73007d8eda03c67d9b8d9f56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод буфера в стандартный поток вывода.  <a href="#a716172d73007d8eda03c67d9b8d9f56f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a716172d73007d8eda03c67d9b8d9f56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a350c4aea57828295b090ad6863f2c385">GetTypeName</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> typeCode)</td></tr>
+<tr class="memdesc:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение названия типа данных.  <a href="#a350c4aea57828295b090ad6863f2c385">Подробнее...</a><br/></td></tr>
+<tr class="separator:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;typename T, RshDataTypes dataCode&gt;<br/>
+class RshBufferType&lt; T, dataCode &gt;</h3>
+
+<p>Шаблонный класс для конструирования буферов данных. </p>
+<p>Данный шаблон используется для создания классов-контейнеров (массивов данных), унаследованных от <a class="el" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. ">RshBaseType</a>.<br/>
+ Также содержит полезные методы для работы с массивами данных - сортировка, запись в файл и др.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Созданные буферы данных использутся, как правило, для передачи массивов данных при вызове полиморфных методов SDK, таких как <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">IRshDevice::GetData()</a> и др.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. ">RshBaseType</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#_a34">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#_a34">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#_a1">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__e_x_t__r_u_8cpp-example.html#_a1">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_EXT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__r_u_8cpp-example.html#_a1">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__i_s__c_a_p_a_b_l_e__r_u_8cpp-example.html#_a7">IRshDevice_Get_RSH_GET_DEVICE_IS_CAPABLE_RU.cpp</a>, <a class="el" href="_i_rsh_device__get_data__digital_input__r_u_8cpp-example.html#_a6">IRshDevice_GetData_DigitalInput_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#_a33">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#_a31">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#_a33">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#_a31">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#_a33">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#_a31">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#_a33">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#_a31">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#_a33">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#_a31">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#_a33">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#_a31">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#_a33">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#_a31">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#_a31">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#_a31">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#_a31">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#_a31">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#_a33">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#_a31">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#_a31">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#_a31">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#_a31">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#_a33">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#_a31">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#_a20">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#_a31">Python_StartStop.cpp</a>, <a class="el" href="_rsh_buffer_type__s_t_l__r_u_8cpp-example.html#_a0">RshBufferType_STL_RU.cpp</a>, <a class="el" href="_rsh_error__r_u_8cpp-example.html#_a5">RshError_RU.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#_a31">Sirius_StartStop.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Определения типов</h2>
+<a class="anchor" id="ac344b63bdba5427830e0c10c7c7094ad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const T* <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#ac344b63bdba5427830e0c10c7c7094ad">const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>const iterator type </p>
+
+</div>
+</div>
+<a class="anchor" id="a120ef357a2af014d5702dd924a770f1a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const T&amp; <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#a120ef357a2af014d5702dd924a770f1a">const_reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>const reference to data type </p>
+
+</div>
+</div>
+<a class="anchor" id="a9cfed579f4d28e253c1c3e1d45df155e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ptrdiff_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#a9cfed579f4d28e253c1c3e1d45df155e">difference_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ptrdiff type </p>
+
+</div>
+</div>
+<a class="anchor" id="ae8eafe0549e6ea64de70333f58b766b4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T* <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4">iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterator type. Pointer to data stored in container is used, because <a class="el" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RshBufferType</a> is array based. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7d9837b0cb11fe36c19f2f2f9c87f82c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T&amp; <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#a7d9837b0cb11fe36c19f2f2f9c87f82c">reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference to data type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a57e01e2dea723787fb19f5252ccb04c6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#a57e01e2dea723787fb19f5252ccb04c6">size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>size type </p>
+
+</div>
+</div>
+<a class="anchor" id="aeef120506d393de5c4ab6b18d87fe20f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#aeef120506d393de5c4ab6b18d87fe20f">value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container data type. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a8cf7faab91689728ebc672b74ce5eab1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em> = <code>32</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02e7ed8c2c6a4db22c0ae7222ee36602"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a9af2115b8d89da7172c435eb509aa446">RshBufferType&lt; T, dataCode &gt;::Copy()</a> и <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_buffer_type_a02e7ed8c2c6a4db22c0ae7222ee36602_cgraph.png" border="0" usemap="#class_rsh_buffer_type_a02e7ed8c2c6a4db22c0ae7222ee36602_cgraph" alt=""/></div>
+<map name="class_rsh_buffer_type_a02e7ed8c2c6a4db22c0ae7222ee36602_cgraph" id="class_rsh_buffer_type_a02e7ed8c2c6a4db22c0ae7222ee36602_cgraph">
+<area shape="rect" id="node2" href="class_rsh_buffer_type.html#a9af2115b8d89da7172c435eb509aa446" title="Копирование данных в буфер из указанной области памяти " alt="" coords="299,5,474,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a75b316d47a8b1a00aef524032cd340aa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::~<a class="el" href="class_rsh_buffer_type.html">RshBufferType</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructror. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aaf89018b24772907e3246ca3f105be6b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::Allocate </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em> = <code>32</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выделение памяти для данных буфера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufferSize</td><td>Желаемый размер буфера (количество элементов). Если система не сможет выделить необходимый размер памяти, будет возвращен соответствующий код ошибки, а значение поля <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a> станет равным нулю.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Используйте этот метод для установки необходимого размера буфера и выделения памяти для данных. После успешного вызова данного метода в поле <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a> будет содержаться размер (количество элементов) буфера, а указатель <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258" title="Указатель на выделнную для данных память. ">RshBufferType::ptr</a> будет указывать на выделенный блок памяти.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если метод вызывается для буфера, который уже содержит какие-то данные, и новый размер буфера отличается от старого, старый блок памяти будет удален, и все данные потеряны. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a35">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a35">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a35">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a35">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a35">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a35">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a35">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a35">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a35">Leonardo2_Persistent.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a42">Python_Continuous.cpp</a> и <a class="el" href="_rsh_error__r_u_8cpp-example.html#a6">RshError_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a45dd412d6f728da4e70a1322175a5ea4">RSH_API_BUFFER_ALLOCATIONZEROSIZE</a>, <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261aaf584a75a2b6aa114ccdb63938e99a04">RSH_API_MEMORY_ALLOCATIONERROR</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac44d777b365ca4f4b34683fa36d6c8f8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4">iterator</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_rsh_buffer_type.html#ac44d777b365ca4f4b34683fa36d6c8f8" title="begin() method. Just return internal array pointer. ">begin()</a> method. Just return internal array pointer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e4ac053afa5a13ad8124f2b3008590b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#ac344b63bdba5427830e0c10c7c7094ad">const_iterator</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>const <a class="el" href="class_rsh_buffer_type.html#ac44d777b365ca4f4b34683fa36d6c8f8" title="begin() method. Just return internal array pointer. ">begin()</a> method. Just return internal array pointer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b2763708deb01a25e32147efca4d73a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::BytePSize </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение реального размера буфера в байтах. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Физический размер буфера в байтах.</dd></dl>
+<p>Используя данный метод, можно получить физический размер буфера (<a class="el" href="class_rsh_buffer_type.html#a7b2763708deb01a25e32147efca4d73a" title="Получение реального размера буфера в байтах. ">RshBufferType::BytePSize</a> элементов) в байтах. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a42">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a42">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a42">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a42">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a42">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a42">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a42">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a42">LA-n150PCI_Persistent.cpp</a> и <a class="el" href="_leonardo2__persistent_8cpp-example.html#a42">Leonardo2_Persistent.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a9a24f9aa83552f4ae33522879ae81a8f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::ByteSize </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение размера актуальной части данных в буфере. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Размер актуальной части данных в байтах.</dd></dl>
+<p>Используя данный метод, можно получить размер актуальной части буфера (<a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">RshBufferType::Size()</a> элементов) в байтах. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9fb3c332c9e876cad3b0382feb1f94d4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::Clear </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присваивает полю <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb" title="Container size. Number of actual elements. Same as Size(), used for STL compatibility only...">RshBufferType::size</a> нулевое значение. </p>
+<dl class="section remark"><dt>Прим.</dt><dd>Рекомендуется использовать этот метод перед вызовом <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">IRshDevice::GetData()</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9af2115b8d89da7172c435eb509aa446"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::Copy </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>iptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>psize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Копирование данных в буфер из указанной области памяти </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iptr</td><td>Указатель на блок памяти, из которого будут скопированы данные в буфер.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">psize</td><td>Размер (в отсчетах) блока памяти, на который ссылается указатель, переданный в параметре <b>iptr</b>.<br/>
+ Если, например, копируются значения из массива, то размер psize должен быть равен размеру массива.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Сколько всего элементов нужно скопировать в буфер из области памяти, на которую указывает <b>iptr</b><br/>
+ Если передать в качестве этого параметра ноль (дефолтное значение), будет скопировано максимально возможное количество элементов.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Этот метод можно использовать для заполнения буфера данными. Если размер буфера (<a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a> ) меньше, чем заданное для копирования количество элементов, только часть данных будет скопирована в буфер. Всегда проверяйте состояние поля <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">RshBufferType::Size()</a> после выполнения операции копирования, чтобы определить актуальное количество элементов в буфере. </p>
+
+<p>Используется в <a class="el" href="class_rsh_buffer_type.html#a02e7ed8c2c6a4db22c0ae7222ee36602">RshBufferType&lt; T, dataCode &gt;::RshBufferType()</a>, <a class="el" href="_rsh_functions_8cpp.html#afd41093be2aaf9a0143cf797811f9201">RshCopyStringToBuffer()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a6326eb1b902c60481b15d2dee500e9de">RshInitADC::RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a574481f022105926faeec864c13b6803">RshInitDMA::RshInitDMA()</a> и <a class="el" href="struct_rsh_init_memory.html#a602ec7a95622f87038db284f5559e744">RshInitMemory::RshInitMemory()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_buffer_type_a9af2115b8d89da7172c435eb509aa446_icgraph.png" border="0" usemap="#class_rsh_buffer_type_a9af2115b8d89da7172c435eb509aa446_icgraph" alt=""/></div>
+<map name="class_rsh_buffer_type_a9af2115b8d89da7172c435eb509aa446_icgraph" id="class_rsh_buffer_type_a9af2115b8d89da7172c435eb509aa446_icgraph">
+<area shape="rect" id="node2" href="class_rsh_buffer_type.html#a02e7ed8c2c6a4db22c0ae7222ee36602" title="Copy constructor. " alt="" coords="231,5,475,33"/><area shape="rect" id="node3" href="_rsh_functions_8cpp.html#afd41093be2aaf9a0143cf797811f9201" title="RshCopyStringToBuffer" alt="" coords="258,57,449,85"/><area shape="rect" id="node4" href="struct_rsh_init_a_d_c.html#a6326eb1b902c60481b15d2dee500e9de" title="RshInitADC::RshInitADC" alt="" coords="258,109,449,137"/><area shape="rect" id="node5" href="struct_rsh_init_d_m_a.html#a574481f022105926faeec864c13b6803" title="RshInitDMA::RshInitDMA" alt="" coords="255,161,451,189"/><area shape="rect" id="node6" href="struct_rsh_init_memory.html#a602ec7a95622f87038db284f5559e744" title="RshInitMemory::RshInitMemory" alt="" coords="229,213,477,241"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7403f968121331f82131870fe07ffe51"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::Copy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>srcBuffer</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Копирование данных из другого буфера того же типа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcBuffer</td><td>Буфер того же самого типа, что и вызывающий данный метод буфер.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Используя данный метод, можно заполнить буфер данными из другого буфера.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>При вызове этого метода не производится выделения памяти! Если буфер имеет размер (psize) меньший, чем количество элементов (m_size) в другом буфере, будут скопированы только первые psize элементов.<br/>
+ Если требуется создать точную копию буфера, можно использовать конструктор копий (dstBuffer = srcBuffer). </dd></dl>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91cd7e2ee6dc32ead98dc2c5cd66abc8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::CopyTo </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>iptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iptrSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Копирование данных из буфера в область памяти. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">iptr</td><td>Адрес (указатель на блок памяти), куда нужно поместить данные из буфера.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iptrSize</td><td>Максимальный размер (в отсчетах) блока памяти, доступный для копирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество скопированных элементов буфера.</dd></dl>
+<p>Данный метод копирует данные из буфера в заданную параметром <b>iptr</b> область памяти.<br/>
+ Если размер буфера меньше, чем запрашиваемый размер (<b>iptrSize</b>), будет скопировано только <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a> элементов буфера.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Данный метод всегда пытается скопировать максимально возможное количество элементов из буфера. Если нужно, к примеру, взять первые десять элементов, можно задать параметр iptrSize=10. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a177718860a204c3c4552917de1d7eb7c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is container empty? Used for STL compatibility. </p>
+
+</div>
+</div>
+<a class="anchor" id="af4438cc5d11fc0c774f3f01f48bdc14b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#ae8eafe0549e6ea64de70333f58b766b4">iterator</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::end </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_rsh_buffer_type.html#af4438cc5d11fc0c774f3f01f48bdc14b" title="end() method. Return pointer to one-after-last element. ">end()</a> method. Return pointer to one-after-last element. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5252866cf7807416f7511c92d7b9301"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#ac344b63bdba5427830e0c10c7c7094ad">const_iterator</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::end </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>const <a class="el" href="class_rsh_buffer_type.html#af4438cc5d11fc0c774f3f01f48bdc14b" title="end() method. Return pointer to one-after-last element. ">end()</a> method. Return pointer to one-after-last element. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9212c240e9a6bcb6110e30d6f841c965"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#a57e01e2dea723787fb19f5252ccb04c6">size_type</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::max_size </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of elements container can hold. Same as <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">PSize()</a>, used for STL compatibility only. We are not implementing "on the fly" allocation as std::vector, for example. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ab94146a4ada1bd42944471c6d65229"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5cd683a6d50aec20b6239b907503ba7e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41a548d3330a8d0c0615a0f3b9299dbc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec50910911aba8ad411b3eb1cb6f6c0a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp; <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefe968cb99c8451a912a7423b84c7f58"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9c76525192a19d8bef754e474d68308"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e08da26f374617f08fc2d152b76ee19"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77b1fe59f1408b084153bc45829c1677"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb30e05f909a4a27172613d8163a90a7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1906f156b23e76df71b4c98fdff8c8a7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::Print </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Печать содержимого буфер в стандартный поток вывода. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Количество элементов, которые нужно напечатать. Если это число равно нулю (дефолт), будут напечатаны все доступные элементы.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Вывод содержимого буфера на консоль. Если задан параметр <b>size</b>, только первые size элементов буфера будут напечатаны. Иначе, будет выведено <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">RshBufferType::Size()</a> элементов (для буферов с <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb" title="Container size. Number of actual elements. Same as Size(), used for STL compatibility only...">RshBufferType::size</a>&gt;0). Если <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">RshBufferType::Size()</a> тоже равен нулю, будут напечатаны все данные буфера (<a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a>). </p>
+
+</div>
+</div>
+<a class="anchor" id="aaafd74e39e8ae442767e40d2f4ed6afd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::PSize </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение реального размера буфера в элементах. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Физический размер буфера в элементах.</dd></dl>
+<p>Используя данный метод, можно получить физический размер буфера (поле RshBufferType::psize) в элементах. </p>
+
+<p>Используется в <a class="el" href="_rsh_functions_8cpp.html#afd41093be2aaf9a0143cf797811f9201">RshCopyStringToBuffer()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_buffer_type_aaafd74e39e8ae442767e40d2f4ed6afd_icgraph.png" border="0" usemap="#class_rsh_buffer_type_aaafd74e39e8ae442767e40d2f4ed6afd_icgraph" alt=""/></div>
+<map name="class_rsh_buffer_type_aaafd74e39e8ae442767e40d2f4ed6afd_icgraph" id="class_rsh_buffer_type_aaafd74e39e8ae442767e40d2f4ed6afd_icgraph">
+<area shape="rect" id="node2" href="_rsh_functions_8cpp.html#afd41093be2aaf9a0143cf797811f9201" title="RshCopyStringToBuffer" alt="" coords="233,5,423,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a51f3edc432c5648a898ba35b54f70a10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::PushBack </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление элемента в буфер. </p>
+<p>Данный метод добавляет элемент в конец буфера и увеличивает его размер. Если в буфере не осталось места (см. <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a>), будет возвращен код ошибки.</p>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>Значение, которое нужно поместить в буфер </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261ab05b59848724d2c5f54df90745087a63">RSH_API_BUFFER_INSUFFICIENTSIZE</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ac1135fa20f01fa01ff018ad0b5b1b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::ReadBufferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Заполнение буфера данными из файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>Путь к файлу, который будет использован в качестве источника данных для заполнения буфера.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>Количество элементов, которые нужно поместить в буфер. Если переданное значение равно нулю, будет прочитано все содержимое файла.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Используя данный метод, можно прочитать данные из указанного файла и заполнить ими буфер.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если текущий размер буфера (psize) недостаточен, чтобы вместить данные, память будет выделена автоматически. Если в буфере содержались какие-либо данные, они будут утеряны после выполнения данного метода. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac207fec5671d4ce165c34334b4c74e93"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::ReadBufferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a7124b00d956178cfdc06e46704e2e4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::ReadBufferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Предупреждения</dt><dd>Данный метод имеет проблемы с кодировкой в текущей реализации, если используются символы не из нижней части ASCII, или символы из других языков, отличные от латинских.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Необходимо сделать:</a></b></dt><dd>Исправить проблемы с кодировками и преобразованием строки </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af408f868d4e76cde3d08bbdd0c67cb75"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::ReadBufferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Предупреждения</dt><dd>Данный метод имеет проблемы с кодировкой в текущей реализации, если используются символы не из нижней части ASCII, или символы из других языков, отличные от латинских.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Необходимо сделать:</a></b></dt><dd>Исправить проблемы с кодировками и преобразованием строки </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b7f57a0fe8b206ecfcd99af8d130832"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::SetSize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка действительного размера массива </p>
+<p>Иногда удобно выделить память в буфере заранее, и затем использовать его несколько раз для передачи массивов разного размера. Перевыделение памяти с помощью <a class="el" href="class_rsh_buffer_type.html#aaf89018b24772907e3246ca3f105be6b" title="Выделение памяти для данных буфера ">Allocate()</a> может быть накладным с точки зрения производительности. Устанавливая фактический размер данных в буфере с помощью этого метода, можно избежать этих проблем</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Фактический размер полезных данных в буфере</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Прим.</dt><dd>Большинство внутренних методов RshApi используют этот размер при обходе буфера вместо <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">PSize()</a>. Если переданный параметр size будет превышать <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">PSize()</a>, размер буфера будет установлен на максимально допустимый. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__e_x_t__r_u_8cpp-example.html#a2">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_EXT_RU.cpp</a> и <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__r_u_8cpp-example.html#a2">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_RU.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a07d02b9f4420045e3c67eaf1c276afbb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::<a class="el" href="class_rsh_buffer_type.html#a57e01e2dea723787fb19f5252ccb04c6">size_type</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::size </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container size. Number of actual elements. Same as <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">Size()</a>, used for STL compatibility only. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab295a287ef7a1bde6b5732ef2cb6c97e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::Size </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество элементов в буфере (актуальный размер). </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Размер актуальной части буфера данных в элементах.</dd></dl>
+<p>Используя данный метод, можно получить размер актуальной части буфера ( поле <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb" title="Container size. Number of actual elements. Same as Size(), used for STL compatibility only...">RshBufferType::size</a>) в элементах. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#a6">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__e_x_t__r_u_8cpp-example.html#a6">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_EXT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__r_u_8cpp-example.html#a6">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_RU.cpp</a>, <a class="el" href="_i_rsh_device__get_data__digital_input__r_u_8cpp-example.html#a10">IRshDevice_GetData_DigitalInput_RU.cpp</a> и <a class="el" href="_python__continuous_8cpp-example.html#a22">Python_Continuous.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="struct_rsh_init_a_d_c.html#a919f7f51712cf0ec3d42e893dc5367e3">RshInitADC::ActiveChannelsNumber()</a> и <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_buffer_type_ab295a287ef7a1bde6b5732ef2cb6c97e_icgraph.png" border="0" usemap="#class_rsh_buffer_type_ab295a287ef7a1bde6b5732ef2cb6c97e_icgraph" alt=""/></div>
+<map name="class_rsh_buffer_type_ab295a287ef7a1bde6b5732ef2cb6c97e_icgraph" id="class_rsh_buffer_type_ab295a287ef7a1bde6b5732ef2cb6c97e_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_a_d_c.html#a919f7f51712cf0ec3d42e893dc5367e3" title="Число активных каналов в массиве каналов. " alt="" coords="221,5,443,49"/><area shape="rect" id="node3" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68" title="operator\&lt;\&lt;" alt="" coords="277,73,387,101"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af697e312b9b63a7b40c0770b73261459"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::SortAscending </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортировка буфера по возрастанию. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Данный метод использует алгоритм std::sort для сортировки элементов буфера в порядке возрастания. </p>
+
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a56ab0917b3c5631a10bd5cc316ef3a08">RSH_API_BUFFER_NOTINITIALIZED</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a6fefcd0397a6357529d6ee41b997c2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::SortDescending </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортировка буфера по убыванию. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Данный метод использует алгоритм std::sort для сортировки элементов буфера в порядке убывания. </p>
+
+<p>Перекрестные ссылки <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a56ab0917b3c5631a10bd5cc316ef3a08">RSH_API_BUFFER_NOTINITIALIZED</a> и <a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972">RSH_API_SUCCESS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdce42e2dc66f4e49d0f4336b7bf8bbe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swap values of two containers. </p>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a710517b89257c94cb20c240ae98b4b68"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::TypeSize </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение размера элемента в буфере </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Размер элеметна буфера в байтах</dd></dl>
+<p>Используя данный метод, можно получить размер элемента буфера в байтах. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7791a28bdb280e4514fc5c4bd520394"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::WriteBufferToFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запись содержимого буфера в файл (актуальный размер) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>Путь к файлу, в который нужно записать данные.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>Количество элементов, которые нужно записать в файл. Если передано значение elements == 0, количество элементов будет определено размером <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">Size()</a> буфера (если <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">Size()</a> &gt; 0 ) или размером <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">PSize()</a>, если <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">Size()</a> == 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Используя данный метод, можно записать <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">RshBufferType::Size()</a> элементов буфера в файл, заданный с помощью параметра <b>fileName</b>. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a41">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a41">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a41">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a41">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a41">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a41">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a41">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a41">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a41">Leonardo2_Persistent.cpp</a> и <a class="el" href="_rsh_error__r_u_8cpp-example.html#a7">RshError_RU.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="adfdf499146df43678a01a089b28756aa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::WriteBufferToFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1dc066f608bb715daeea86c74207b0dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::WriteBufferToFile </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Предупреждения</dt><dd>Данный метод имеет проблемы с кодировкой в текущей реализации, если используются символы не из нижней части ASCII, или символы из других языков, отличные от латинских.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Необходимо сделать:</a></b></dt><dd>Исправить проблемы с кодировками и преобразованием строки </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7219dd1cc72c3dbf56ab9c4c8a96207"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::WriteBufferToFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elements</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Предупреждения</dt><dd>Данный метод имеет проблемы с кодировкой в текущей реализации, если используются символы не из нижней части ASCII, или символы из других языков, отличные от латинских.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Необходимо сделать:</a></b></dt><dd>Исправить проблемы с кодировками и преобразованием строки </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a716172d73007d8eda03c67d9b8d9f56f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод буфера в стандартный поток вывода. </p>
+<p>Данная перегруженная операция печатает максимум 32 элемента буфера, или меньше, если размер буфера меньше 32. Если необходимо полностью вывести на печать больший буфер, или определенное заранее заданное число элементов, используйте метод <a class="el" href="class_rsh_buffer_type.html#a1906f156b23e76df71b4c98fdff8c8a7" title="Печать содержимого буфер в стандартный поток вывода. ">Print()</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a736f485e21c19f5f232e8fa061af4258"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, RshDataTypes dataCode&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="class_rsh_buffer_type.html">RshBufferType</a>&lt; T, dataCode &gt;::ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на выделнную для данных память. </p>
+<p>Можно использовать данный указатель для доступа к данным, хранящимся в буфере (также, есть перегруженный оператор [], но прямой доступ быстрее - для больших массивов данных индексирование лучше производить, используя указатель ptr).</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Используйте данных указатель только для доступа к данным - попытки выделить или удалить память или поменять адрес, на который ссылается указатель могут быть фатальными. Для управления памятью используйте методы класса. Данный указатель имеет публичный доступ только из соображений производительности и удобства.<br/>
+ Также, всегда используйте <a class="el" href="class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. ">RshBufferType::PSize()</a> в качестве референса при индексировании. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#a7">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a39">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a39">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a39">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a39">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a39">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a39">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a39">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a39">LA-n150PCI_Persistent.cpp</a> и <a class="el" href="_leonardo2__persistent_8cpp-example.html#a39">Leonardo2_Persistent.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="struct_rsh_init_a_d_c.html#a919f7f51712cf0ec3d42e893dc5367e3">RshInitADC::ActiveChannelsNumber()</a>, <a class="el" href="class_rsh_buffer_type.html#a7403f968121331f82131870fe07ffe51">RshBufferType&lt; T, dataCode &gt;::Copy()</a>, <a class="el" href="class_rsh_buffer_type.html#a5cd683a6d50aec20b6239b907503ba7e">RshBufferType&lt; T, dataCode &gt;::operator&lt;()</a>, <a class="el" href="class_rsh_buffer_type.html#aec50910911aba8ad411b3eb1cb6f6c0a">RshBufferType&lt; T, dataCode &gt;::operator=()</a>, <a class="el" href="class_rsh_buffer_type.html#aefe968cb99c8451a912a7423b84c7f58">RshBufferType&lt; T, dataCode &gt;::operator==()</a>, <a class="el" href="class_rsh_buffer_type.html#a8cf7faab91689728ebc672b74ce5eab1">RshBufferType&lt; T, dataCode &gt;::RshBufferType()</a> и <a class="el" href="class_rsh_buffer_type.html#afdce42e2dc66f4e49d0f4336b7bf8bbe">RshBufferType&lt; T, dataCode &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_buffer_type_8h_source.html">RshBufferType.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_buffer_type_8cpp.html">RshBufferType.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:33. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

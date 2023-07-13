@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура RshInitADC</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="struct_rsh_init_a_d_c-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура RshInitADC</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Базовая структура инициализации для АЦП устройств  
+ <a href="struct_rsh_init_a_d_c.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_init_a_d_c_8h_source.html">RshInitADC.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RshInitADC:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c__inherit__graph.png" border="0" usemap="#_rsh_init_a_d_c_inherit__map" alt="Inheritance graph"/></div>
+<map name="_rsh_init_a_d_c_inherit__map" id="_rsh_init_a_d_c_inherit__map">
+<area shape="rect" id="node3" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. " alt="" coords="5,161,109,189"/><area shape="rect" id="node4" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. " alt="" coords="133,161,264,189"/><area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="68,6,188,34"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RshInitADC:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c__coll__graph.png" border="0" usemap="#_rsh_init_a_d_c_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_init_a_d_c_coll__map" id="_rsh_init_a_d_c_coll__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="295,99,415,127"/><area shape="rect" id="node7" href="class_rsh_buffer_type.html" title="RshBufferType\&lt; RshChannel,\l rshBufferTypeChannel \&gt;" alt="" coords="111,334,347,378"/><area shape="rect" id="node8" href="struct_rsh_channel.html" title="Параметры аналогового канала " alt="" coords="423,209,529,237"/><area shape="rect" id="node9" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. " alt="" coords="5,209,259,237"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a052804ec71ccbe925a8b33359bd233ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233ea">StartType</a> { <br/>
+&#160;&#160;<a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaadc54c54b5f08844cc75cd2d8eb1c31f5">Program</a> = 0x1, 
+<a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaa9db2e34cceb99c7fe481cfa58a7a3cb3">Timer</a> = 0x2, 
+<a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaab353bf3e1b6d2302905eb2f9d9cbcd13">External</a> = 0x4, 
+<a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaaa85aaa4fbccb5d9ef642002a37203c98">Internal</a> = 0x8, 
+<br/>
+&#160;&#160;<a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaa77f738f46a81db5a1dff418cab5c78f7">FrequencyExternal</a> = 0x10, 
+<a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaae840f4e9feb73bd6ea90b452c898b977">Master</a> = 0x20
+<br/>
+ }</td></tr>
+<tr class="memdesc:a052804ec71ccbe925a8b33359bd233ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список режимов запуска  <a href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233ea">Подробнее...</a><br/></td></tr>
+<tr class="separator:a052804ec71ccbe925a8b33359bd233ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62d171ab48740511a0571263a9e3939"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939">ControlSynchro</a> { <br/>
+&#160;&#160;<a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aaef6edbcf541ac47ae2bccb1b90646a2">FrequencySwitchOff</a> = 0x0, 
+<a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192">SlopeFront</a> = 0x0, 
+<a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5">SlopeDecline</a> = 0x2, 
+<a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc">FrequencySwitchToMinimum</a> = 0x4, 
+<br/>
+&#160;&#160;<a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47">FrequencySwitchToMaximum</a> = 0x8
+<br/>
+ }</td></tr>
+<tr class="memdesc:ae62d171ab48740511a0571263a9e3939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список дополнительных опций сбора данных  <a href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939">Подробнее...</a><br/></td></tr>
+<tr class="separator:ae62d171ab48740511a0571263a9e3939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a921f51e4369d88d80b90b013a79f8ba8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a921f51e4369d88d80b90b013a79f8ba8">RshInitADC</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11dae30bec2a5e2442a9d429c83cba2d1aee">rshInitADC</a>, const size_t sizeType=sizeof(<a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a>))</td></tr>
+<tr class="separator:a921f51e4369d88d80b90b013a79f8ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6326eb1b902c60481b15d2dee500e9de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a6326eb1b902c60481b15d2dee500e9de">RshInitADC</a> (<a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> const &amp;obj)</td></tr>
+<tr class="separator:a6326eb1b902c60481b15d2dee500e9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc1eb52b4ed5a269380b19ee1935cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=</a> (const <a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;obj)</td></tr>
+<tr class="separator:abbc1eb52b4ed5a269380b19ee1935cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab79a488fa9d0a55fbfb21f67add6185"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==</a> (<a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;obj) const </td></tr>
+<tr class="separator:aab79a488fa9d0a55fbfb21f67add6185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2befb2e5e9a1ed14e9530e5e91be170b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a2befb2e5e9a1ed14e9530e5e91be170b">operator!=</a> (<a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;obj) const </td></tr>
+<tr class="separator:a2befb2e5e9a1ed14e9530e5e91be170b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919f7f51712cf0ec3d42e893dc5367e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a919f7f51712cf0ec3d42e893dc5367e3">ActiveChannelsNumber</a> () const </td></tr>
+<tr class="memdesc:a919f7f51712cf0ec3d42e893dc5367e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число активных каналов в массиве каналов.  <a href="#a919f7f51712cf0ec3d42e893dc5367e3">Подробнее...</a><br/></td></tr>
+<tr class="separator:a919f7f51712cf0ec3d42e893dc5367e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58558f3ff94211268862b88a4d554f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#ad58558f3ff94211268862b88a4d554f2">SetSynchroSlopeFront</a> ()</td></tr>
+<tr class="memdesc:ad58558f3ff94211268862b88a4d554f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192" title="Синхронизация по фронту ">RshInitADC::SlopeFront</a>.  <a href="#ad58558f3ff94211268862b88a4d554f2">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad58558f3ff94211268862b88a4d554f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afdb373b1b59411d2cd497c3b102b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a5afdb373b1b59411d2cd497c3b102b4d">SetSynchroSlopeDecline</a> ()</td></tr>
+<tr class="memdesc:a5afdb373b1b59411d2cd497c3b102b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5" title="Синхронизация по спаду ">RshInitADC::SlopeDecline</a>.  <a href="#a5afdb373b1b59411d2cd497c3b102b4d">Подробнее...</a><br/></td></tr>
+<tr class="separator:a5afdb373b1b59411d2cd497c3b102b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367eb3aa602f9678b8d58453e5b822e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a367eb3aa602f9678b8d58453e5b822e7">IsSynchroSlopeFrontActive</a> () const </td></tr>
+<tr class="memdesc:a367eb3aa602f9678b8d58453e5b822e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192" title="Синхронизация по фронту ">RshInitADC::SlopeFront</a>.  <a href="#a367eb3aa602f9678b8d58453e5b822e7">Подробнее...</a><br/></td></tr>
+<tr class="separator:a367eb3aa602f9678b8d58453e5b822e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7786a276bc32a57d818f2f12607776d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#ae7786a276bc32a57d818f2f12607776d">IsSynchroSlopeDeclineActive</a> () const </td></tr>
+<tr class="memdesc:ae7786a276bc32a57d818f2f12607776d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5" title="Синхронизация по спаду ">RshInitADC::SlopeDecline</a>.  <a href="#ae7786a276bc32a57d818f2f12607776d">Подробнее...</a><br/></td></tr>
+<tr class="separator:ae7786a276bc32a57d818f2f12607776d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f825e2d4d17a93a184f379e40b01a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a52f825e2d4d17a93a184f379e40b01a7">SetSynchroFreqSwitchOff</a> ()</td></tr>
+<tr class="memdesc:a52f825e2d4d17a93a184f379e40b01a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aaef6edbcf541ac47ae2bccb1b90646a2" title="Предыстория и история собираются с одной частотой дискретизации ">RshInitADC::FrequencySwitchOff</a>.  <a href="#a52f825e2d4d17a93a184f379e40b01a7">Подробнее...</a><br/></td></tr>
+<tr class="separator:a52f825e2d4d17a93a184f379e40b01a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bb11594951d4365f3a96dcbdb0c323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#ac3bb11594951d4365f3a96dcbdb0c323">SetSynchroFreqSwitchToMin</a> ()</td></tr>
+<tr class="memdesc:ac3bb11594951d4365f3a96dcbdb0c323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc" title="Предыстория и история собираются с разными частотами (переключение на низкую частоту) ...">RshInitADC::FrequencySwitchToMinimum</a>.  <a href="#ac3bb11594951d4365f3a96dcbdb0c323">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac3bb11594951d4365f3a96dcbdb0c323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33d9a59329623440cde9404be603695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#ad33d9a59329623440cde9404be603695">SetSynchroFreqSwitchToMax</a> ()</td></tr>
+<tr class="memdesc:ad33d9a59329623440cde9404be603695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47" title="Предыстория и история собираются с разными частотами (переключение на высокую частоту) ...">RshInitADC::FrequencySwitchToMaximum</a>.  <a href="#ad33d9a59329623440cde9404be603695">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad33d9a59329623440cde9404be603695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347123a3dd4658f1e2f43c25c4600473"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a347123a3dd4658f1e2f43c25c4600473">IsSynchroFreqSwitchToMinActive</a> () const </td></tr>
+<tr class="memdesc:a347123a3dd4658f1e2f43c25c4600473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc" title="Предыстория и история собираются с разными частотами (переключение на низкую частоту) ...">RshInitADC::FrequencySwitchToMinimum</a>.  <a href="#a347123a3dd4658f1e2f43c25c4600473">Подробнее...</a><br/></td></tr>
+<tr class="separator:a347123a3dd4658f1e2f43c25c4600473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737faccccc96541010a038ad2c079c26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a737faccccc96541010a038ad2c079c26">IsSynchroFreqSwitchToMaxActive</a> () const </td></tr>
+<tr class="memdesc:a737faccccc96541010a038ad2c079c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47" title="Предыстория и история собираются с разными частотами (переключение на высокую частоту) ...">RshInitADC::FrequencySwitchToMaximum</a>.  <a href="#a737faccccc96541010a038ad2c079c26">Подробнее...</a><br/></td></tr>
+<tr class="separator:a737faccccc96541010a038ad2c079c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#af965550d2b72863db870e01894846350">RshBaseType</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11da92056d50bfe18f306587535477d7bfe7">rshTypeUndefined</a>, const size_t typeSize=sizeof(<a class="el" href="struct_rsh_base_type.html">RshBaseType</a>))</td></tr>
+<tr class="memdesc:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#af965550d2b72863db870e01894846350">Подробнее...</a><br/></td></tr>
+<tr class="separator:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a79c78fcf2b560f843c84303098c524c2">GetTypeName</a> () const </td></tr>
+<tr class="separator:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a3efbcf323a21adb0ba6de43ed3b5871f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f">startType</a></td></tr>
+<tr class="memdesc:a3efbcf323a21adb0ba6de43ed3b5871f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим запуска сбора данных  <a href="#a3efbcf323a21adb0ba6de43ed3b5871f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a3efbcf323a21adb0ba6de43ed3b5871f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9169154ef3e721aa8eaa72a1df3f3451"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451">bufferSize</a></td></tr>
+<tr class="memdesc:a9169154ef3e721aa8eaa72a1df3f3451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер буфера в отсчетах  <a href="#a9169154ef3e721aa8eaa72a1df3f3451">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9169154ef3e721aa8eaa72a1df3f3451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f51fdaa389ac6d8fdaa704305df298a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a2f51fdaa389ac6d8fdaa704305df298a">frequency</a></td></tr>
+<tr class="memdesc:a2f51fdaa389ac6d8fdaa704305df298a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Частота дискретизации в Гц  <a href="#a2f51fdaa389ac6d8fdaa704305df298a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a2f51fdaa389ac6d8fdaa704305df298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb89a28e7e1a808330a4fda0ef19cec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_channel_8h.html#a3b9671d20bc444b221cbe11d88e39dce">RSH_BUFFER_CHANNEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9">channels</a></td></tr>
+<tr class="memdesc:aeb89a28e7e1a808330a4fda0ef19cec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройки аналоговых каналов  <a href="#aeb89a28e7e1a808330a4fda0ef19cec9">Подробнее...</a><br/></td></tr>
+<tr class="separator:aeb89a28e7e1a808330a4fda0ef19cec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e8176103f96ba4c068800b0d73eb4d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a41e8176103f96ba4c068800b0d73eb4d">threshold</a></td></tr>
+<tr class="memdesc:a41e8176103f96ba4c068800b0d73eb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень синхронизации  <a href="#a41e8176103f96ba4c068800b0d73eb4d">Подробнее...</a><br/></td></tr>
+<tr class="separator:a41e8176103f96ba4c068800b0d73eb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd0e3074cc4af0a7228093bd81b9161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a></td></tr>
+<tr class="memdesc:acbd0e3074cc4af0a7228093bd81b9161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дополнительные параметры синхронизации  <a href="#acbd0e3074cc4af0a7228093bd81b9161">Подробнее...</a><br/></td></tr>
+<tr class="separator:acbd0e3074cc4af0a7228093bd81b9161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#acb736f830c5d916de275eabf81127066">_typeSize</a></td></tr>
+<tr class="memdesc:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер структуры данных или класса.  <a href="#acb736f830c5d916de275eabf81127066">Подробнее...</a><br/></td></tr>
+<tr class="separator:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a0993279e21dd4e2c15d0f8d0ebba76be">_type</a></td></tr>
+<tr class="memdesc:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор типа данных.  <a href="#a0993279e21dd4e2c15d0f8d0ebba76be">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a9dcbb1f22eeacbccc4e7e02f5a1bbe68"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_a_d_c.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;obj)</td></tr>
+<tr class="separator:a9dcbb1f22eeacbccc4e7e02f5a1bbe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a350c4aea57828295b090ad6863f2c385">GetTypeName</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> typeCode)</td></tr>
+<tr class="memdesc:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение названия типа данных.  <a href="#a350c4aea57828295b090ad6863f2c385">Подробнее...</a><br/></td></tr>
+<tr class="separator:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Базовая структура инициализации для АЦП устройств </p>
+<p>В этой структуре содержатся параметры инициализации, общие для всех АЦП устройств, такие как размер буфера, частота дискретизации и др. <br/>
+ Данная структура сама по себе не используется ни в одной из библиотек абстракции устройств - только в качестве предка для структур <a class="el" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a> и <a class="el" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a>.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a> | <a class="el" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a> </dd></dl>
+</div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="ae62d171ab48740511a0571263a9e3939"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939">RshInitADC::ControlSynchro</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список дополнительных опций сбора данных </p>
+<p>Флаги из этого списка можно объединять по 'ИЛИ'. Установив нужную комбинацию флагов в поле <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161" title="Дополнительные параметры синхронизации ">RshInitDMA::controlSynchro</a>, можно задействовать дополнительные опции. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae62d171ab48740511a0571263a9e3939aaef6edbcf541ac47ae2bccb1b90646a2"></a>FrequencySwitchOff</em>&nbsp;</td><td class="fielddoc">
+<p>Предыстория и история собираются с одной частотой дискретизации </p>
+<p>Данный флаг ставится по умолчанию, и работает для всех устройств.<br/>
+ Аналог в SDK1 - константа ADC_CONTROL_ESW.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866abbd6a3d6733d7e318c076e5dc28c23f1" title="Доступна возможность переключения частоты дискретизации после получения события синхронизации. ">RSH_CAPS_DEVICE_FREQUENCY_SWITCH_PREHISTORY</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192"></a>SlopeFront</em>&nbsp;</td><td class="fielddoc">
+<p>Синхронизация по фронту </p>
+<p>Данный флаг актуален только при работе в режиме синхронизации (см. <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f" title="Режим запуска сбора данных ">RshInitDMA::startType</a>).<br/>
+ Взаимоисключающий с флагом <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5" title="Синхронизация по спаду ">RshInitDMA::SlopeDecline</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5"></a>SlopeDecline</em>&nbsp;</td><td class="fielddoc">
+<p>Синхронизация по спаду </p>
+<p>Данный флаг актуален только при работе в режиме синхронизации (см. <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f" title="Режим запуска сбора данных ">RshInitDMA::startType</a>).<br/>
+ Взаимоисключающий с флагом <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192" title="Синхронизация по фронту ">RshInitDMA::SlopeFront</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc"></a>FrequencySwitchToMinimum</em>&nbsp;</td><td class="fielddoc">
+<p>Предыстория и история собираются с разными частотами (переключение на низкую частоту) </p>
+<p>Данный флаг может использоваться только для устройств, которые поддерживают данную возможность ( <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866abbd6a3d6733d7e318c076e5dc28c23f1" title="Доступна возможность переключения частоты дискретизации после получения события синхронизации. ">RSH_CAPS_DEVICE_FREQUENCY_SWITCH_PREHISTORY</a>). Если флаг активен, частота дискретизации будет изменена (на низкую частоту, F = Fmax/8, см. документацию к устройству). в момент срабатывания синхронизации, и предыстория будет оцифрована с одной частотой, а основной сигнал - с другой.<br/>
+ Аналог в SDK1 - константа ADC_CONTROL_FSW. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47"></a>FrequencySwitchToMaximum</em>&nbsp;</td><td class="fielddoc">
+<p>Предыстория и история собираются с разными частотами (переключение на высокую частоту) </p>
+<p>Данный флаг может использоваться только для устройств, которые поддерживают данную возможность ( <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866abbd6a3d6733d7e318c076e5dc28c23f1" title="Доступна возможность переключения частоты дискретизации после получения события синхронизации. ">RSH_CAPS_DEVICE_FREQUENCY_SWITCH_PREHISTORY</a>). Если флаг активен, частота дискретизации будет изменена (на высокую частоту, см. документацию к устройству). в момент срабатывания синхронизации, и предыстория будет оцифрована с одной частотой, а основной сигнал - с другой.<br/>
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a052804ec71ccbe925a8b33359bd233ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233ea">RshInitADC::StartType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список режимов запуска </p>
+<p>Элементы этого перечисления используются для задания режима запуска АЦП.<br/>
+ Чтобы выбрать режим, нужно установить одно из этих значений в поле <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f" title="Режим запуска сбора данных ">RshInitADC::startType</a>.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="page__synchronization.html">Синхронизация </a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a052804ec71ccbe925a8b33359bd233eaadc54c54b5f08844cc75cd2d8eb1c31f5"></a>Program</em>&nbsp;</td><td class="fielddoc">
+<p>Программный запуск </p>
+<p>Преобразование будет запущено сразу же после получения устройством команды на запуск.<br/>
+ Это означает, что АЦП будет запущено сразу же после вызова метода <a class="el" href="struct_i_rsh_device.html#a47d6a77d7311d54deea8c02ad77e66fc" title="Запуск процесса сбора данных или генерации сигнала. ">IRshDevice::Start()</a>.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>"Сразу же" на самом деле происходит не мгновенно, так как всегда есть задержки - вызов функций, передача данных по шине, отклик устройства. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a052804ec71ccbe925a8b33359bd233eaa9db2e34cceb99c7fe481cfa58a7a3cb3"></a>Timer</em>&nbsp;</td><td class="fielddoc">
+<p>Запуск по таймеру </p>
+<p>Запуск преобразования по внутреннему таймеру.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Уст.:</a></b></dt><dd>На текущий момент данный режим не используется ни в одной библиотеке абстракции устройства. В SDK1 некоторые устройства использовали флаг Program, другие Timer для одного и того же режима - запуск преобразования по вызову команды <a class="el" href="struct_i_rsh_device.html#a47d6a77d7311d54deea8c02ad77e66fc" title="Запуск процесса сбора данных или генерации сигнала. ">IRshDevice::Start()</a>.<br/>
+ Возможно, данный флаг будет удален в будущих релизах.</dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a052804ec71ccbe925a8b33359bd233eaab353bf3e1b6d2302905eb2f9d9cbcd13"></a>External</em>&nbsp;</td><td class="fielddoc">
+<p>Внешняя синхронизации (или внешний запуск) </p>
+<p>Использовать внешний источник для запуска преобразования.<br/>
+ В качестве внешнего источнка может выступать либо вход внешней синхронизации, либо вход внешнего запуска.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Существуют два различных механизма, которые включаются данным флагом: использование входа внешней синхронизации (как правило, данный режим есть у "Memory" устройств - см. <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a4e931de0e0a4fb97becc7c552239d2fd" title="Устройство имеет дополнительный вход, который может быть использован в качестве источника синхронизац...">RSH_CAPS_DEVICE_SYNCHRO_EXTERNAL</a>) или использование внешнего старта (как правило, данный режим есть у "DMA" устройств - см. <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a819d7c0f4299baf67e2c592b78340105" title="Устройство поддерживает возможность внешнего запуска преобразования. ">RSH_CAPS_DEVICE_EXTERNAL_START</a>). </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a052804ec71ccbe925a8b33359bd233eaaa85aaa4fbccb5d9ef642002a37203c98"></a>Internal</em>&nbsp;</td><td class="fielddoc">
+<p>Внутренняя синхронизация </p>
+<p>Использование одного из аналоговых входов в качестве источника сигнала для запуска АЦП.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Используйте <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a1d7c7830ca32b68ec713eaf7196502b6" title="Аналоговые каналы устройства могут быть использованы в качестве источника синхронизации. ">RSH_CAPS_DEVICE_SYNCHRO_INTERNAL</a> чтобы проверить, поддерживает ли устройство данный режим или нет.<br/>
+ Как правило, данная возможность поддерживается устройствами типа "Memory".</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769a890c19bd24b25fc6efba7eddc1ccfb81" title="Канал будет использоваться в качестве источника синхронизации ">RshChannel::Synchro</a> | <a class="el" href="struct_rsh_init_a_d_c.html#a41e8176103f96ba4c068800b0d73eb4d" title="Уровень синхронизации ">RshInitMemory::threshold</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a052804ec71ccbe925a8b33359bd233eaa77f738f46a81db5a1dff418cab5c78f7"></a>FrequencyExternal</em>&nbsp;</td><td class="fielddoc">
+<p>Использование внешней частоты дискретизации </p>
+<p>АЦП будет сэмплироваться от внешнего источника частоты дискретизации. См. <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a9f291ff9cb8c78e6cc63fe9dd7732001" title="АЦП может тактироваться из внешнего источника. ">RSH_CAPS_DEVICE_EXTERNAL_FREQUENCY</a></p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Необходимо сделать:</a></b></dt><dd>Напрашивается перенос данного поля в control, возможно нужно объединить контролы из <a class="el" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a> и <a class="el" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a> и перенести все флаги в <a class="el" href="struct_rsh_init_a_d_c.html" title="Базовая структура инициализации для АЦП устройств ">RshInitADC</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a052804ec71ccbe925a8b33359bd233eaae840f4e9feb73bd6ea90b452c898b977"></a>Master</em>&nbsp;</td><td class="fielddoc">
+<p>Запуск от ведущего устройства </p>
+<p>Актуально для систем, где несколько устройств запускаются синхронно. Одно из устройств выступает в качестве ведущего, все остальные - в качестве ведомых.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866aab020fd08c44e6af6b9ff1ca657e59f5" title="Сбор данных может быть запущен от ведущего устройства. ">RSH_CAPS_DEVICE_SLAVE_MASTER_SWITCH</a> </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a921f51e4369d88d80b90b013a79f8ba8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitADC::RshInitADC </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11dae30bec2a5e2442a9d429c83cba2d1aee">rshInitADC</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>sizeType</em> = <code>sizeof(<a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a>)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451">bufferSize</a>, <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a2f51fdaa389ac6d8fdaa704305df298a">frequency</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaadc54c54b5f08844cc75cd2d8eb1c31f5">Program</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f">startType</a> и <a class="el" href="struct_rsh_init_a_d_c.html#a41e8176103f96ba4c068800b0d73eb4d">threshold</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6326eb1b902c60481b15d2dee500e9de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitADC::RshInitADC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> const &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451">bufferSize</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9">channels</a>, <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a>, <a class="el" href="class_rsh_buffer_type.html#a9af2115b8d89da7172c435eb509aa446">RshBufferType&lt; T, dataCode &gt;::Copy()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a2f51fdaa389ac6d8fdaa704305df298a">frequency</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f">startType</a> и <a class="el" href="struct_rsh_init_a_d_c.html#a41e8176103f96ba4c068800b0d73eb4d">threshold</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c_a6326eb1b902c60481b15d2dee500e9de_cgraph.png" border="0" usemap="#struct_rsh_init_a_d_c_a6326eb1b902c60481b15d2dee500e9de_cgraph" alt=""/></div>
+<map name="struct_rsh_init_a_d_c_a6326eb1b902c60481b15d2dee500e9de_cgraph" id="struct_rsh_init_a_d_c_a6326eb1b902c60481b15d2dee500e9de_cgraph">
+<area shape="rect" id="node2" href="class_rsh_buffer_type.html#a9af2115b8d89da7172c435eb509aa446" title="Копирование данных в буфер из указанной области памяти " alt="" coords="246,5,421,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a919f7f51712cf0ec3d42e893dc5367e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitADC::ActiveChannelsNumber </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число активных каналов в массиве каналов. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество активных каналов.</dd></dl>
+<p>Данный метод позволяет получить число каналов с установленным флагом <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ab1f9ac172ca4a0c1bb0fd95585e3bd6f" title="Канал будет использоваться при сборе данных ">RshChannel::Used</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9">channels</a>, <a class="el" href="struct_rsh_channel.html#a626796764804dc139e86ab45dadf6c0d">RshChannel::IsUsed()</a>, <a class="el" href="class_rsh_buffer_type.html#a736f485e21c19f5f232e8fa061af4258">RshBufferType&lt; T, dataCode &gt;::ptr</a> и <a class="el" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e">RshBufferType&lt; T, dataCode &gt;::Size()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c_a919f7f51712cf0ec3d42e893dc5367e3_cgraph.png" border="0" usemap="#struct_rsh_init_a_d_c_a919f7f51712cf0ec3d42e893dc5367e3_cgraph" alt=""/></div>
+<map name="struct_rsh_init_a_d_c_a919f7f51712cf0ec3d42e893dc5367e3_cgraph" id="struct_rsh_init_a_d_c_a919f7f51712cf0ec3d42e893dc5367e3_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_channel.html#a626796764804dc139e86ab45dadf6c0d" title="Проверка наличия флага RshChannel::Used. " alt="" coords="276,5,441,33"/><area shape="rect" id="node3" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). " alt="" coords="275,57,443,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a737faccccc96541010a038ad2c079c26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitADC::IsSynchroFreqSwitchToMaxActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47" title="Предыстория и история собираются с разными частотами (переключение на высокую частоту) ...">RshInitADC::FrequencySwitchToMaximum</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47">FrequencySwitchToMaximum</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a347123a3dd4658f1e2f43c25c4600473"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitADC::IsSynchroFreqSwitchToMinActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc" title="Предыстория и история собираются с разными частотами (переключение на низкую частоту) ...">RshInitADC::FrequencySwitchToMinimum</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc">FrequencySwitchToMinimum</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7786a276bc32a57d818f2f12607776d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitADC::IsSynchroSlopeDeclineActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5" title="Синхронизация по спаду ">RshInitADC::SlopeDecline</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5">SlopeDecline</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_a_d_c.html#a367eb3aa602f9678b8d58453e5b822e7">IsSynchroSlopeFrontActive()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c_ae7786a276bc32a57d818f2f12607776d_icgraph.png" border="0" usemap="#struct_rsh_init_a_d_c_ae7786a276bc32a57d818f2f12607776d_icgraph" alt=""/></div>
+<map name="struct_rsh_init_a_d_c_ae7786a276bc32a57d818f2f12607776d_icgraph" id="struct_rsh_init_a_d_c_ae7786a276bc32a57d818f2f12607776d_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_a_d_c.html#a367eb3aa602f9678b8d58453e5b822e7" title="Проверка наличия флага RshInitADC::SlopeFront. " alt="" coords="275,5,496,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a367eb3aa602f9678b8d58453e5b822e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitADC::IsSynchroSlopeFrontActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192" title="Синхронизация по фронту ">RshInitADC::SlopeFront</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#ae7786a276bc32a57d818f2f12607776d">IsSynchroSlopeDeclineActive()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c_a367eb3aa602f9678b8d58453e5b822e7_cgraph.png" border="0" usemap="#struct_rsh_init_a_d_c_a367eb3aa602f9678b8d58453e5b822e7_cgraph" alt=""/></div>
+<map name="struct_rsh_init_a_d_c_a367eb3aa602f9678b8d58453e5b822e7_cgraph" id="struct_rsh_init_a_d_c_a367eb3aa602f9678b8d58453e5b822e7_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_a_d_c.html#ae7786a276bc32a57d818f2f12607776d" title="Проверка наличия флага RshInitADC::SlopeDecline. " alt="" coords="275,5,496,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2befb2e5e9a1ed14e9530e5e91be170b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitADC::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c_a2befb2e5e9a1ed14e9530e5e91be170b_cgraph.png" border="0" usemap="#struct_rsh_init_a_d_c_a2befb2e5e9a1ed14e9530e5e91be170b_cgraph" alt=""/></div>
+<map name="struct_rsh_init_a_d_c_a2befb2e5e9a1ed14e9530e5e91be170b_cgraph" id="struct_rsh_init_a_d_c_a2befb2e5e9a1ed14e9530e5e91be170b_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185" title="RshInitADC::operator==" alt="" coords="248,5,448,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abbc1eb52b4ed5a269380b19ee1935cac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp; RshInitADC::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451">bufferSize</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9">channels</a>, <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a2f51fdaa389ac6d8fdaa704305df298a">frequency</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f">startType</a> и <a class="el" href="struct_rsh_init_a_d_c.html#a41e8176103f96ba4c068800b0d73eb4d">threshold</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab79a488fa9d0a55fbfb21f67add6185"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitADC::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451">bufferSize</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9">channels</a>, <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a2f51fdaa389ac6d8fdaa704305df298a">frequency</a>, <a class="el" href="_rsh_macro_8h.html#af658970f2bee93e068ac5db68ea07e9f">RSH_CMPDOUBLE</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f">startType</a> и <a class="el" href="struct_rsh_init_a_d_c.html#a41e8176103f96ba4c068800b0d73eb4d">threshold</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_a_d_c.html#a2befb2e5e9a1ed14e9530e5e91be170b">operator!=()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_a_d_c_aab79a488fa9d0a55fbfb21f67add6185_icgraph.png" border="0" usemap="#struct_rsh_init_a_d_c_aab79a488fa9d0a55fbfb21f67add6185_icgraph" alt=""/></div>
+<map name="struct_rsh_init_a_d_c_aab79a488fa9d0a55fbfb21f67add6185_icgraph" id="struct_rsh_init_a_d_c_aab79a488fa9d0a55fbfb21f67add6185_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_a_d_c.html#a2befb2e5e9a1ed14e9530e5e91be170b" title="RshInitADC::operator!=" alt="" coords="254,5,447,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a52f825e2d4d17a93a184f379e40b01a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshInitADC::SetSynchroFreqSwitchOff </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aaef6edbcf541ac47ae2bccb1b90646a2" title="Предыстория и история собираются с одной частотой дискретизации ">RshInitADC::FrequencySwitchOff</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a>, <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47">FrequencySwitchToMaximum</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc">FrequencySwitchToMinimum</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad33d9a59329623440cde9404be603695"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshInitADC::SetSynchroFreqSwitchToMax </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47" title="Предыстория и история собираются с разными частотами (переключение на высокую частоту) ...">RshInitADC::FrequencySwitchToMaximum</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939ae967f9ca6620011f8f83ff414c92ac47">FrequencySwitchToMaximum</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3bb11594951d4365f3a96dcbdb0c323"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshInitADC::SetSynchroFreqSwitchToMin </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc" title="Предыстория и история собираются с разными частотами (переключение на низкую частоту) ...">RshInitADC::FrequencySwitchToMinimum</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aec69366ab34f2397535633973ed45fdc">FrequencySwitchToMinimum</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5afdb373b1b59411d2cd497c3b102b4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshInitADC::SetSynchroSlopeDecline </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5" title="Синхронизация по спаду ">RshInitADC::SlopeDecline</a>. </p>
+<p>Синхронизация по спаду </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5">SlopeDecline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad58558f3ff94211268862b88a4d554f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshInitADC::SetSynchroSlopeFront </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка флага <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192" title="Синхронизация по фронту ">RshInitADC::SlopeFront</a>. </p>
+<p>Синхронизация по фронту </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161">controlSynchro</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939af5fd11c363bc80c5f68c64158d6ed1b5">SlopeDecline</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a9dcbb1f22eeacbccc4e7e02f5a1bbe68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_a_d_c.html">RshInitADC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a9169154ef3e721aa8eaa72a1df3f3451"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitADC::bufferSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Размер буфера в отсчетах </p>
+<p>Размер буфера данных, в отсчетах на канал.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Размер задается на канал, т.е. при использовании нескольких каналов фактический размер собранных данных будет пропорционален числу каналов.<br/>
+ Это надо учитывать при вызове метода <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">IRshDevice::GetData()</a>. Если число используемых каналов равно N, при получении данных в метод <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">IRshDevice::GetData()</a> нужно передать размер, равный <a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451" title="Размер буфера в отсчетах ">RshInitADC::bufferSize</a>*N.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">IRshDevice::GetData()</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_frame_frequency_mode__r_u_8cpp-example.html#a9">FrameFrequencyMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#a11">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__init__rsh_init_d_m_a__r_u_8cpp-example.html#a7">IRshDevice_Init_RshInitDMA_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a26">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a24">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a26">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a24">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a26">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a24">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a26">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a24">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a26">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a24">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a26">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a24">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a26">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a24">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a24">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a24">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a24">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a24">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a26">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a24">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a24">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a24">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a24">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a26">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a24">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a31">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a24">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a24">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a82bca2c28f6128e2ad2e66563bf09078">RshInitDMA::operator=()</a>, <a class="el" href="struct_rsh_init_memory.html#ae12c8f4b3c832500d7ab2bf6199c79c8">RshInitMemory::operator=()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a07986bc044910118df98a87db40323a4">RshInitDMA::operator==()</a>, <a class="el" href="struct_rsh_init_memory.html#aea6a1bb443b3c85ef52433b93f9af6cd">RshInitMemory::operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a921f51e4369d88d80b90b013a79f8ba8">RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a574481f022105926faeec864c13b6803">RshInitDMA::RshInitDMA()</a> и <a class="el" href="struct_rsh_init_memory.html#a602ec7a95622f87038db284f5559e744">RshInitMemory::RshInitMemory()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb89a28e7e1a808330a4fda0ef19cec9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_channel_8h.html#a3b9671d20bc444b221cbe11d88e39dce">RSH_BUFFER_CHANNEL</a> RshInitADC::channels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Настройки аналоговых каналов </p>
+<p>Список структур <a class="el" href="struct_rsh_channel.html" title="Параметры аналогового канала ">RshChannel</a>. Количество структур в списке равно <a class="el" href="_rsh_consts___common_8h.html#ae7d488a30722dd3fc910f018ffa148e0">RSH_MAX_CHANNEL_NUMBER</a>. Если устройство имеет меньшее число каналов (это справедливо для большинства устройств), используется только часть списка, отвечающая фактическому количеству каналов.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Узнать количество каналов устройства можно, вызвав метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">IRshDevice::Get()</a> с параметром <a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5afed15638c6ab2468179e807e9d9f3675" title="Количество аналоговых каналов ">RSH_GET_DEVICE_NUMBER_CHANNELS</a>.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_rsh_channel.html" title="Параметры аналогового канала ">RshChannel</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_frame_frequency_mode__r_u_8cpp-example.html#a11">FrameFrequencyMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#a12">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__init__rsh_init_d_m_a__r_u_8cpp-example.html#a8">IRshDevice_Init_RshInitDMA_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a28">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a26">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a28">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a26">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a28">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a26">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a28">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a26">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a28">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a26">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a28">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a26">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a28">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a26">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a26">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a26">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a26">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a26">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a28">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a26">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a26">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a26">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a26">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a28">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a26">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a36">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a26">Python_StartStop.cpp</a>, <a class="el" href="_rsh_channel_setup__r_u_8cpp-example.html#a1">RshChannelSetup_RU.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a26">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="struct_rsh_init_a_d_c.html#a919f7f51712cf0ec3d42e893dc5367e3">ActiveChannelsNumber()</a>, <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a82bca2c28f6128e2ad2e66563bf09078">RshInitDMA::operator=()</a>, <a class="el" href="struct_rsh_init_memory.html#ae12c8f4b3c832500d7ab2bf6199c79c8">RshInitMemory::operator=()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a07986bc044910118df98a87db40323a4">RshInitDMA::operator==()</a>, <a class="el" href="struct_rsh_init_memory.html#aea6a1bb443b3c85ef52433b93f9af6cd">RshInitMemory::operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a6326eb1b902c60481b15d2dee500e9de">RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a574481f022105926faeec864c13b6803">RshInitDMA::RshInitDMA()</a> и <a class="el" href="struct_rsh_init_memory.html#a602ec7a95622f87038db284f5559e744">RshInitMemory::RshInitMemory()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbd0e3074cc4af0a7228093bd81b9161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitADC::controlSynchro</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дополнительные параметры синхронизации </p>
+<p>Комбинация флагов из перечисления <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939" title="Список дополнительных опций сбора данных ">RshInitDMA::ControlSynchro</a>.<br/>
+ По умолчанию, данный параметр равен нулю, что соответствует сочетанию флагов: <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aaef6edbcf541ac47ae2bccb1b90646a2" title="Предыстория и история собираются с одной частотой дискретизации ">RshInitDMA::FrequencySwitchOff</a> | <a class="el" href="struct_rsh_init_a_d_c.html#ae62d171ab48740511a0571263a9e3939aa702dcba5921110fe9d595d492d9b192" title="Синхронизация по фронту ">RshInitDMA::SlopeFront</a> </p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_a_d_c.html#a737faccccc96541010a038ad2c079c26">IsSynchroFreqSwitchToMaxActive()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a347123a3dd4658f1e2f43c25c4600473">IsSynchroFreqSwitchToMinActive()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#ae7786a276bc32a57d818f2f12607776d">IsSynchroSlopeDeclineActive()</a>, <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a82bca2c28f6128e2ad2e66563bf09078">RshInitDMA::operator=()</a>, <a class="el" href="struct_rsh_init_memory.html#ae12c8f4b3c832500d7ab2bf6199c79c8">RshInitMemory::operator=()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a07986bc044910118df98a87db40323a4">RshInitDMA::operator==()</a>, <a class="el" href="struct_rsh_init_memory.html#aea6a1bb443b3c85ef52433b93f9af6cd">RshInitMemory::operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a921f51e4369d88d80b90b013a79f8ba8">RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a2ce3d5b4ae81fbab6b4e2ee1f00f0a0e">RshInitDMA::RshInitDMA()</a>, <a class="el" href="struct_rsh_init_memory.html#aa333ed1675183aea6843c7bb37e20e64">RshInitMemory::RshInitMemory()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a52f825e2d4d17a93a184f379e40b01a7">SetSynchroFreqSwitchOff()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#ad33d9a59329623440cde9404be603695">SetSynchroFreqSwitchToMax()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#ac3bb11594951d4365f3a96dcbdb0c323">SetSynchroFreqSwitchToMin()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a5afdb373b1b59411d2cd497c3b102b4d">SetSynchroSlopeDecline()</a> и <a class="el" href="struct_rsh_init_a_d_c.html#ad58558f3ff94211268862b88a4d554f2">SetSynchroSlopeFront()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f51fdaa389ac6d8fdaa704305df298a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RshInitADC::frequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Частота дискретизации в Гц </p>
+<p>Частота дискретизации в Гц на канал. Также как и размер <a class="el" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451" title="Размер буфера в отсчетах ">RshInitADC::bufferSize</a>, эта настройка привязывается к каналу.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Для устройств с мультиплексированными каналами, максимальная частота дискретизации зависит от числа используемых каналов.<br/>
+ Всегда проверяйте поле частоты дискретизации и размера буфера в стркутуре после вызова метода <a class="el" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">IRshDevice::Init()</a> чтобы узнать, какие параметры были фактически установлены при инициализации.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866ae0218b6df2f5e3cef65793b25a48389a" title="Аналоговые каналы устройства - синхронные. ">RSH_CAPS_DEVICE_SYNCHRO_CHANNELS</a> | <a class="el" href="_rsh_consts___init_modes_8h.html#a053ac212f2672ff50a8e4c2768cb5305a130b795cc36ed9452497889b9794a409" title="Только проверка параметров инициализации в структуре. ">RSH_INIT_MODE_CHECK</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_frame_frequency_mode__r_u_8cpp-example.html#a5">FrameFrequencyMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#a9">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__init__rsh_init_d_m_a__r_u_8cpp-example.html#a4">IRshDevice_Init_RshInitDMA_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a27">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a25">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a27">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a25">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a27">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a25">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a27">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a25">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a27">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a25">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a27">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a25">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a27">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a25">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a25">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a25">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a25">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a25">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a27">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a25">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a25">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a25">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a25">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a27">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a25">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a32">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a25">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a25">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a82bca2c28f6128e2ad2e66563bf09078">RshInitDMA::operator=()</a>, <a class="el" href="struct_rsh_init_memory.html#ae12c8f4b3c832500d7ab2bf6199c79c8">RshInitMemory::operator=()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a07986bc044910118df98a87db40323a4">RshInitDMA::operator==()</a>, <a class="el" href="struct_rsh_init_memory.html#aea6a1bb443b3c85ef52433b93f9af6cd">RshInitMemory::operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a921f51e4369d88d80b90b013a79f8ba8">RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a574481f022105926faeec864c13b6803">RshInitDMA::RshInitDMA()</a> и <a class="el" href="struct_rsh_init_memory.html#a602ec7a95622f87038db284f5559e744">RshInitMemory::RshInitMemory()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3efbcf323a21adb0ba6de43ed3b5871f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitADC::startType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Режим запуска сбора данных </p>
+<p>Одна из констант перечисления <a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233ea" title="Список режимов запуска ">RshInitADC::StartType</a>, которая определяет, как будет запускаться сбор данных. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_frame_frequency_mode__r_u_8cpp-example.html#a3">FrameFrequencyMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__init__rsh_init_d_m_a__r_u_8cpp-example.html#a2">IRshDevice_Init_RshInitDMA_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a22">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a22">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a22">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a22">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a22">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a22">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a22">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a22">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a22">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a22">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a22">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a22">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a22">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a22">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a22">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a22">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a22">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a22">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a22">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a22">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a22">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a22">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a22">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a22">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a22">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a29">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a22">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a22">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a82bca2c28f6128e2ad2e66563bf09078">RshInitDMA::operator=()</a>, <a class="el" href="struct_rsh_init_memory.html#ae12c8f4b3c832500d7ab2bf6199c79c8">RshInitMemory::operator=()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a07986bc044910118df98a87db40323a4">RshInitDMA::operator==()</a>, <a class="el" href="struct_rsh_init_memory.html#aea6a1bb443b3c85ef52433b93f9af6cd">RshInitMemory::operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a921f51e4369d88d80b90b013a79f8ba8">RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a574481f022105926faeec864c13b6803">RshInitDMA::RshInitDMA()</a> и <a class="el" href="struct_rsh_init_memory.html#a602ec7a95622f87038db284f5559e744">RshInitMemory::RshInitMemory()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41e8176103f96ba4c068800b0d73eb4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RshInitADC::threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уровень синхронизации </p>
+<p>Уровень синхронизации в вольтах. Данный параметр актуален, когда устройство работает в режиме синхронизации (т.е. тип запуска <a class="el" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f" title="Режим запуска сбора данных ">RshInitDMA::startType</a> установлен либо <a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaaa85aaa4fbccb5d9ef642002a37203c98" title="Внутренняя синхронизация ">RshInitDMA::Internal</a>, либо <a class="el" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaab353bf3e1b6d2302905eb2f9d9cbcd13" title="Внешняя синхронизации (или внешний запуск) ">RshInitMemory::External</a>).<br/>
+ Когда сигнал на выбранном для синхронизации входе достигает заданного порога (сверху или снизу, в зависимости от состояния поля <a class="el" href="struct_rsh_init_a_d_c.html#acbd0e3074cc4af0a7228093bd81b9161" title="Дополнительные параметры синхронизации ">RshInitDMA::controlSynchro</a>), происходит событие синхронизации, и начинается процесс сбора и передача данных.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если синхронизация выключана, данное поле не используется</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="page__synchronization.html">Синхронизация </a> </dd></dl>
+
+<p>Используется в <a class="el" href="_rsh_init_a_d_c_8cpp.html#a9dcbb1f22eeacbccc4e7e02f5a1bbe68">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a82bca2c28f6128e2ad2e66563bf09078">RshInitDMA::operator=()</a>, <a class="el" href="struct_rsh_init_memory.html#ae12c8f4b3c832500d7ab2bf6199c79c8">RshInitMemory::operator=()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#abbc1eb52b4ed5a269380b19ee1935cac">operator=()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a07986bc044910118df98a87db40323a4">RshInitDMA::operator==()</a>, <a class="el" href="struct_rsh_init_memory.html#aea6a1bb443b3c85ef52433b93f9af6cd">RshInitMemory::operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#aab79a488fa9d0a55fbfb21f67add6185">operator==()</a>, <a class="el" href="struct_rsh_init_a_d_c.html#a921f51e4369d88d80b90b013a79f8ba8">RshInitADC()</a>, <a class="el" href="struct_rsh_init_d_m_a.html#a2ce3d5b4ae81fbab6b4e2ee1f00f0a0e">RshInitDMA::RshInitDMA()</a> и <a class="el" href="struct_rsh_init_memory.html#aa333ed1675183aea6843c7bb37e20e64">RshInitMemory::RshInitMemory()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_a_d_c_8h_source.html">RshInitADC.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_a_d_c_8cpp.html">RshInitADC.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:34. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

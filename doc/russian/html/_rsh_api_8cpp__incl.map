@@ -1,0 +1,43 @@
+<map id="G:/SDK2/HEADERS/Include/RshApi.cpp" name="G:/SDK2/HEADERS/Include/RshApi.cpp">
+<area shape="rect" id="node2" href="$_rsh_api_8h.html" title="Главный заголовочный файл RSH API. " alt="" coords="775,99,860,127"/>
+<area shape="rect" id="node22" href="$_rsh_base_type_8cpp.html" title="Класс RshBaseType и связанные с ним типы данных. " alt="" coords="593,331,743,359"/>
+<area shape="rect" id="node23" href="$_rsh_scalar_type_8cpp.html" title="Шаблонный Класс RshScalarType &#45; для простых типов данных. " alt="" coords="1155,177,1315,205"/>
+<area shape="rect" id="node24" href="$_rsh_buffer_type_8cpp.html" title="RshBufferType.cpp" alt="" coords="1846,177,2004,205"/>
+<area shape="rect" id="node30" href="$_rsh_register_8cpp.html" title="Класс RshRegister. " alt="" coords="634,177,773,205"/>
+<area shape="rect" id="node31" href="$_rsh_device_base_info_8cpp.html" title="Класс RshDeviceBaseInfo и связанные с ним типы данных. " alt="" coords="2270,177,2460,205"/>
+<area shape="rect" id="node32" href="$_rsh_device_full_info_8cpp.html" title="Класс RshDeviceFullInfo и связанные с ним типы данных. " alt="" coords="1269,254,1448,282"/>
+<area shape="rect" id="node33" href="$_rsh_port_info_8cpp.html" title="Класс RshPortInfo и связанные с ним типы данных. " alt="" coords="985,99,1121,127"/>
+<area shape="rect" id="node34" href="$_rsh_board_port_info_8cpp.html" title="Класс RshBoardPortInfo. " alt="" coords="1145,99,1324,127"/>
+<area shape="rect" id="node35" href="$_rsh_channel_8cpp.html" title="Класс RshChannel. " alt="" coords="3533,99,3672,127"/>
+<area shape="rect" id="node36" href="$_rsh_synchro_channel_8cpp.html" title="Класс RshSynchroChannel. " alt="" coords="1399,99,1596,127"/>
+<area shape="rect" id="node37" href="$_rsh_device_key_8cpp.html" title="Класс RshDeviceKey. " alt="" coords="1620,99,1775,127"/>
+<area shape="rect" id="node38" href="$_rsh_time_8cpp.html" title="Класс RshTime. " alt="" coords="1799,99,1915,127"/>
+<area shape="rect" id="node39" href="$_rsh_init_a_d_c_8cpp.html" title="Структура инициализации RshInitADC. " alt="" coords="1939,99,2071,127"/>
+<area shape="rect" id="node40" href="$_rsh_init_d_m_a_8cpp.html" title="Структура инициализации RshInitDMA. " alt="" coords="2095,99,2229,127"/>
+<area shape="rect" id="node41" href="$_rsh_init_memory_8cpp.html" title="Структура инициализации RshInitMemory. " alt="" coords="2254,99,2415,127"/>
+<area shape="rect" id="node42" href="$_rsh_init_d_a_c_8cpp.html" title="Структура инициализации RshInitDAC. " alt="" coords="2439,99,2571,127"/>
+<area shape="rect" id="node43" href="$_rsh_init_g_s_p_f_8cpp.html" title="Структура инициализации RshInitGSPF. " alt="" coords="2596,99,2737,127"/>
+<area shape="rect" id="node44" href="$_rsh_init_port_8cpp.html" title="Структура инициализации RshInitPort. " alt="" coords="2761,99,2892,127"/>
+<area shape="rect" id="node45" href="$_rsh_init_timer_8cpp.html" title="Структура инициализации RshInitTimer. " alt="" coords="2893,331,3035,359"/>
+<area shape="rect" id="node46" href="$_rsh_init_voltmeter_8cpp.html" title="Структура инициализации RshInitVoltmeter. " alt="" coords="2967,99,3141,127"/>
+<area shape="rect" id="node47" href="$_rsh_dll_interface_key_8cpp.html" title="Вспомогательный класс, используемый совместно с RshDllClient. " alt="" coords="5,177,192,205"/>
+<area shape="rect" id="node48" href="$_rsh_dll_client_8cpp.html" title="Класс для работы с dll. " alt="" coords="269,177,405,205"/>
+<area shape="rect" id="node49" href="$_rsh_error_8cpp.html" title="Класс для формирования сообщений об ошибках и связанные структуры данных. " alt="" coords="3166,99,3281,127"/>
+<area shape="rect" id="node50" href="$_rsh_functions_8cpp.html" title="Глобальные функции. " alt="" coords="3358,99,3508,127"/>
+<area shape="rect" id="node3" href="$_rsh_8h.html" title="Версия SDK. " alt="" coords="798,177,860,205"/>
+<area shape="rect" id="node4" href="$_rsh_def_chk_8h.html" title="Определения констант операционных систем, компиляторов и простых типов данных. " alt="" coords="828,486,943,514"/>
+<area shape="rect" id="node5" href="$_rsh_macro_8h.html" title="Макросы и шаблоны, применяемые в SDK. " alt="" coords="3358,177,3465,205"/>
+<area shape="rect" id="node7" href="$_rsh_types_8h.html" title="В этом файле содержатся определения типов данных, используемых в RSH SDK. " alt="" coords="885,177,992,205"/>
+<area shape="rect" id="node15" href="$_rsh_consts_8h.html" title="Данный файл включает в себя все заголовочные файлы с константами из RSH SDK. " alt="" coords="1017,177,1129,205"/>
+<area shape="rect" id="node17" href="$_rsh_functions_8h.html" title="Прототипы глобальных функций. " alt="" coords="2112,177,2245,205"/>
+<area shape="rect" id="node18" href="$_i_rsh_factory_8h.html" title="Интерфейс IRshFactory &#45; абстрактная фабрика классов. " alt="" coords="395,331,516,359"/>
+<area shape="rect" id="node19" href="$_i_rsh_device_8h.html" title="Интерфейс IRshDevice. " alt="" coords="184,331,299,359"/>
+<area shape="rect" id="node20" href="$_rsh_dll_client_8h.html" title="Класс для работы с dll. " alt="" coords="287,254,407,282"/>
+<area shape="rect" id="node21" href="$_rsh_error_8h.html" title="Класс для формирования сообщений об ошибках и связанные структуры данных. " alt="" coords="1604,177,1703,205"/>
+<area shape="rect" id="node8" href="$_rsh_base_type_8h.html" title="Класс RshBaseType и связанные с ним типы данных. " alt="" coords="765,409,899,437"/>
+<area shape="rect" id="node9" href="$_rsh_scalar_type_8h.html" title="Шаблонный Класс RshScalarType &#45; для простых типов данных. " alt="" coords="870,331,1012,359"/>
+<area shape="rect" id="node10" href="$_rsh_buffer_type_8h.html" title="Класс RshBufferType и связанные с ним типы данных. " alt="" coords="1287,331,1429,359"/>
+<area shape="rect" id="node13" href="$_rsh_register_8h.html" title="Класс RshRegister. " alt="" coords="672,254,795,282"/>
+<area shape="rect" id="node14" href="$_rsh_device_base_info_8h.html" title="Класс RshDeviceBaseInfo и связанные с ним типы данных. " alt="" coords="1072,254,1245,282"/>
+<area shape="rect" id="node16" href="$_rsh_consts___status_codes_8h.html" title="В этом файле содержится описание возвращаемых кодов для RSH SDK. " alt="" coords="1473,254,1687,282"/>
+</map>

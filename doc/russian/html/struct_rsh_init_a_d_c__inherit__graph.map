@@ -1,0 +1,5 @@
+<map id="RshInitADC" name="RshInitADC">
+<area shape="rect" id="node3" href="$struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. " alt="" coords="5,161,109,189"/>
+<area shape="rect" id="node4" href="$struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. " alt="" coords="133,161,264,189"/>
+<area shape="rect" id="node2" href="$struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="68,6,188,34"/>
+</map>

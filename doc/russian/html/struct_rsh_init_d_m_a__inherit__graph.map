@@ -1,0 +1,4 @@
+<map id="RshInitDMA" name="RshInitDMA">
+<area shape="rect" id="node2" href="$struct_rsh_init_a_d_c.html" title="Базовая структура инициализации для АЦП устройств " alt="" coords="15,83,116,111"/>
+<area shape="rect" id="node3" href="$struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="5,6,125,34"/>
+</map>

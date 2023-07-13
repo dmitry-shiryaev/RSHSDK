@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Класс RshTime</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_rsh_time-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс RshTime</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура с данными о времени.  
+ <a href="class_rsh_time.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_time_8h_source.html">RshTime.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a05725edafad244d2f706f677e70c7a52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a05725edafad244d2f706f677e70c7a52">RshTime</a> ()</td></tr>
+<tr class="separator:a05725edafad244d2f706f677e70c7a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaac1c020961700df6942f1aecdd390c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#acaac1c020961700df6942f1aecdd390c">RshTime</a> (<a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> <a class="el" href="class_rsh_time.html#a3965e23a10eb9a347efad2d726f8a772">hours</a>, <a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> <a class="el" href="class_rsh_time.html#a21508ba664fd014576302d4bced9324f">minutes</a>, <a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> <a class="el" href="class_rsh_time.html#ac4f4f3a132789e0183255113f739708c">seconds</a>=0, <a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> milliseconds=0, <a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> microseconds=0)</td></tr>
+<tr class="separator:acaac1c020961700df6942f1aecdd390c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7328bd04874bb4b982e17a5224d99452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a7328bd04874bb4b982e17a5224d99452">RshTime</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj)</td></tr>
+<tr class="separator:a7328bd04874bb4b982e17a5224d99452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79cfe7b784aaceccc2369e13ed8b75c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a79cfe7b784aaceccc2369e13ed8b75c9">operator=</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj)</td></tr>
+<tr class="separator:a79cfe7b784aaceccc2369e13ed8b75c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3be82f981c28bc834d74a41c297919"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a2e3be82f981c28bc834d74a41c297919">operator==</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj) const </td></tr>
+<tr class="separator:a2e3be82f981c28bc834d74a41c297919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8401e0c7a1833bdd172b0b7eede89d8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a8401e0c7a1833bdd172b0b7eede89d8a">operator&lt;</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj) const </td></tr>
+<tr class="separator:a8401e0c7a1833bdd172b0b7eede89d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add65f440268913425db57840c55e5f74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#add65f440268913425db57840c55e5f74">operator!=</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj) const </td></tr>
+<tr class="separator:add65f440268913425db57840c55e5f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05329a5a5453e4cdafb7f38b0b9d69e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a05329a5a5453e4cdafb7f38b0b9d69e7">operator&gt;</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj) const </td></tr>
+<tr class="separator:a05329a5a5453e4cdafb7f38b0b9d69e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7143100da4676ceee4093a8b526c4a24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a7143100da4676ceee4093a8b526c4a24">operator&lt;=</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj) const </td></tr>
+<tr class="separator:a7143100da4676ceee4093a8b526c4a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ea7c35ca310c1638787030041911c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a34ea7c35ca310c1638787030041911c6">operator&gt;=</a> (const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj) const </td></tr>
+<tr class="separator:a34ea7c35ca310c1638787030041911c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72af34bf632d705fa4f397f983addbb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a72af34bf632d705fa4f397f983addbb6">RshTime</a> (double timeElapsed_s)</td></tr>
+<tr class="memdesc:a72af34bf632d705fa4f397f983addbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование интервала времени  <a href="#a72af34bf632d705fa4f397f983addbb6">Подробнее...</a><br/></td></tr>
+<tr class="separator:a72af34bf632d705fa4f397f983addbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78bbd5840f7002cd4578fb849651d86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#ab78bbd5840f7002cd4578fb849651d86">toString</a> (const std::string &amp;format=std::string(&quot;hh:mm:ss:zzz.uuu&quot;)) const </td></tr>
+<tr class="memdesc:ab78bbd5840f7002cd4578fb849651d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в строку  <a href="#ab78bbd5840f7002cd4578fb849651d86">Подробнее...</a><br/></td></tr>
+<tr class="separator:ab78bbd5840f7002cd4578fb849651d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed3bb02285401aa1996a87ca652c3ad"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a0ed3bb02285401aa1996a87ca652c3ad">toWString</a> (const std::wstring &amp;format=std::wstring(L&quot;hh:mm:ss:zzz.uuu&quot;)) const </td></tr>
+<tr class="memdesc:a0ed3bb02285401aa1996a87ca652c3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в строку  <a href="#a0ed3bb02285401aa1996a87ca652c3ad">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0ed3bb02285401aa1996a87ca652c3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c3729be65ad0c708949193ff7d110d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a247f981169a36050706298a2fa104bbf">U64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a97c3729be65ad0c708949193ff7d110d">toMicroSeconds</a> () const </td></tr>
+<tr class="memdesc:a97c3729be65ad0c708949193ff7d110d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в микросекунды  <a href="#a97c3729be65ad0c708949193ff7d110d">Подробнее...</a><br/></td></tr>
+<tr class="separator:a97c3729be65ad0c708949193ff7d110d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a83136098f26093328448a8c10555bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf">setHMS</a> (<a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> <a class="el" href="class_rsh_time.html#a3965e23a10eb9a347efad2d726f8a772">hours</a>, <a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> <a class="el" href="class_rsh_time.html#a21508ba664fd014576302d4bced9324f">minutes</a>, <a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> <a class="el" href="class_rsh_time.html#ac4f4f3a132789e0183255113f739708c">seconds</a>=0, <a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> milliseconds=0, <a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> microseconds=0)</td></tr>
+<tr class="memdesc:a5a83136098f26093328448a8c10555bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить время в структуре  <a href="#a5a83136098f26093328448a8c10555bf">Подробнее...</a><br/></td></tr>
+<tr class="separator:a5a83136098f26093328448a8c10555bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab592690da35fd881f155b3c4b3e55c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a0ab592690da35fd881f155b3c4b3e55c">setFromElapsed</a> (double timeElapsed_s)</td></tr>
+<tr class="memdesc:a0ab592690da35fd881f155b3c4b3e55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить время в структуре  <a href="#a0ab592690da35fd881f155b3c4b3e55c">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0ab592690da35fd881f155b3c4b3e55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3965e23a10eb9a347efad2d726f8a772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a3965e23a10eb9a347efad2d726f8a772">hours</a> ()</td></tr>
+<tr class="memdesc:a3965e23a10eb9a347efad2d726f8a772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Часы  <a href="#a3965e23a10eb9a347efad2d726f8a772">Подробнее...</a><br/></td></tr>
+<tr class="separator:a3965e23a10eb9a347efad2d726f8a772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21508ba664fd014576302d4bced9324f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a21508ba664fd014576302d4bced9324f">minutes</a> ()</td></tr>
+<tr class="memdesc:a21508ba664fd014576302d4bced9324f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минуты.  <a href="#a21508ba664fd014576302d4bced9324f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a21508ba664fd014576302d4bced9324f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f4f3a132789e0183255113f739708c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#ac4f4f3a132789e0183255113f739708c">seconds</a> ()</td></tr>
+<tr class="memdesc:ac4f4f3a132789e0183255113f739708c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Секунды.  <a href="#ac4f4f3a132789e0183255113f739708c">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac4f4f3a132789e0183255113f739708c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7f5e2f12c25cf2e9112e1a26851dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a6b7f5e2f12c25cf2e9112e1a26851dda">milliSeconds</a> ()</td></tr>
+<tr class="memdesc:a6b7f5e2f12c25cf2e9112e1a26851dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Миллисекунды.  <a href="#a6b7f5e2f12c25cf2e9112e1a26851dda">Подробнее...</a><br/></td></tr>
+<tr class="separator:a6b7f5e2f12c25cf2e9112e1a26851dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1c80b2041fad30f3d7d146c78005fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a0f1c80b2041fad30f3d7d146c78005fe">microSeconds</a> ()</td></tr>
+<tr class="memdesc:a0f1c80b2041fad30f3d7d146c78005fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Микросекунды.  <a href="#a0f1c80b2041fad30f3d7d146c78005fe">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0f1c80b2041fad30f3d7d146c78005fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a7c5bfcb530a303e60c5b082e4cbf76a5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_rsh_time.html">RshTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#a7c5bfcb530a303e60c5b082e4cbf76a5">currentTime</a> ()</td></tr>
+<tr class="memdesc:a7c5bfcb530a303e60c5b082e4cbf76a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее время  <a href="#a7c5bfcb530a303e60c5b082e4cbf76a5">Подробнее...</a><br/></td></tr>
+<tr class="separator:a7c5bfcb530a303e60c5b082e4cbf76a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:ac56c8a7e24eb2f6892e3323d1aff935f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rsh_time.html#ac56c8a7e24eb2f6892e3323d1aff935f">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;obj)</td></tr>
+<tr class="separator:ac56c8a7e24eb2f6892e3323d1aff935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура с данными о времени. </p>
+<p>Максимальное значение, которое может храниться в структуре: 23ч 59м 59с 999мс 999мкс </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a05725edafad244d2f706f677e70c7a52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshTime::RshTime </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acaac1c020961700df6942f1aecdd390c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshTime::RshTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td>
+          <td class="paramname"><em>hours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td>
+          <td class="paramname"><em>minutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td>
+          <td class="paramname"><em>seconds</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>&#160;</td>
+          <td class="paramname"><em>milliseconds</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>&#160;</td>
+          <td class="paramname"><em>microseconds</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf">setHMS()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_acaac1c020961700df6942f1aecdd390c_cgraph.png" border="0" usemap="#class_rsh_time_acaac1c020961700df6942f1aecdd390c_cgraph" alt=""/></div>
+<map name="class_rsh_time_acaac1c020961700df6942f1aecdd390c_cgraph" id="class_rsh_time_acaac1c020961700df6942f1aecdd390c_cgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf" title="Установить время в структуре " alt="" coords="213,57,365,85"/><area shape="rect" id="node3" href="class_rsh_time.html#a3965e23a10eb9a347efad2d726f8a772" title="Часы " alt="" coords="423,5,559,33"/><area shape="rect" id="node4" href="class_rsh_time.html#a21508ba664fd014576302d4bced9324f" title="Минуты. " alt="" coords="413,57,568,85"/><area shape="rect" id="node5" href="class_rsh_time.html#ac4f4f3a132789e0183255113f739708c" title="Секунды. " alt="" coords="413,109,568,137"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7328bd04874bb4b982e17a5224d99452"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshTime::RshTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a72af34bf632d705fa4f397f983addbb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshTime::RshTime </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeElapsed_s</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование интервала времени </p>
+<p>Преобразование времени (в секундах, число с плавающей точкой) в полное представление - часы, минуты, секунды, миллисекунды и микросекунды.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeElapsed_s</td><td>Время в секундах</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Прим.</dt><dd>Если время timeElapsed_s больше либо равно 86400.0 (сутки), будет установлено значение 23ч 59м 59с 999мс 999мкс. </dd></dl>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_time.html#a0ab592690da35fd881f155b3c4b3e55c">setFromElapsed()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_a72af34bf632d705fa4f397f983addbb6_cgraph.png" border="0" usemap="#class_rsh_time_a72af34bf632d705fa4f397f983addbb6_cgraph" alt=""/></div>
+<map name="class_rsh_time_a72af34bf632d705fa4f397f983addbb6_cgraph" id="class_rsh_time_a72af34bf632d705fa4f397f983addbb6_cgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a0ab592690da35fd881f155b3c4b3e55c" title="Установить время в структуре " alt="" coords="213,5,427,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a7c5bfcb530a303e60c5b082e4cbf76a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_time.html">RshTime</a> RshTime::currentTime </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущее время </p>
+<p>Данный метод заполняет структуру <a class="el" href="class_rsh_time.html" title="Структура с данными о времени. ">RshTime</a> - поля структуры получают значения, соответствующие системному времени.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Заполненная структура <a class="el" href="class_rsh_time.html" title="Структура с данными о времени. ">RshTime</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3965e23a10eb9a347efad2d726f8a772"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> RshTime::hours </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Часы </p>
+
+<p>Используется в <a class="el" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf">setHMS()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_a3965e23a10eb9a347efad2d726f8a772_icgraph.png" border="0" usemap="#class_rsh_time_a3965e23a10eb9a347efad2d726f8a772_icgraph" alt=""/></div>
+<map name="class_rsh_time_a3965e23a10eb9a347efad2d726f8a772_icgraph" id="class_rsh_time_a3965e23a10eb9a347efad2d726f8a772_icgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf" title="Установить время в структуре " alt="" coords="189,5,341,33"/><area shape="rect" id="node3" href="class_rsh_time.html#acaac1c020961700df6942f1aecdd390c" title="RshTime::RshTime" alt="" coords="390,5,549,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f1c80b2041fad30f3d7d146c78005fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> RshTime::microSeconds </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Микросекунды. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b7f5e2f12c25cf2e9112e1a26851dda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> RshTime::milliSeconds </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Миллисекунды. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21508ba664fd014576302d4bced9324f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> RshTime::minutes </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минуты. </p>
+
+<p>Используется в <a class="el" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf">setHMS()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_a21508ba664fd014576302d4bced9324f_icgraph.png" border="0" usemap="#class_rsh_time_a21508ba664fd014576302d4bced9324f_icgraph" alt=""/></div>
+<map name="class_rsh_time_a21508ba664fd014576302d4bced9324f_icgraph" id="class_rsh_time_a21508ba664fd014576302d4bced9324f_icgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf" title="Установить время в структуре " alt="" coords="208,5,360,33"/><area shape="rect" id="node3" href="class_rsh_time.html#acaac1c020961700df6942f1aecdd390c" title="RshTime::RshTime" alt="" coords="409,5,567,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="add65f440268913425db57840c55e5f74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshTime::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8401e0c7a1833bdd172b0b7eede89d8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshTime::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7143100da4676ceee4093a8b526c4a24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshTime::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79cfe7b784aaceccc2369e13ed8b75c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rsh_time.html">RshTime</a> &amp; RshTime::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e3be82f981c28bc834d74a41c297919"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshTime::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05329a5a5453e4cdafb7f38b0b9d69e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshTime::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34ea7c35ca310c1638787030041911c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshTime::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4f4f3a132789e0183255113f739708c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a> RshTime::seconds </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Секунды. </p>
+
+<p>Используется в <a class="el" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf">setHMS()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_ac4f4f3a132789e0183255113f739708c_icgraph.png" border="0" usemap="#class_rsh_time_ac4f4f3a132789e0183255113f739708c_icgraph" alt=""/></div>
+<map name="class_rsh_time_ac4f4f3a132789e0183255113f739708c_icgraph" id="class_rsh_time_ac4f4f3a132789e0183255113f739708c_icgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a5a83136098f26093328448a8c10555bf" title="Установить время в структуре " alt="" coords="208,5,360,33"/><area shape="rect" id="node3" href="class_rsh_time.html#acaac1c020961700df6942f1aecdd390c" title="RshTime::RshTime" alt="" coords="409,5,567,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ab592690da35fd881f155b3c4b3e55c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshTime::setFromElapsed </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeElapsed_s</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить время в структуре </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeElapsed_s</td><td>Время в секундах</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Прим.</dt><dd>Если время timeElapsed_s больше либо равно 86400.0 (сутки), будет установлено значение 23ч 59м 59с 999мс 999мкс. </dd></dl>
+
+<p>Используется в <a class="el" href="class_rsh_time.html#a72af34bf632d705fa4f397f983addbb6">RshTime()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_a0ab592690da35fd881f155b3c4b3e55c_icgraph.png" border="0" usemap="#class_rsh_time_a0ab592690da35fd881f155b3c4b3e55c_icgraph" alt=""/></div>
+<map name="class_rsh_time_a0ab592690da35fd881f155b3c4b3e55c_icgraph" id="class_rsh_time_a0ab592690da35fd881f155b3c4b3e55c_icgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a72af34bf632d705fa4f397f983addbb6" title="Преобразование интервала времени " alt="" coords="267,5,426,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a83136098f26093328448a8c10555bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshTime::setHMS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td>
+          <td class="paramname"><em>hours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td>
+          <td class="paramname"><em>minutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a3cb25ca6f51f003950f9625ff05536fc">U8</a>&#160;</td>
+          <td class="paramname"><em>seconds</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>&#160;</td>
+          <td class="paramname"><em>milliseconds</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>&#160;</td>
+          <td class="paramname"><em>microseconds</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить время в структуре </p>
+
+<p>Перекрестные ссылки <a class="el" href="class_rsh_time.html#a3965e23a10eb9a347efad2d726f8a772">hours()</a>, <a class="el" href="class_rsh_time.html#a21508ba664fd014576302d4bced9324f">minutes()</a> и <a class="el" href="class_rsh_time.html#ac4f4f3a132789e0183255113f739708c">seconds()</a>.</p>
+
+<p>Используется в <a class="el" href="class_rsh_time.html#acaac1c020961700df6942f1aecdd390c">RshTime()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_a5a83136098f26093328448a8c10555bf_cgraph.png" border="0" usemap="#class_rsh_time_a5a83136098f26093328448a8c10555bf_cgraph" alt=""/></div>
+<map name="class_rsh_time_a5a83136098f26093328448a8c10555bf_cgraph" id="class_rsh_time_a5a83136098f26093328448a8c10555bf_cgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#a3965e23a10eb9a347efad2d726f8a772" title="Часы " alt="" coords="215,5,351,33"/><area shape="rect" id="node3" href="class_rsh_time.html#a21508ba664fd014576302d4bced9324f" title="Минуты. " alt="" coords="205,57,360,85"/><area shape="rect" id="node4" href="class_rsh_time.html#ac4f4f3a132789e0183255113f739708c" title="Секунды. " alt="" coords="205,109,360,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_a5a83136098f26093328448a8c10555bf_icgraph.png" border="0" usemap="#class_rsh_time_a5a83136098f26093328448a8c10555bf_icgraph" alt=""/></div>
+<map name="class_rsh_time_a5a83136098f26093328448a8c10555bf_icgraph" id="class_rsh_time_a5a83136098f26093328448a8c10555bf_icgraph">
+<area shape="rect" id="node2" href="class_rsh_time.html#acaac1c020961700df6942f1aecdd390c" title="RshTime::RshTime" alt="" coords="206,5,365,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a97c3729be65ad0c708949193ff7d110d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a247f981169a36050706298a2fa104bbf">U64</a> RshTime::toMicroSeconds </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование в микросекунды </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Текущее хранящееся в структуре время в микросекундах Пересчет производится суммированием всех полей структуры. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab78bbd5840f7002cd4578fb849651d86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RshTime::toString </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>std::string(&quot;hh:mm:ss:zzz.uuu&quot;)</code>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование в строку </p>
+<p>Формат задается в виде строки, можно использовать следующие ключевые слова:<br/>
+ <b>hh</b> - часы<br/>
+ <b>mm</b> - минуты<br/>
+ <b>ss</b> - секунды<br/>
+ <b>zzz</b> - миллисекунды<br/>
+ <b>uuu</b> - микросекунды<br/>
+ Например, для формата "hh.mm" будет сформированаа строка вида "13.09"</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>По умолчанию используется формат "hh:mm:ss:zzz.uuu" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Используется в <a class="el" href="_rsh_time_8cpp.html#ac56c8a7e24eb2f6892e3323d1aff935f">operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rsh_time_ab78bbd5840f7002cd4578fb849651d86_icgraph.png" border="0" usemap="#class_rsh_time_ab78bbd5840f7002cd4578fb849651d86_icgraph" alt=""/></div>
+<map name="class_rsh_time_ab78bbd5840f7002cd4578fb849651d86_icgraph" id="class_rsh_time_ab78bbd5840f7002cd4578fb849651d86_icgraph">
+<area shape="rect" id="node2" href="_rsh_time_8cpp.html#ac56c8a7e24eb2f6892e3323d1aff935f" title="operator\&lt;\&lt;" alt="" coords="209,5,319,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ed3bb02285401aa1996a87ca652c3ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring RshTime::toWString </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>std::wstring(L&quot;hh:mm:ss:zzz.uuu&quot;)</code>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование в строку </p>
+<p>Формат задается в виде строки, можно использовать следующие ключевые слова:<br/>
+ <b>hh</b> - часы<br/>
+ <b>mm</b> - минуты<br/>
+ <b>ss</b> - секунды<br/>
+ <b>zzz</b> - миллисекунды<br/>
+ <b>uuu</b> - микросекунды<br/>
+ Например, для формата "hh.mm" будет сформированаа строка вида "13.09"</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>По умолчанию используется формат "hh:mm:ss:zzz.uuu" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="ac56c8a7e24eb2f6892e3323d1aff935f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_rsh_time.html">RshTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_time_8h_source.html">RshTime.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_time_8cpp.html">RshTime.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:34. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

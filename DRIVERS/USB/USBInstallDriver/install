@@ -1,0 +1,32 @@
+#!bin/sh
+
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root. Terminated."
+   exit 1
+fi
+
+printf "\nCopying udev rules . . ."
+cp ./usb/50-rsh_devices.rules /etc/udev/rules.d
+
+printf "\nCompiling device naming utility . . ."
+gcc -O2 ./usb/device_namer.c -o ./usb/device_namer
+
+printf "\nCopying it to /usr/local/bin . . ."
+cp ./usb/device_namer /usr/local/bin
+rm ./usb/device_namer
+
+printf "\nInstalling USB driver . . ."
+echo lausb >> /etc/modules
+
+USB_DRIVER_DEST_DIR="/lib/modules/$(uname -r)/kernel/drivers/usb/rsh"
+if [ -d  "$USB_DRIVER_DEST_DIR" ]; then
+  rm -r "$USB_DRIVER_DEST_DIR"
+fi
+
+mkdir "$USB_DRIVER_DEST_DIR"
+cp ../LAUSB/lausb.ko "$USB_DRIVER_DEST_DIR"
+depmod -a
+
+
+exit 0
+

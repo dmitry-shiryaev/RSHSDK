@@ -1,0 +1,4 @@
+<map id="RshCopyStringToBuffer" name="RshCopyStringToBuffer">
+<area shape="rect" id="node2" href="$class_rsh_buffer_type.html#a9af2115b8d89da7172c435eb509aa446" title="Копирование данных в буфер из указанной области памяти " alt="" coords="247,5,422,33"/>
+<area shape="rect" id="node3" href="$class_rsh_buffer_type.html#aaafd74e39e8ae442767e40d2f4ed6afd" title="Получение реального размера буфера в элементах. " alt="" coords="246,57,423,85"/>
+</map>

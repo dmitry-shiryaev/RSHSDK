@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура RshDllInterfaceKey</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_rsh_dll_interface_key-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура RshDllInterfaceKey</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Данная структура используется для передачи параметров в методы класса <a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a>.  
+ <a href="struct_rsh_dll_interface_key.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_dll_interface_key_8h_source.html">RshDllInterfaceKey.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса RshDllInterfaceKey:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_dll_interface_key__coll__graph.png" border="0" usemap="#_rsh_dll_interface_key_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_dll_interface_key_coll__map" id="_rsh_dll_interface_key_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a0df2282d0609fa0af0cbdce1ef480ded"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#a0df2282d0609fa0af0cbdce1ef480ded">RshDllInterfaceKey</a> (const char *libraryName, void **Interface, void **Factory=((<a class="el" href="_rsh_def_chk_8h.html#a7927e087749615dae3114cc27b91c86d">VOID</a> *) 0x0), void *Parameter=((VOID *) 0x0))</td></tr>
+<tr class="separator:a0df2282d0609fa0af0cbdce1ef480ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadebd3746968bb0cbc530a130e5c3ee9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#aadebd3746968bb0cbc530a130e5c3ee9">RshDllInterfaceKey</a> (const char *deviceName, <a class="el" href="struct_i_rsh_device.html">IRshDevice</a> *&amp;Interface)</td></tr>
+<tr class="separator:aadebd3746968bb0cbc530a130e5c3ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5f57a0e8ba160ab6c57f7cf240a7ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#a0d5f57a0e8ba160ab6c57f7cf240a7ad">~RshDllInterfaceKey</a> ()</td></tr>
+<tr class="separator:a0d5f57a0e8ba160ab6c57f7cf240a7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a2bf06dcaccb9591255fe548635c68357"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#a2bf06dcaccb9591255fe548635c68357">_Name</a></td></tr>
+<tr class="memdesc:a2bf06dcaccb9591255fe548635c68357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя устройства.  <a href="#a2bf06dcaccb9591255fe548635c68357">Подробнее...</a><br/></td></tr>
+<tr class="separator:a2bf06dcaccb9591255fe548635c68357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2040e070adb7e868a988031f5ccf691b"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#a2040e070adb7e868a988031f5ccf691b">_Interface</a></td></tr>
+<tr class="memdesc:a2040e070adb7e868a988031f5ccf691b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на загружаемый интерфейс.  <a href="#a2040e070adb7e868a988031f5ccf691b">Подробнее...</a><br/></td></tr>
+<tr class="separator:a2040e070adb7e868a988031f5ccf691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add82dd4ef5041633ef26c4287b2d87c0"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#add82dd4ef5041633ef26c4287b2d87c0">_Factory</a></td></tr>
+<tr class="separator:add82dd4ef5041633ef26c4287b2d87c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0248092d237014b2dba38693a070db2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_dll_interface_key.html#ab0248092d237014b2dba38693a070db2">_Parameter</a></td></tr>
+<tr class="separator:ab0248092d237014b2dba38693a070db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Данная структура используется для передачи параметров в методы класса <a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a>. </p>
+<p>Используя метод <a class="el" href="class_rsh_dll_client.html#acb6fcca3a0de67f78cc9ccedde321841" title="Получение интерфейса устройства (IRshDevice). ">RshDllClient::GetDeviceInterface()</a> и другие, можно загрузить интерфейс устройства (<a class="el" href="struct_i_rsh_device.html" title="Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО &quot;Руднев-Шиляев&quot;. ">IRshDevice</a>) из динамической библиотеки.<br/>
+ Дополнительно, можно получить интерфейс фабрики (<a class="el" href="struct_i_rsh_factory.html" title="Интерфейс IRshFactory - абстрактная фабрика классов. ">IRshFactory</a>), а также передать дополнительные параметры инстанцирования в нее.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#_a7">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#_a7">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#_a7">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#_a7">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#_a7">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#_a7">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#_a7">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#_a7">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#_a7">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#_a7">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#_a7">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#_a7">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#_a7">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#_a7">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#_a7">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#_a7">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#_a7">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#_a7">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#_a7">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#_a7">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#_a7">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#_a7">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#_a7">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#_a7">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#_a7">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#_a7">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#_a7">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#_a7">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#_a7">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#_a7">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#_a7">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#_a7">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#_a7">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#_a7">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#_a7">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#_a7">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#_a7">Leonardo2_Port.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#_a7">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#_a4">Python_Continuous.cpp</a>, <a class="el" href="_python__port_8cpp-example.html#_a4">Python_Port.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#_a7">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#_a7">Sirius_StartStop.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a0df2282d0609fa0af0cbdce1ef480ded"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshDllInterfaceKey::RshDllInterfaceKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>libraryName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>Interface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>Factory</em> = <code>((<a class="el" href="_rsh_def_chk_8h.html#a7927e087749615dae3114cc27b91c86d">VOID</a>&#160;*)&#160;0x0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>Parameter</em> = <code>((<a class="el" href="_rsh_def_chk_8h.html#a7927e087749615dae3114cc27b91c86d">VOID</a>&#160;*)&#160;0x0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aadebd3746968bb0cbc530a130e5c3ee9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshDllInterfaceKey::RshDllInterfaceKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>deviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_i_rsh_device.html">IRshDevice</a> *&amp;&#160;</td>
+          <td class="paramname"><em>Interface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d5f57a0e8ba160ab6c57f7cf240a7ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshDllInterfaceKey::~RshDllInterfaceKey </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="add82dd4ef5041633ef26c4287b2d87c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void** RshDllInterfaceKey::_Factory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2040e070adb7e868a988031f5ccf691b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void** RshDllInterfaceKey::_Interface</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на загружаемый интерфейс. </p>
+<p>В данном поле будет возвращен объект с интерфейсом нужной библиотеки (или устройства) после вызова метода <a class="el" href="class_rsh_dll_client.html#a9c77d5416b90a752666a602febb7f7d2" title="Получение интерфейса библиотеки. ">RshDllClient::GetLibraryInterface()</a> ( <a class="el" href="class_rsh_dll_client.html#acb6fcca3a0de67f78cc9ccedde321841" title="Получение интерфейса устройства (IRshDevice). ">RshDllClient::GetDeviceInterface()</a> для устройства).</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bf06dcaccb9591255fe548635c68357"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* RshDllInterfaceKey::_Name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Имя устройства. </p>
+<p>Имя устройства (или библиотеки), соответствующее записи в реестре (LA20USB, LA1_5PCI и т.д.)</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Получить полный список всех зарегистрированных устройств (или библиотек) можно с помощью метода <a class="el" href="class_rsh_dll_client.html#a78f78a592b71af8516c6f0d676bed238" title="Получение списка зарегистрированных библиотек. ">RshDllClient::GetRegisteredList()</a>.<br/>
+</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0248092d237014b2dba38693a070db2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* RshDllInterfaceKey::_Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_dll_interface_key_8h_source.html">RshDllInterfaceKey.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_dll_interface_key_8cpp.html">RshDllInterfaceKey.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:33. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

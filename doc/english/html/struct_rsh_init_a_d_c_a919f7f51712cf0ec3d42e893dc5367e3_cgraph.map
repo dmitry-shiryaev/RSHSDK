@@ -1,0 +1,4 @@
+<map id="RshInitADC::ActiveChannelsNumber" name="RshInitADC::ActiveChannelsNumber">
+<area shape="rect" id="node2" href="$struct_rsh_channel.html#a626796764804dc139e86ab45dadf6c0d" title="Check RshChannel::Used flag. " alt="" coords="276,5,441,33"/>
+<area shape="rect" id="node3" href="$class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Get actual buffer size in data elements. " alt="" coords="275,57,443,85"/>
+</map>

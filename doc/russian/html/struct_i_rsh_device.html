@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура IRshDevice</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="struct_i_rsh_device-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура IRshDevice<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО "Руднев-Шиляев".  
+ <a href="struct_i_rsh_device.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_i_rsh_device_8h_source.html">IRshDevice.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2b02354ea4ee4638ac9685f546f5b7e8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_rsh_device.html#a2b02354ea4ee4638ac9685f546f5b7e8">Connect</a> (<a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *key, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> mode=<a class="el" href="_rsh_consts___connect_modes_8h.html#a1ad88ea368f4e8f621911861d587982da7343238b45bc271b724b854f190402c3">RSH_CONNECT_MODE_BASE</a>)=0</td></tr>
+<tr class="memdesc:a2b02354ea4ee4638ac9685f546f5b7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подключение к заданному устройству.  <a href="#a2b02354ea4ee4638ac9685f546f5b7e8">Подробнее...</a><br/></td></tr>
+<tr class="separator:a2b02354ea4ee4638ac9685f546f5b7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4706cd2760eb548240eeb8f49041f964"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964">Init</a> (<a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *structure, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> mode=<a class="el" href="_rsh_consts___init_modes_8h.html#a053ac212f2672ff50a8e4c2768cb5305a49ae355f6059908d48aeaf1f15734483">RSH_INIT_MODE_INIT</a>)=0</td></tr>
+<tr class="memdesc:a4706cd2760eb548240eeb8f49041f964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка параметров сбора и настройка устройства.  <a href="#a4706cd2760eb548240eeb8f49041f964">Подробнее...</a><br/></td></tr>
+<tr class="separator:a4706cd2760eb548240eeb8f49041f964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d6a77d7311d54deea8c02ad77e66fc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_rsh_device.html#a47d6a77d7311d54deea8c02ad77e66fc">Start</a> ()=0</td></tr>
+<tr class="memdesc:a47d6a77d7311d54deea8c02ad77e66fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск процесса сбора данных или генерации сигнала.  <a href="#a47d6a77d7311d54deea8c02ad77e66fc">Подробнее...</a><br/></td></tr>
+<tr class="separator:a47d6a77d7311d54deea8c02ad77e66fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ed2025368f7aabe6db1ac49b56b553"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_rsh_device.html#a58ed2025368f7aabe6db1ac49b56b553">Stop</a> ()=0</td></tr>
+<tr class="memdesc:a58ed2025368f7aabe6db1ac49b56b553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остановка процесса сбора данных или генерации сигнала.  <a href="#a58ed2025368f7aabe6db1ac49b56b553">Подробнее...</a><br/></td></tr>
+<tr class="separator:a58ed2025368f7aabe6db1ac49b56b553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe82265d052163e34a1ffab4fec1c6d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d">GetData</a> (<a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *buffer, <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> flags=<a class="el" href="_rsh_consts___get_data_modes_8h.html#aa66f31cd5fa19e26cdb77dee428ac536ac0b38806d84205e87294f73f71fd3741">RSH_DATA_MODE_NO_FLAGS</a>)=0</td></tr>
+<tr class="memdesc:a5fe82265d052163e34a1ffab4fec1c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение (или отправка) буфера с данными.  <a href="#a5fe82265d052163e34a1ffab4fec1c6d">Подробнее...</a><br/></td></tr>
+<tr class="separator:a5fe82265d052163e34a1ffab4fec1c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afa4c54b4302eca2d5827fe9d9c1468"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468">Get</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> mode, <a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *adr=((<a class="el" href="_rsh_def_chk_8h.html#a7927e087749615dae3114cc27b91c86d">VOID</a> *) 0x0))=0</td></tr>
+<tr class="memdesc:a8afa4c54b4302eca2d5827fe9d9c1468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение различной информации об устройстве и библиотеке абстракции.  <a href="#a8afa4c54b4302eca2d5827fe9d9c1468">Подробнее...</a><br/></td></tr>
+<tr class="separator:a8afa4c54b4302eca2d5827fe9d9c1468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО "Руднев-Шиляев". </p>
+<p>Основной интерфейс для управления устройствами, выпускаемыми фирмой ЗАО "Руднев-Шиляев", а также некоторыми устройствами других фирм.<br/>
+ Обычный сценарий работы - получение объекта, реализующего интерфейс <a class="el" href="struct_i_rsh_device.html" title="Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО &quot;Руднев-Шиляев&quot;. ">IRshDevice</a>, из библиотеки абстракции, которая может быть загружена используя класс <a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a>. После этого пользователь получает доступ ко всем возможностям устройства, при этом ему не нужно знать низкоуровневых деталей реализации аппаратной структуры устройства и драйвера.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Некоторые устройства ЗАО "Руднев-Шиляев" не используют этот интерфейс, например, усилители заряда подключаются к компьютеру через последовательный порт и управляются по протоколу RS-232.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_rsh_dll_client.html" title="Класс для работы с dll. ">RshDllClient</a>. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#_a5">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#_a5">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#_a0">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__b_u_f_f_e_r__r_e_a_d_y__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_BUFFER_READY_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__e_x_t__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_EXT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__i_n_f_o_r_m_a_t_i_o_n__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_DEVICE_INFORMATION_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__i_s__c_a_p_a_b_l_e__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_DEVICE_IS_CAPABLE_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__b_u_f_f_e_r__r_e_a_d_y__e_v_e_n_t__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_WAIT_BUFFER_READY_EVENT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__g_a_t_h_e_r_i_n_g__c_o_m_p_l_e_t_e__r_u_8cpp-example.html#_a0">IRshDevice_Get_RSH_GET_WAIT_GATHERING_COMPLETE_RU.cpp</a>, <a class="el" href="_i_rsh_device__get_data__digital_input__r_u_8cpp-example.html#_a0">IRshDevice_GetData_DigitalInput_RU.cpp</a>, <a class="el" href="_i_rsh_device__init__rsh_init_d_m_a__r_u_8cpp-example.html#_a0">IRshDevice_Init_RshInitDMA_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#_a5">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#_a5">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#_a5">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#_a5">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#_a5">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#_a5">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#_a5">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#_a5">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#_a5">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#_a5">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#_a5">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#_a5">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#_a5">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#_a5">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#_a5">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#_a5">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#_a5">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#_a5">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#_a5">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#_a5">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#_a5">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#_a5">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#_a5">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#_a5">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#_a5">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#_a5">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#_a5">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#_a5">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#_a5">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#_a5">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#_a5">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#_a5">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#_a5">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#_a5">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#_a5">Leonardo2_Port.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#_a5">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#_a3">Python_Continuous.cpp</a>, <a class="el" href="_python__port_8cpp-example.html#_a3">Python_Port.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#_a5">Python_StartStop.cpp</a>, <a class="el" href="_rsh_init_d_a_c__r_u_8cpp-example.html#_a0">RshInitDAC_RU.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#_a5">Sirius_StartStop.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a2b02354ea4ee4638ac9685f546f5b7e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall IRshDevice::Connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="_rsh_consts___connect_modes_8h.html#a1ad88ea368f4e8f621911861d587982da7343238b45bc271b724b854f190402c3">RSH_CONNECT_MODE_BASE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Подключение к заданному устройству. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Идентификационный ключ устройства. В зависимости от выбранного режима подключения может быть индексом устройства, его серийным номером или строкой подключения.<br/>
+ В качестве ключа используется структура <a class="el" href="struct_rsh_device_key.html" title="Идентификационный ключ устройства ">RshDeviceKey</a> (тип параметра <a class="el" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. ">RshBaseType</a> оставлен для большей универсальности).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Режим подключения к устройству с использованием серийного номера устройства, его индекса или строки подключения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Данный метод нужно вызывать первым, до вызова любых других методов доступа к устройству.<br/>
+ После успешного вызова этого метода устройство полностью готово к использованию и может быть настроено для сбора данных. Большинство других методов интерфейса (такие как <a class="el" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">Init()</a>, <a class="el" href="struct_i_rsh_device.html#a47d6a77d7311d54deea8c02ad77e66fc" title="Запуск процесса сбора данных или генерации сигнала. ">Start()</a>) вернут ошибку, если вызвать их до вызова <a class="el" href="struct_i_rsh_device.html#a2b02354ea4ee4638ac9685f546f5b7e8" title="Подключение к заданному устройству. ">Connect()</a>.<br/>
+ Можно, однако, получить некоторые статические параметры библиотеки абстракции и устройства, используя метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">Get()</a>.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если вы используете режим подключения <a class="el" href="_rsh_consts___connect_modes_8h.html#a1ad88ea368f4e8f621911861d587982da7343238b45bc271b724b854f190402c3" title="Подключение к устройству по его индексу. ">RSH_CONNECT_MODE_BASE</a>, нумерация устройств начинается с 1. Порядок устройств определяется операционной системой, и зависит от используемого разъема (слота), а так же очередности подключения устройств к компьютеру.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">Get()</a> | <a class="el" href="_rsh_consts___connect_modes_8h.html#a1ad88ea368f4e8f621911861d587982d" title="Варианты подключения к устройству. ">RSH_CONNECT_MODES</a> | <a class="el" href="struct_rsh_device_key.html" title="Идентификационный ключ устройства ">RshDeviceKey</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#a19">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#a19">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__r_u_8cpp-example.html#a8">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a18">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a18">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a18">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a18">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a18">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a18">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a18">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a18">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a18">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a18">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a18">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a18">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a18">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a18">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a18">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a18">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a18">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a18">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a18">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a18">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a18">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a18">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a18">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a18">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a18">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a18">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a18">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a18">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a18">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a18">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a18">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a18">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a18">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a18">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a18">Leonardo2_Port.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a18">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a13">Python_Continuous.cpp</a>, <a class="el" href="_python__port_8cpp-example.html#a15">Python_Port.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a18">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a18">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a8afa4c54b4302eca2d5827fe9d9c1468"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall IRshDevice::Get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *&#160;</td>
+          <td class="paramname"><em>adr</em> = <code>((<a class="el" href="_rsh_def_chk_8h.html#a7927e087749615dae3114cc27b91c86d">VOID</a>&#160;*)&#160;0x0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение различной информации об устройстве и библиотеке абстракции. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Одна из констант списка <a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5" title="Коды операций для метода IRshDevice::Get() интерфейса IRshDevice (и некоторых других). ">RSH_GET</a>. В зависимости от используемой константы, действие метода будет меняться. Все необходимые сведения приведены в описании конкретной константы.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">adr</td><td>Адрес объекта, унаследованного от класса <a class="el" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. ">RshBaseType</a>. Какой конкретно тип будет использоваться, зависит от используемого режима (параметр <b>mode</b> ). В некоторых случаях можно передавать NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Данный метод используется для выполнения широкого спектра действий ввиду его гибкости. С помощью этого метода можно получать информацию (как статическую, так и динамическую) об устройстве и библиотеке абстракции, а также управлять некоторыми функциями библиотеки и устройства.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Всегда проверяйте возвращаемое методом значение, чтобы быть уверенными в том, что полученная информация актуальна.<br/>
+ В большинстве случаев, передаваемый в метод объект будет модифицирован, и после вызова метода будет содержать запрошенные данные. Но в некоторых случаях данные отправляются в устройство (или библиотеку абстракции). В этих случаях, константы из списка <a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5" title="Коды операций для метода IRshDevice::Get() интерфейса IRshDevice (и некоторых других). ">RSH_GET</a> имеют суффикс <b>_SET</b>, и данные должны быть подготовлены <em>до</em> вызова метода.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5" title="Коды операций для метода IRshDevice::Get() интерфейса IRshDevice (и некоторых других). ">RSH_GET</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#a10">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#a10">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__double_freq_mode__r_u_8cpp-example.html#a2">IRshDevice_DoubleFreqMode_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__b_u_f_f_e_r__r_e_a_d_y__r_u_8cpp-example.html#a3">IRshDevice_Get_RSH_GET_BUFFER_READY_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__e_x_t__r_u_8cpp-example.html#a3">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_EXT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__b_a_s_e__l_i_s_t__r_u_8cpp-example.html#a3">IRshDevice_Get_RSH_GET_DEVICE_BASE_LIST_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__i_n_f_o_r_m_a_t_i_o_n__r_u_8cpp-example.html#a2">IRshDevice_Get_RSH_GET_DEVICE_INFORMATION_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__d_e_v_i_c_e__i_s__c_a_p_a_b_l_e__r_u_8cpp-example.html#a3">IRshDevice_Get_RSH_GET_DEVICE_IS_CAPABLE_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__b_u_f_f_e_r__r_e_a_d_y__e_v_e_n_t__r_u_8cpp-example.html#a3">IRshDevice_Get_RSH_GET_WAIT_BUFFER_READY_EVENT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__g_a_t_h_e_r_i_n_g__c_o_m_p_l_e_t_e__r_u_8cpp-example.html#a9">IRshDevice_Get_RSH_GET_WAIT_GATHERING_COMPLETE_RU.cpp</a>, <a class="el" href="_i_rsh_device__get_data__digital_input__r_u_8cpp-example.html#a2">IRshDevice_GetData_DigitalInput_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a10">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a10">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a10">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a10">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a10">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a10">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a10">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a10">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a10">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a10">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a10">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a10">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a10">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a10">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a10">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a10">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a10">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a10">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a10">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a10">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a10">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a10">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a10">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a10">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a10">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a10">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a10">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a10">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a10">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a10">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a10">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a10">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a10">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a10">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a10">Leonardo2_Port.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a10">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a8">Python_Continuous.cpp</a>, <a class="el" href="_python__port_8cpp-example.html#a8">Python_Port.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a10">Python_StartStop.cpp</a>, <a class="el" href="_rsh_init_d_a_c__r_u_8cpp-example.html#a2">RshInitDAC_RU.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a10">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a5fe82265d052163e34a1ffab4fec1c6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall IRshDevice::GetData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="_rsh_consts___get_data_modes_8h.html#aa66f31cd5fa19e26cdb77dee428ac536ac0b38806d84205e87294f73f71fd3741">RSH_DATA_MODE_NO_FLAGS</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение (или отправка) буфера с данными. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>Буфер для данных (или буфер с данными при генерации сигнала). Одна из реализаций шаблона <a class="el" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RshBufferType</a> для простых типов данных.<br/>
+ Чаще всего для передачи данных используются типы буфера <a class="el" href="_rsh_buffer_type_8h.html#a58d03401b38e489d26adf524e2e195a3" title="Буфер для типа данных S8. ">RSH_BUFFER_S8</a>, <a class="el" href="_rsh_buffer_type_8h.html#a7093791749e8184ea97e9b0202d564d9" title="Буфер для типа данных S16. ">RSH_BUFFER_S16</a>, <a class="el" href="_rsh_buffer_type_8h.html#a80550270e3194347ca417e8cede4a3da" title="Буфер для типа данных S32. ">RSH_BUFFER_S32</a>. Данные всегда приводятся к старшему биту (исключение - специальные дополнительные флаги преобразования данных, см. <b>flags</b>).<br/>
+ Кроме того, иногда удобно использовать <a class="el" href="_rsh_buffer_type_8h.html#a67c47cf06db69a2777f74a8811d8f7b0" title="Буфер для данных типа double. ">RSH_BUFFER_DOUBLE</a>, в котором данные будут сразу в вольтах, а не в МЗР.<br/>
+ Пользователь должен сам выделить память под данные перед вызовом <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">GetData()</a>. Это можно сделать с помощью метода <a class="el" href="class_rsh_buffer_type.html#aaf89018b24772907e3246ca3f105be6b" title="Выделение памяти для данных буфера ">RshBufferType::Allocate</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Дополнительные флаги преобразования данных. Могут использоваться, например, для того, чтобы получить сигналы с цифровых линий одновременно с данными аналоговых каналов. Полный список флагов: <a class="el" href="_rsh_consts___get_data_modes_8h.html#aa66f31cd5fa19e26cdb77dee428ac536" title="Дополнительные флаги преобразования данных для метода IRshDevice::GetData(). ">RSH_DATA_MODES</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Этот метод используется для передачи данных из (или к) библиотеке абстракции устройства. После получения события <a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a1ee8707ed41d6ea6e8954156aaf9c192" title="Ожидание завершения процесса сбора и передачи данных. ">RSH_GET_WAIT_BUFFER_READY_EVENT</a> данные готовы (уже находятся в компьютере, в памяти библиотеки абстракции). Можно забрать их в свою программу, предварительно выделив память в объекте <a class="el" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RshBufferType</a>. Если размер выделенного буфера окажется меньше, чем размер доступных данных, ничего страшного не произойдет - буфер будет заполнен полностью. В обратной ситуации (когда размер выделенного буфера больше чем размер доступных данных) в буфер будет переложено столько данных, сколько есть в наличии. В поле <a class="el" href="class_rsh_buffer_type.html#a07d02b9f4420045e3c67eaf1c276afbb" title="Container size. Number of actual elements. Same as Size(), used for STL compatibility only...">RshBufferType::size</a> после вызова <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">GetData()</a> содержится фактический размер переданных данных.<br/>
+ Все размеры всегда в словах (отсчетах АЦП).</p>
+<dl class="section remark"><dt>Прим.</dt><dd>В структурах инициализации размер буфера всегда привязан к каналу. Если, к примеру, при инициализации был задан размер 2048 отсчетов, и выбрано 2 канала, следует ожидать 2048*2 = 4096 отсчетов при вызове метода <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">GetData()</a>.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RshBufferType</a> | <a class="el" href="_rsh_consts___get_data_modes_8h.html#aa66f31cd5fa19e26cdb77dee428ac536" title="Дополнительные флаги преобразования данных для метода IRshDevice::GetData(). ">RSH_DATA_MODES</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#a37">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#a37">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__b_u_f_f_e_r__r_e_a_d_y__r_u_8cpp-example.html#a6">IRshDevice_Get_RSH_GET_BUFFER_READY_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__b_u_f_f_e_r__r_e_a_d_y__e_v_e_n_t__r_u_8cpp-example.html#a7">IRshDevice_Get_RSH_GET_WAIT_BUFFER_READY_EVENT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get_data__digital_input__r_u_8cpp-example.html#a8">IRshDevice_GetData_DigitalInput_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a38">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a35">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a38">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a35">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a38">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a35">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a38">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a35">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a38">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a35">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a38">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a35">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a38">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a35">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a35">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a35">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a35">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a35">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a38">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a35">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a35">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a35">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a35">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a38">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a35">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a45">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a35">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a35">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a4706cd2760eb548240eeb8f49041f964"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall IRshDevice::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_base_type.html">RshBaseType</a> *&#160;</td>
+          <td class="paramname"><em>structure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="_rsh_consts___init_modes_8h.html#a053ac212f2672ff50a8e4c2768cb5305a49ae355f6059908d48aeaf1f15734483">RSH_INIT_MODE_INIT</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установка параметров сбора и настройка устройства. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">structure</td><td>Структура инициализации, унаследованная от <a class="el" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. ">RshBaseType</a>.<br/>
+ Каждое устройство поддерживает как минимум одну структуру инициализации, такую как <a class="el" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a> или <a class="el" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td><a class="el" href="_rsh_consts___init_modes_8h.html#a053ac212f2672ff50a8e4c2768cb5305a130b795cc36ed9452497889b9794a409" title="Только проверка параметров инициализации в структуре. ">RSH_INIT_MODE_CHECK</a> - проверка полей в переданной структуре инициализаци, неподходящие значения будут исправлены на допустимые. После исправления параметров метод завершает работу, обращений к устройству не производится.<br/>
+ <a class="el" href="_rsh_consts___init_modes_8h.html#a053ac212f2672ff50a8e4c2768cb5305a49ae355f6059908d48aeaf1f15734483" title="Проверка параметров в структуре и фактическая инициализация. ">RSH_INIT_MODE_INIT</a> - действительня реализация, после исправления значений в структуре производится передача выбранных параметров к устройству, запись в регистры и тому подобное.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Данный метод используется для задания параметров сбора (генерации). Для передачи параметров используется одна из специальных структур инициализации:<br/>
+ <a class="el" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a>: как правило, данная структура используется для низкочастотных (до 10Мгц) устройств без установленной флэш памяти для данных.<br/>
+ <a class="el" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a>: для высокочастотных устройств с собственной памятью.<br/>
+ <a class="el" href="struct_rsh_init_g_s_p_f.html" title="Cтруктура инициализации для генераторов ">RshInitGSPF</a>: для цифровых генераторов сигнала.<br/>
+ <a class="el" href="struct_rsh_init_voltmeter.html" title="Cтруктура инициализации для вольтметров типа B7-78. ">RshInitVoltmeter</a>: для вольтметра В7/78<br/>
+ <a class="el" href="struct_rsh_init_port.html" title="Операции с цифровым портом ">RshInitPort</a>: для доступа к цифровым портам.<br/>
+ <a class="el" href="struct_rsh_init_d_a_c.html" title="Структура для доступа к ЦАП. ">RshInitDAC</a>: для доступа к ЦАПам.<br/>
+ Используя данные структуры, можно задать различные параметры сбора, такие как частоту дискретизации, число каналов, размер буфера и др. Более подробно - в описании структур инициализации.<br/>
+</p>
+<p>Пример использования метода: </p>
+<div class="fragment"><div class="line"><a class="code" href="struct_i_rsh_device.html" title="Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО &quot;Руднев-Шиляев&quot;. ">IRshDevice</a>* device;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//структура инициализации</span></div>
+<div class="line"><a class="code" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a> params;</div>
+<div class="line"></div>
+<div class="line">params.<a class="code" href="struct_rsh_init_a_d_c.html#a3efbcf323a21adb0ba6de43ed3b5871f" title="Режим запуска сбора данных ">startType</a> = <a class="code" href="struct_rsh_init_a_d_c.html#a052804ec71ccbe925a8b33359bd233eaadc54c54b5f08844cc75cd2d8eb1c31f5" title="Программный запуск ">RshInitDMA::Program</a>;    <span class="comment">//запуск по внутреннему таймеру</span></div>
+<div class="line">params.<a class="code" href="struct_rsh_init_a_d_c.html#a2f51fdaa389ac6d8fdaa704305df298a" title="Частота дискретизации в Гц ">frequency</a> = 10000.0;              <span class="comment">//частота дискретизации (на канал)</span></div>
+<div class="line">params.<a class="code" href="struct_rsh_init_d_m_a.html#a54480ebc1f6970f61fa0535f71aea762" title="Режим сбора данных ">dmaMode</a> = <a class="code" href="struct_rsh_init_d_m_a.html#a63c45f9c20b03ee80131b6512c40509fada268bf1054bb2e352f15d8df6f2c55f" title="Одиночный запуск ">RshInitDMA::Single</a>;     <span class="comment">//одиночный запуск (без непрерывного режима)</span></div>
+<div class="line">params.<a class="code" href="struct_rsh_init_a_d_c.html#a9169154ef3e721aa8eaa72a1df3f3451" title="Размер буфера в отсчетах ">bufferSize</a> = 2048;                <span class="comment">//размер буфера (на канал)</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//настройка каналов</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//делаем канал 0 активным</span></div>
+<div class="line">params.<a class="code" href="struct_rsh_init_a_d_c.html#aeb89a28e7e1a808330a4fda0ef19cec9" title="Настройки аналоговых каналов ">channels</a>[0].SetUsed(); </div>
+<div class="line"></div>
+<div class="line"><span class="comment">//альтернативный вариант - прямое манипулирование битами контрольного слова канала</span></div>
+<div class="line"><span class="comment">//params.channels[0].control |= RshChannel::Used;</span></div>
+<div class="line"></div>
+<div class="line"><a class="code" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> res = device-&gt;<a class="code" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">Init</a>(&amp;params);</div>
+<div class="line"><span class="keywordflow">if</span>(res != RSH_API_SUCESS)</div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">//обработка ошибки</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section remark"><dt>Прим.</dt><dd>Чтобы узнать, поддерживает или нет конкретное устройство ту или иную структуру инициализации, используйте метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">Get()</a> с параметром <a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5ac5d41944239efbcfa7b5b9e1d65e9aa9" title="Определение возможностей устройства и библиотеки. ">RSH_GET_DEVICE_IS_CAPABLE</a> с соответствующими кодами для структур (<a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a5ed5faedf3212a6c617025124db414ce" title="Структура инициализации RshInitMemory поддерживается библиотекой абстракции. ">RSH_CAPS_SOFT_INIT_MEMORY</a>, <a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a6b5450990b92306f3c288cd8325be52c" title="Структура инициализации RshInitDMA поддерживается библиотекой абстракции. ">RSH_CAPS_SOFT_INIT_DMA</a> и т.д.)</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. ">RshInitDMA</a> | <a class="el" href="struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. ">RshInitMemory</a> | <a class="el" href="struct_rsh_init_d_a_c.html" title="Структура для доступа к ЦАП. ">RshInitDAC</a> | <a class="el" href="struct_rsh_init_voltmeter.html" title="Cтруктура инициализации для вольтметров типа B7-78. ">RshInitVoltmeter</a> | <a class="el" href="struct_rsh_init_port.html" title="Операции с цифровым портом ">RshInitPort</a> | <a class="el" href="struct_rsh_init_g_s_p_f.html" title="Cтруктура инициализации для генераторов ">RshInitGSPF</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#a33">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#a33">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__g_a_t_h_e_r_i_n_g__c_o_m_p_l_e_t_e__r_u_8cpp-example.html#a4">IRshDevice_Get_RSH_GET_WAIT_GATHERING_COMPLETE_RU.cpp</a>, <a class="el" href="_i_rsh_device__init__rsh_init_d_m_a__r_u_8cpp-example.html#a9">IRshDevice_Init_RshInitDMA_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a30">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__port_8cpp-example.html#a31">LA-1.5PCI_Port.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a28">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a30">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__port_8cpp-example.html#a31">LA-20USB_Port.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a28">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a30">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__port_8cpp-example.html#a31">LA-2M5PCI_Port.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a28">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a30">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__port_8cpp-example.html#a31">LA-2USB_Port.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a28">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a30">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__port_8cpp-example.html#a31">LA-50USB_Port.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a28">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a30">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__port_8cpp-example.html#a31">LA-5Net_Port.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a28">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a30">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__port_8cpp-example.html#a31">LA-i24USB_Port.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a28">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a28">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a28">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a28">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a28">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a30">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__port_8cpp-example.html#a31">LA-n150PCI_Port.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a28">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a28">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__port_8cpp-example.html#a31">LA-n20-12PCI_Port.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a28">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a28">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_l_a48_d_p_c_i__port_8cpp-example.html#a31">LA48DPCI_Port.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a30">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__port_8cpp-example.html#a31">Leonardo2_Port.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a28">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a38">Python_Continuous.cpp</a>, <a class="el" href="_python__port_8cpp-example.html#a28">Python_Port.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a28">Python_StartStop.cpp</a>, <a class="el" href="_rsh_init_d_a_c__r_u_8cpp-example.html#a8">RshInitDAC_RU.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a28">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a47d6a77d7311d54deea8c02ad77e66fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall IRshDevice::Start </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запуск процесса сбора данных или генерации сигнала. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>Устройства сбора данных начинают процесс сбора и передачи данных, когда вызывается этот метод. После завершения передачи ставится флаг готовности данных, и данные можно получить с помощью метода <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">GetData()</a> <br/>
+ Генераторы сигнала (серия ГСПФ) начинают проигрование буфера по этой команде. Таким образом, для генераторов порядок команд будет обратным: сначала нужно передать подготовленный буфер с данными с помощью метода <a class="el" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">GetData()</a> и только затем запустить генарацию, вызвав <a class="el" href="struct_i_rsh_device.html#a47d6a77d7311d54deea8c02ad77e66fc" title="Запуск процесса сбора данных или генерации сигнала. ">Start()</a>.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Процесс запуска происходит не мгновенно, требуется некоторое время на передачу команды и подготовку устройства.<br/>
+ Более того, если используется синхронизация в каком-либо виде, непосредственно процесс сбора данных начнется только после получения события синхронизации.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a1ee8707ed41d6ea6e8954156aaf9c192" title="Ожидание завершения процесса сбора и передачи данных. ">RSH_GET_WAIT_BUFFER_READY_EVENT</a> | <a class="el" href="page__synchronization.html">Синхронизация</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_g_s_p_f-052_p_c_i__generate_8cpp-example.html#a38">GSPF-052PCI_Generate.cpp</a>, <a class="el" href="_g_s_p_f-053_u_s_b__generate_8cpp-example.html#a38">GSPF-053USB_Generate.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__b_u_f_f_e_r__r_e_a_d_y__r_u_8cpp-example.html#a2">IRshDevice_Get_RSH_GET_BUFFER_READY_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__b_u_f_f_e_r__r_e_a_d_y__e_v_e_n_t__r_u_8cpp-example.html#a2">IRshDevice_Get_RSH_GET_WAIT_BUFFER_READY_EVENT_RU.cpp</a>, <a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__g_a_t_h_e_r_i_n_g__c_o_m_p_l_e_t_e__r_u_8cpp-example.html#a6">IRshDevice_Get_RSH_GET_WAIT_GATHERING_COMPLETE_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a36">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a32">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a36">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a32">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a36">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a32">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a36">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a32">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a36">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a32">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a36">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a32">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a36">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a32">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a32">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a32">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a32">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a32">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a36">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a32">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a32">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a32">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a32">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a36">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a32">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a43">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a32">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a32">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a58ed2025368f7aabe6db1ac49b56b553"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> __stdcall IRshDevice::Stop </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Остановка процесса сбора данных или генерации сигнала. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a> или код ошибки.</dd></dl>
+<p>При вызове этого метода вся активность, связанная со сбором или генерацией прекращается: останавливается АЦП (ЦАП), сбрасывается процесс передачи по USB, ПДП каналы возвращаются в исходное состояние. Устройство готово к следующему вызову метода <a class="el" href="struct_i_rsh_device.html#a47d6a77d7311d54deea8c02ad77e66fc" title="Запуск процесса сбора данных или генерации сигнала. ">Start()</a>.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если данный метод вызывается до того, как была успешно завершена передача блока данных (размер блока определяется настройками сбора в структуре инициализации), метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">Get()</a> с параметром RSH_GET_WAIT_BUFFER_READY_EVENT вернет код ошибки в качестве результата работы.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a1ee8707ed41d6ea6e8954156aaf9c192" title="Ожидание завершения процесса сбора и передачи данных. ">RSH_GET_WAIT_BUFFER_READY_EVENT</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_i_rsh_device__get__r_s_h__g_e_t__w_a_i_t__g_a_t_h_e_r_i_n_g__c_o_m_p_l_e_t_e__r_u_8cpp-example.html#a7">IRshDevice_Get_RSH_GET_WAIT_GATHERING_COMPLETE_RU.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__persistent_8cpp-example.html#a40">LA-1.5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-1_85_p_c_i__start_stop_8cpp-example.html#a34">LA-1.5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-20_u_s_b__persistent_8cpp-example.html#a40">LA-20USB_Persistent.cpp</a>, <a class="el" href="_l_a-20_u_s_b__start_stop_8cpp-example.html#a34">LA-20USB_StartStop.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__persistent_8cpp-example.html#a40">LA-2M5PCI_Persistent.cpp</a>, <a class="el" href="_l_a-2_m5_p_c_i__start_stop_8cpp-example.html#a34">LA-2M5PCI_StartStop.cpp</a>, <a class="el" href="_l_a-2_u_s_b__persistent_8cpp-example.html#a40">LA-2USB_Persistent.cpp</a>, <a class="el" href="_l_a-2_u_s_b__start_stop_8cpp-example.html#a34">LA-2USB_StartStop.cpp</a>, <a class="el" href="_l_a-50_u_s_b__persistent_8cpp-example.html#a40">LA-50USB_Persistent.cpp</a>, <a class="el" href="_l_a-50_u_s_b__start_stop_8cpp-example.html#a34">LA-50USB_StartStop.cpp</a>, <a class="el" href="_l_a-5_net__persistent_8cpp-example.html#a40">LA-5Net_Persistent.cpp</a>, <a class="el" href="_l_a-5_net__start_stop_8cpp-example.html#a34">LA-5Net_StartStop.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__persistent_8cpp-example.html#a40">LA-i24USB_Persistent.cpp</a>, <a class="el" href="_l_a-i24_u_s_b__start_stop_8cpp-example.html#a34">LA-i24USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_p_c_i__start_stop_8cpp-example.html#a34">LA-n10-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10-12_u_s_b__start_stop_8cpp-example.html#a34">LA-n10-12USB_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-100_p_c_i__start_stop_8cpp-example.html#a34">LA-n10M8-100PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n10_m8-500_p_c_i__start_stop_8cpp-example.html#a34">LA-n10M8-500PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__persistent_8cpp-example.html#a40">LA-n150PCI_Persistent.cpp</a>, <a class="el" href="_l_a-n150_p_c_i__start_stop_8cpp-example.html#a34">LA-n150PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n1_u_s_b__start_stop_8cpp-example.html#a34">LA-n1USB_StartStop.cpp</a>, <a class="el" href="_l_a-n20-12_p_c_i__start_stop_8cpp-example.html#a34">LA-n20-12PCI_StartStop.cpp</a>, <a class="el" href="_l_a-n2_u_s_b__start_stop_8cpp-example.html#a34">LA-n2USB_StartStop.cpp</a>, <a class="el" href="_leonardo2__persistent_8cpp-example.html#a40">Leonardo2_Persistent.cpp</a>, <a class="el" href="_leonardo2__start_stop_8cpp-example.html#a34">Leonardo2_StartStop.cpp</a>, <a class="el" href="_python__continuous_8cpp-example.html#a47">Python_Continuous.cpp</a>, <a class="el" href="_python__start_stop_8cpp-example.html#a34">Python_StartStop.cpp</a> и <a class="el" href="_sirius__start_stop_8cpp-example.html#a34">Sirius_StartStop.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_i_rsh_device_8h_source.html">IRshDevice.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:33. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

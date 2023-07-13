@@ -1,0 +1,11 @@
+To install driver for Rudnev-Shilyaev devices do the following:
+1. Go to LAUSB directory and run 'make' command.
+   NOTE: you will need kernel headers. If you don't have them installed or don't know what kernel headers are, 
+         do the following: 
+			   sudo apt-get update
+                           sudo apt-get install linux-headers-$(uname -r)
+	 If you are running Linux other than Debian/Ubuntu, use Google to find appropriate way to install kernel headers on 
+         your system.
+2. Go to USBInstallDriver directory and run 'sudo bash install'
+3. Check for errors and contact us on soft@rudshel.ru if necessary. If no errors occured, reboot and you are ready to use Rudnev-Shilyaev devices.
+	

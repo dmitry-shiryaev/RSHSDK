@@ -1,0 +1,22 @@
+<map id="G:/SDK2/HEADERS/Include/RshBufferType.h" name="G:/SDK2/HEADERS/Include/RshBufferType.h">
+<area shape="rect" id="node2" href="$_rsh_types_8h.html" title="В этом файле содержатся определения типов данных, используемых в RSH SDK. " alt="" coords="722,379,936,423"/>
+<area shape="rect" id="node5" href="$_rsh_device_base_info_8h.html" title="Класс RshDeviceBaseInfo и связанные с ним типы данных. " alt="" coords="964,193,1178,237"/>
+<area shape="rect" id="node7" href="$_rsh_device_full_info_8cpp.html" title="Класс RshDeviceFullInfo и связанные с ним типы данных. " alt="" coords="1015,379,1229,423"/>
+<area shape="rect" id="node9" href="$_rsh_channel_8h.html" title="Класс RshChannel. " alt="" coords="572,99,786,143"/>
+<area shape="rect" id="node17" href="$_rsh_functions_8h.html" title="Прототипы глобальных функций. " alt="" coords="1254,379,1468,423"/>
+<area shape="rect" id="node21" href="$_rsh_buffer_type_8cpp.html" title="G:/SDK2/HEADERS/Include\l/RshBufferType.cpp" alt="" coords="1542,99,1756,143"/>
+<area shape="rect" id="node3" href="$_rsh_api_8h.html" title="Главный заголовочный файл RSH API. " alt="" coords="812,473,1026,517"/>
+<area shape="rect" id="node4" href="$_rsh_api_8cpp.html" title="Объединение всех cpp файлов, входящих в состав SDK. " alt="" coords="692,566,906,610"/>
+<area shape="rect" id="node6" href="$_rsh_device_full_info_8h.html" title="Класс RshDeviceFullInfo и связанные с ним типы данных. " alt="" coords="1015,286,1229,330"/>
+<area shape="rect" id="node8" href="$_rsh_device_base_info_8cpp.html" title="Класс RshDeviceBaseInfo и связанные с ним типы данных. " alt="" coords="574,473,788,517"/>
+<area shape="rect" id="node10" href="$_rsh_init_a_d_c_8h.html" title="Структура инициализации RshInitADC. " alt="" coords="522,193,736,237"/>
+<area shape="rect" id="node16" href="$_rsh_channel_8cpp.html" title="Класс RshChannel. " alt="" coords="91,193,305,237"/>
+<area shape="rect" id="node11" href="$_rsh_init_d_m_a_8h.html" title="Структура инициализации RshInitDMA. " alt="" coords="44,286,258,330"/>
+<area shape="rect" id="node14" href="$_rsh_init_memory_8h.html" title="Структура инициализации RshInitMemory. " alt="" coords="283,286,497,330"/>
+<area shape="rect" id="node15" href="$_rsh_init_a_d_c_8cpp.html" title="Структура инициализации RshInitADC. " alt="" coords="522,286,736,330"/>
+<area shape="rect" id="node12" href="$_rsh_init_d_m_a_8cpp.html" title="Структура инициализации RshInitDMA. " alt="" coords="283,379,497,423"/>
+<area shape="rect" id="node13" href="$_rsh_init_memory_8cpp.html" title="Структура инициализации RshInitMemory. " alt="" coords="44,379,258,423"/>
+<area shape="rect" id="node18" href="$_rsh_time_8cpp.html" title="Класс RshTime. " alt="" coords="1342,473,1556,517"/>
+<area shape="rect" id="node19" href="$_rsh_functions_8cpp.html" title="Глобальные функции. " alt="" coords="1103,473,1317,517"/>
+<area shape="rect" id="node20" href="$_rsh_caps_description_8h.html" title="Простая структура для хранения описаний капс&#45;кодов " alt="" coords="1580,473,1794,517"/>
+</map>

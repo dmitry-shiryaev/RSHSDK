@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: IRshDevice_GetData_DigitalInput_RU.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">IRshDevice_GetData_DigitalInput_RU.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Пример получения данных цифрового порта вместе с данными аналоговых каналов.</p>
+<div class="fragment"><div class="line"><a name="_a0"></a><a class="code" href="struct_i_rsh_device.html" title="Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО &quot;Руднев-Шиляев&quot;. ">IRshDevice</a>* device;</div>
+<div class="line"></div>
+<div class="line">...</div>
+<div class="line"><span class="comment">//получение интерфейса, подключение к устройству</span></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//получим разрядность АЦП</span></div>
+<div class="line"><a name="_a1"></a><a class="code" href="struct_rsh_scalar_type.html" title="Шаблонный класс для простых типов данных ">RSH_U32</a> dataBits = 0;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordflow">if</span> (device-&gt;<a name="a2"></a><a class="code" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">Get</a>(<a name="a3"></a><a class="code" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a875e23280b6bff71e3d30a272c9155e8" title="Разрядность АЦП (или ЦАП) ">RSH_GET_DEVICE_DATA_BITS</a>, &amp;dataBits) != <a name="a4"></a><a class="code" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//обработка ошибки</span></div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//построение маски аналоговых данных и маски данных цифрового порта (для 16 битного слова данных)</span></div>
+<div class="line"><a class="code" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> dataMask = (<a name="a5"></a><a class="code" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>)0xFFFF &lt;&lt; (16 - dataBits);</div>
+<div class="line"><a class="code" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a> portMask = (<a class="code" href="_rsh_def_chk_8h.html#adf928e51a60dba0df29d615401cc55a8">U16</a>)0xFFFF ^ dataMask;</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//общее количество линий цифрового порта( битов), которые будут передаваться с данными будет равно 16 - dataBits</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//выделим память под данные</span></div>
+<div class="line"><a name="_a6"></a><a class="code" href="class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. ">RSH_BUFFER_S16</a> buffer = <a name="a7"></a><a class="code" href="_rsh_buffer_type_8h.html#a7093791749e8184ea97e9b0202d564d9" title="Буфер для типа данных S16. ">RSH_BUFFER_S16</a>(1024);</div>
+<div class="line"></div>
+<div class="line">...</div>
+<div class="line"><span class="comment">//инициализация, запуск преобразования, ожидание готовности буфера</span></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//получаем данные</span></div>
+<div class="line"><a class="code" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> res = device-&gt;<a name="a8"></a><a class="code" href="struct_i_rsh_device.html#a5fe82265d052163e34a1ffab4fec1c6d" title="Получение (или отправка) буфера с данными. ">GetData</a>(&amp;buffer, <a name="a9"></a><a class="code" href="_rsh_consts___get_data_modes_8h.html#aa66f31cd5fa19e26cdb77dee428ac536ae76e61b6770abc72b0ec6ed288eb4b35" title="Передача состояния входных линий цифрового порта вместе с данными. ">RSH_DATA_MODE_CONTAIN_DIGITAL_INPUT</a>);</div>
+<div class="line"></div>
+<div class="line"><span class="keywordflow">if</span>(res != <a class="code" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//обработка ошибки</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span></div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//можно получить доступ к данным цифрового порта в каждом отсчетче (слове данных)</span></div>
+<div class="line">    <span class="keywordflow">for</span>(<a class="code" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> i=0;i&lt;buffer.<a name="a10"></a><a class="code" href="class_rsh_buffer_type.html#ab295a287ef7a1bde6b5732ef2cb6c97e" title="Количество элементов в буфере (актуальный размер). ">Size</a>();++i)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">//проверим, установлен ли нулевой бит (первая линия цифрового порта)</span></div>
+<div class="line">        <span class="keywordflow">if</span>(buffer.data[i] &amp; 0x1)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">//делаем что-нибудь с данными</span></div>
+<div class="line">        }</div>
+<div class="line">                </div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

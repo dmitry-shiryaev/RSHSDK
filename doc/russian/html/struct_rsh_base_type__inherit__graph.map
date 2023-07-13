@@ -1,0 +1,22 @@
+<map id="RshBaseType" name="RshBaseType">
+<area shape="rect" id="node2" href="$struct_rsh_board_port_info.html" title="Информация о цифровых портах устройства " alt="" coords="230,5,378,33"/>
+<area shape="rect" id="node3" href="$class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. " alt="" coords="177,163,431,191"/>
+<area shape="rect" id="node4" href="$class_rsh_buffer_type.html" title="RshBufferType\&lt; RshChannel,\l rshBufferTypeChannel \&gt;" alt="" coords="702,186,938,230"/>
+<area shape="rect" id="node5" href="$class_rsh_buffer_type.html" title="RshBufferType\&lt; RshPortInfo,\l rshBufferTypePortInfo \&gt;" alt="" coords="703,98,937,142"/>
+<area shape="rect" id="node6" href="$struct_rsh_channel.html" title="Параметры аналогового канала " alt="" coords="251,267,357,295"/>
+<area shape="rect" id="node7" href="$struct_rsh_device_base_info.html" title="Структура с информацией об устройстве " alt="" coords="225,319,383,347"/>
+<area shape="rect" id="node9" href="$struct_rsh_device_key.html" title="Идентификационный ключ устройства " alt="" coords="242,371,366,399"/>
+<area shape="rect" id="node10" href="$struct_rsh_init_a_d_c.html" title="Базовая структура инициализации для АЦП устройств " alt="" coords="253,423,355,451"/>
+<area shape="rect" id="node13" href="$struct_rsh_init_d_a_c.html" title="Структура для доступа к ЦАП. " alt="" coords="253,475,355,503"/>
+<area shape="rect" id="node14" href="$struct_rsh_init_g_s_p_f.html" title="Cтруктура инициализации для генераторов " alt="" coords="249,527,359,555"/>
+<area shape="rect" id="node15" href="$struct_rsh_init_port.html" title="Операции с цифровым портом " alt="" coords="254,579,354,607"/>
+<area shape="rect" id="node16" href="$struct_rsh_init_timer.html" title="Прямое управление таймерами " alt="" coords="248,631,360,659"/>
+<area shape="rect" id="node17" href="$struct_rsh_init_voltmeter.html" title="Cтруктура инициализации для вольтметров типа B7&#45;78. " alt="" coords="233,683,375,711"/>
+<area shape="rect" id="node18" href="$struct_rsh_port_info.html" title="Информация о цифровом порте " alt="" coords="251,735,357,763"/>
+<area shape="rect" id="node19" href="$struct_rsh_register.html" title="Структура с данными регистра " alt="" coords="249,787,359,815"/>
+<area shape="rect" id="node20" href="$struct_rsh_scalar_type.html" title="Шаблонный класс для простых типов данных " alt="" coords="177,839,431,867"/>
+<area shape="rect" id="node21" href="$struct_rsh_synchro_channel.html" title="Параметры канала внешней синхронизации " alt="" coords="221,891,387,919"/>
+<area shape="rect" id="node8" href="$struct_rsh_device_full_info.html" title="Структура с информацией об устройстве " alt="" coords="747,319,893,347"/>
+<area shape="rect" id="node11" href="$struct_rsh_init_d_m_a.html" title="Структура инициализации для устройств типа &quot;DMA&quot;. " alt="" coords="768,449,872,477"/>
+<area shape="rect" id="node12" href="$struct_rsh_init_memory.html" title="Структура инициализации для устройств типа &quot;Memory&quot;. " alt="" coords="755,397,885,425"/>
+</map>

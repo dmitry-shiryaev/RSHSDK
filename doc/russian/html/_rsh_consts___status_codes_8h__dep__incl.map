@@ -1,0 +1,9 @@
+<map id="G:/SDK2/HEADERS/Include/RshConsts_StatusCodes.h" name="G:/SDK2/HEADERS/Include/RshConsts_StatusCodes.h">
+<area shape="rect" id="node2" href="$_rsh_consts_8h.html" title="Данный файл включает в себя все заголовочные файлы с константами из RSH SDK. " alt="" coords="5,99,219,143"/>
+<area shape="rect" id="node5" href="$_rsh_error_8h.html" title="Класс для формирования сообщений об ошибках и связанные структуры данных. " alt="" coords="243,99,457,143"/>
+<area shape="rect" id="node7" href="$_rsh_buffer_type_8cpp.html" title="G:/SDK2/HEADERS/Include\l/RshBufferType.cpp" alt="" coords="627,193,841,237"/>
+<area shape="rect" id="node8" href="$_rsh_error_description_8h.html" title="Простая структура для хранения кода ошибки и строковых констант с ее описанием. " alt="" coords="482,99,696,143"/>
+<area shape="rect" id="node3" href="$_rsh_api_8h.html" title="Главный заголовочный файл RSH API. " alt="" coords="150,193,364,237"/>
+<area shape="rect" id="node4" href="$_rsh_api_8cpp.html" title="Объединение всех cpp файлов, входящих в состав SDK. " alt="" coords="389,286,603,330"/>
+<area shape="rect" id="node6" href="$_rsh_error_8cpp.html" title="Класс для формирования сообщений об ошибках и связанные структуры данных. " alt="" coords="389,193,603,237"/>
+</map>

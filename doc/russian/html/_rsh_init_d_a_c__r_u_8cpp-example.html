@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: RshInitDAC_RU.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RshInitDAC_RU.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Пример управления ЦАПом с помощью структуры инициализации <a class="el" href="struct_rsh_init_d_a_c.html" title="Структура для доступа к ЦАП. ">RshInitDAC</a></p>
+<div class="fragment"><div class="line"><a name="_a0"></a><a class="code" href="struct_i_rsh_device.html" title="Интерфейс используется для управления практически всеми АЦП/ЦАП устройствами ЗАО &quot;Руднев-Шиляев&quot;. ">IRshDevice</a>* device;</div>
+<div class="line"></div>
+<div class="line">...</div>
+<div class="line"><span class="comment">//получение интерфейса, подключение к устройству</span></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//получим выходной диапазон ЦАПа</span></div>
+<div class="line"><a name="_a1"></a><a class="code" href="struct_rsh_scalar_type.html" title="Шаблонный класс для простых типов данных ">RSH_DOUBLE</a> range = 0;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordflow">if</span> (device-&gt;<a name="a2"></a><a class="code" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">Get</a>(<a name="a3"></a><a class="code" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a85edb19cde7c9f048ac6e00f87839370" title="Выходной диапазон в вольтах при коэффициенте усиления 1. ">RSH_GET_DEVICE_OUTPUT_RANGE_VOLTS</a>, &amp;range) != <a name="a4"></a><a class="code" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//обработка ошибки</span></div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//структура инициализации для управления ЦАПами</span></div>
+<div class="line"><a name="_a5"></a><a class="code" href="struct_rsh_init_d_a_c.html" title="Структура для доступа к ЦАП. ">RshInitDAC</a> par;</div>
+<div class="line"></div>
+<div class="line">par.<a name="a6"></a><a class="code" href="struct_rsh_init_d_a_c.html#a67924ea9bc6df3cb258ed09757eedb77" title="Порядковй номер ЦАПа. ">id</a> = 0; <span class="comment">//запись в нулевой ЦАП</span></div>
+<div class="line">par.<a name="a7"></a><a class="code" href="struct_rsh_init_d_a_c.html#a24fce565460ae5a02b143f98dcdeeaa2" title="Выходное напряжение. ">voltage</a> = range/2.0; <span class="comment">//половина диапазона</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">//Инициализация (выдача напряжения на ЦАП)</span></div>
+<div class="line"><span class="keywordflow">if</span>(device-&gt;<a name="a8"></a><a class="code" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">Init</a>(&amp;par) != <a class="code" href="_rsh_consts___status_codes_8h.html#af5c23a07b5f7e111ef15a9aa32b4e261a76893786bb0b2da5cda7d5a42ba52972" title=": Ошибок нет. ">RSH_API_SUCCESS</a>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//обработка ошибки</span></div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//еще один раз</span></div>
+<div class="line">par.<a class="code" href="struct_rsh_init_d_a_c.html#a24fce565460ae5a02b143f98dcdeeaa2" title="Выходное напряжение. ">voltage</a> = -3.7;</div>
+<div class="line">device-&gt;<a class="code" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">Init</a>(&amp;par);</div>
+</div><!-- fragment --> </div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

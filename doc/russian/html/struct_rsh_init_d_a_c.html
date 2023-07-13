@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура RshInitDAC</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="struct_rsh_init_d_a_c-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура RshInitDAC</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура для доступа к ЦАП.  
+ <a href="struct_rsh_init_d_a_c.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_init_d_a_c_8h_source.html">RshInitDAC.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RshInitDAC:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_d_a_c__inherit__graph.png" border="0" usemap="#_rsh_init_d_a_c_inherit__map" alt="Inheritance graph"/></div>
+<map name="_rsh_init_d_a_c_inherit__map" id="_rsh_init_d_a_c_inherit__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="5,6,125,34"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RshInitDAC:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_d_a_c__coll__graph.png" border="0" usemap="#_rsh_init_d_a_c_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_init_d_a_c_coll__map" id="_rsh_init_d_a_c_coll__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="101,99,221,127"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac0b6c4a25a0f696081bfc914542a6d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#ac0b6c4a25a0f696081bfc914542a6d0c">RshInitDAC</a> (<a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> ID=0, double Voltage=0.0)</td></tr>
+<tr class="memdesc:ac0b6c4a25a0f696081bfc914542a6d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значения по умолчанию: id=0, voltage=0.0.  <a href="#ac0b6c4a25a0f696081bfc914542a6d0c">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac0b6c4a25a0f696081bfc914542a6d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6c4999a3a34f07a8102aebf3c4b570"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#aad6c4999a3a34f07a8102aebf3c4b570">RshInitDAC</a> (<a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> const &amp;obj)</td></tr>
+<tr class="separator:aad6c4999a3a34f07a8102aebf3c4b570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f374d4895bb847b35242e74a84cc5ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#a0f374d4895bb847b35242e74a84cc5ba">operator=</a> (const <a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;obj)</td></tr>
+<tr class="separator:a0f374d4895bb847b35242e74a84cc5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f88b3530294ee62b4993a21fbb72273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#a9f88b3530294ee62b4993a21fbb72273">operator==</a> (<a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;obj) const </td></tr>
+<tr class="separator:a9f88b3530294ee62b4993a21fbb72273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b27f9472f0f2caf3b365aa555f5ee9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#aa1b27f9472f0f2caf3b365aa555f5ee9">operator!=</a> (<a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;obj) const </td></tr>
+<tr class="separator:aa1b27f9472f0f2caf3b365aa555f5ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#af965550d2b72863db870e01894846350">RshBaseType</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11da92056d50bfe18f306587535477d7bfe7">rshTypeUndefined</a>, const size_t typeSize=sizeof(<a class="el" href="struct_rsh_base_type.html">RshBaseType</a>))</td></tr>
+<tr class="memdesc:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#af965550d2b72863db870e01894846350">Подробнее...</a><br/></td></tr>
+<tr class="separator:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a79c78fcf2b560f843c84303098c524c2">GetTypeName</a> () const </td></tr>
+<tr class="separator:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a67924ea9bc6df3cb258ed09757eedb77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#a67924ea9bc6df3cb258ed09757eedb77">id</a></td></tr>
+<tr class="memdesc:a67924ea9bc6df3cb258ed09757eedb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Порядковй номер ЦАПа.  <a href="#a67924ea9bc6df3cb258ed09757eedb77">Подробнее...</a><br/></td></tr>
+<tr class="separator:a67924ea9bc6df3cb258ed09757eedb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24fce565460ae5a02b143f98dcdeeaa2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#a24fce565460ae5a02b143f98dcdeeaa2">voltage</a></td></tr>
+<tr class="memdesc:a24fce565460ae5a02b143f98dcdeeaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выходное напряжение.  <a href="#a24fce565460ae5a02b143f98dcdeeaa2">Подробнее...</a><br/></td></tr>
+<tr class="separator:a24fce565460ae5a02b143f98dcdeeaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#acb736f830c5d916de275eabf81127066">_typeSize</a></td></tr>
+<tr class="memdesc:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер структуры данных или класса.  <a href="#acb736f830c5d916de275eabf81127066">Подробнее...</a><br/></td></tr>
+<tr class="separator:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a0993279e21dd4e2c15d0f8d0ebba76be">_type</a></td></tr>
+<tr class="memdesc:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор типа данных.  <a href="#a0993279e21dd4e2c15d0f8d0ebba76be">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a0f713703be625c0efedd3fdb92fd3279"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_init_d_a_c.html#a0f713703be625c0efedd3fdb92fd3279">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;obj)</td></tr>
+<tr class="separator:a0f713703be625c0efedd3fdb92fd3279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a350c4aea57828295b090ad6863f2c385">GetTypeName</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> typeCode)</td></tr>
+<tr class="memdesc:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение названия типа данных.  <a href="#a350c4aea57828295b090ad6863f2c385">Подробнее...</a><br/></td></tr>
+<tr class="separator:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура для доступа к ЦАП. </p>
+<p>Данная структура используется для управления ЦАПом (или ЦАПами), которые имеются у некоторых АЦП устройств. Используя эту структуру, можно установить нужное напряжение на одном из ЦАПов.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Устройства, основным предназначением которых является генерация сигнала, используют другие, более сложные структуры для инициализации, например <a class="el" href="struct_rsh_init_g_s_p_f.html" title="Cтруктура инициализации для генераторов ">RshInitGSPF</a>.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a7c64477dd605fa74b9c0d8c0c693b38b" title="Структура инициализации RshInitDAC поддерживается библиотекой абстракции. ">RSH_CAPS_SOFT_INIT_DAC</a> | <a class="el" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">IRshDevice::Init()</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_d_a_c__r_u_8cpp-example.html#_a5">RshInitDAC_RU.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ac0b6c4a25a0f696081bfc914542a6d0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitDAC::RshInitDAC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td>
+          <td class="paramname"><em>ID</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Voltage</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Значения по умолчанию: id=0, voltage=0.0. </p>
+
+</div>
+</div>
+<a class="anchor" id="aad6c4999a3a34f07a8102aebf3c4b570"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshInitDAC::RshInitDAC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> const &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_d_a_c.html#a67924ea9bc6df3cb258ed09757eedb77">id</a> и <a class="el" href="struct_rsh_init_d_a_c.html#a24fce565460ae5a02b143f98dcdeeaa2">voltage</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aa1b27f9472f0f2caf3b365aa555f5ee9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitDAC::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_d_a_c.html#a9f88b3530294ee62b4993a21fbb72273">operator==()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_d_a_c_aa1b27f9472f0f2caf3b365aa555f5ee9_cgraph.png" border="0" usemap="#struct_rsh_init_d_a_c_aa1b27f9472f0f2caf3b365aa555f5ee9_cgraph" alt=""/></div>
+<map name="struct_rsh_init_d_a_c_aa1b27f9472f0f2caf3b365aa555f5ee9_cgraph" id="struct_rsh_init_d_a_c_aa1b27f9472f0f2caf3b365aa555f5ee9_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_d_a_c.html#a9f88b3530294ee62b4993a21fbb72273" title="RshInitDAC::operator==" alt="" coords="248,5,448,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f374d4895bb847b35242e74a84cc5ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp; RshInitDAC::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_d_a_c.html#a67924ea9bc6df3cb258ed09757eedb77">id</a> и <a class="el" href="struct_rsh_init_d_a_c.html#a24fce565460ae5a02b143f98dcdeeaa2">voltage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f88b3530294ee62b4993a21fbb72273"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshInitDAC::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_init_d_a_c.html#a67924ea9bc6df3cb258ed09757eedb77">id</a>, <a class="el" href="_rsh_macro_8h.html#af658970f2bee93e068ac5db68ea07e9f">RSH_CMPDOUBLE</a> и <a class="el" href="struct_rsh_init_d_a_c.html#a24fce565460ae5a02b143f98dcdeeaa2">voltage</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_init_d_a_c.html#aa1b27f9472f0f2caf3b365aa555f5ee9">operator!=()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_init_d_a_c_a9f88b3530294ee62b4993a21fbb72273_icgraph.png" border="0" usemap="#struct_rsh_init_d_a_c_a9f88b3530294ee62b4993a21fbb72273_icgraph" alt=""/></div>
+<map name="struct_rsh_init_d_a_c_a9f88b3530294ee62b4993a21fbb72273_icgraph" id="struct_rsh_init_d_a_c_a9f88b3530294ee62b4993a21fbb72273_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_init_d_a_c.html#aa1b27f9472f0f2caf3b365aa555f5ee9" title="RshInitDAC::operator!=" alt="" coords="254,5,447,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a0f713703be625c0efedd3fdb92fd3279"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_init_d_a_c.html">RshInitDAC</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a67924ea9bc6df3cb258ed09757eedb77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshInitDAC::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Порядковй номер ЦАПа. </p>
+<p>Используя данное поле, можно задать номер ЦАПа, который будет использоваться для выдачи напряжения</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если устройство имеет только один ЦАП, данный параметр игнорируется.<br/>
+ Нумерация начинается с нуля. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_d_a_c__r_u_8cpp-example.html#a6">RshInitDAC_RU.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_d_a_c_8cpp.html#a0f713703be625c0efedd3fdb92fd3279">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_a_c.html#a0f374d4895bb847b35242e74a84cc5ba">operator=()</a>, <a class="el" href="struct_rsh_init_d_a_c.html#a9f88b3530294ee62b4993a21fbb72273">operator==()</a> и <a class="el" href="struct_rsh_init_d_a_c.html#aad6c4999a3a34f07a8102aebf3c4b570">RshInitDAC()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24fce565460ae5a02b143f98dcdeeaa2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RshInitDAC::voltage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выходное напряжение. </p>
+<p>Используйте метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">IRshDevice::Get()</a> с параметром RSH_GET_DEVICE_OUTPUT_RANGE_VOLTS для того, чтобы определить допустимый диапазон выходного напряжения на ЦАПе.</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Если будет установлено неправильное (выходящее за диапазон) значение напряжения, оно будет откорректировано при вызове метода <a class="el" href="struct_i_rsh_device.html#a4706cd2760eb548240eeb8f49041f964" title="Установка параметров сбора и настройка устройства. ">IRshDevice::Init()</a>.</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a85edb19cde7c9f048ac6e00f87839370" title="Выходной диапазон в вольтах при коэффициенте усиления 1. ">RSH_GET_DEVICE_OUTPUT_RANGE_VOLTS</a> | <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">IRshDevice::Get()</a> </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_d_a_c__r_u_8cpp-example.html#a7">RshInitDAC_RU.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_init_d_a_c_8cpp.html#a0f713703be625c0efedd3fdb92fd3279">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_init_d_a_c.html#a0f374d4895bb847b35242e74a84cc5ba">operator=()</a>, <a class="el" href="struct_rsh_init_d_a_c.html#a9f88b3530294ee62b4993a21fbb72273">operator==()</a> и <a class="el" href="struct_rsh_init_d_a_c.html#aad6c4999a3a34f07a8102aebf3c4b570">RshInitDAC()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_d_a_c_8h_source.html">RshInitDAC.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_init_d_a_c_8cpp.html">RshInitDAC.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:34. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

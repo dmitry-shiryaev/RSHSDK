@@ -1,0 +1,27 @@
+#!bin/bash
+
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root. Terminated."
+   exit 1
+fi
+
+_PLX_SDK_DIR_=$(pwd)
+
+export PLX_SDK_DIR=$_PLX_SDK_DIR_
+
+cd $_PLX_SDK_DIR_/Driver
+
+bash builddriver 9054
+bash builddriver 9050
+bash builddriver 8311
+
+cp $_PLX_SDK_DIR_/Driver/Plx9054/Plx9054.ko $_PLX_SDK_DIR_/Bin/Plx9054.ko
+cp $_PLX_SDK_DIR_/Driver/Plx9050/Plx9050.ko $_PLX_SDK_DIR_/Bin/Plx9050.ko
+cp $_PLX_SDK_DIR_/Driver/Plx8311/Plx8311.ko $_PLX_SDK_DIR_/Bin/Plx8311.ko
+
+cd $_PLX_SDK_DIR_/PlxApi && make && cp $_PLX_SDK_DIR_/PlxApi/Library/PlxApi.a $_PLX_SDK_DIR_/Bin/libPlxApi.a && rm -r $_PLX_SDK_DIR_/PlxApi/Library
+
+rm -r /var/local/plx
+
+cd $_PLX_SDK_DIR_/InstallDriver && bash install
+cd $_PLX_SDK_DIR_/Driver && rm -r Plx*

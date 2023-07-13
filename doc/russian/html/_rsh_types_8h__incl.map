@@ -1,0 +1,27 @@
+<map id="G:/SDK2/HEADERS/Include/RshTypes.h" name="G:/SDK2/HEADERS/Include/RshTypes.h">
+<area shape="rect" id="node2" href="$_rsh_def_chk_8h.html" title="Определения констант операционных систем, компиляторов и простых типов данных. " alt="" coords="845,502,960,530"/>
+<area shape="rect" id="node6" href="$_rsh_base_type_8h.html" title="Класс RshBaseType и связанные с ним типы данных. " alt="" coords="1650,425,1784,453"/>
+<area shape="rect" id="node8" href="$_rsh_scalar_type_8h.html" title="Шаблонный Класс RshScalarType &#45; для простых типов данных. " alt="" coords="1499,262,1641,290"/>
+<area shape="rect" id="node10" href="$_rsh_buffer_type_8h.html" title="Класс RshBufferType и связанные с ним типы данных. " alt="" coords="2705,347,2847,375"/>
+<area shape="rect" id="node15" href="$_rsh_register_8h.html" title="Класс RshRegister. " alt="" coords="2157,262,2280,290"/>
+<area shape="rect" id="node16" href="$_rsh_device_base_info_8h.html" title="Класс RshDeviceBaseInfo и связанные с ним типы данных. " alt="" coords="2304,262,2477,290"/>
+<area shape="rect" id="node17" href="$_rsh_device_full_info_8h.html" title="Класс RshDeviceFullInfo и связанные с ним типы данных. " alt="" coords="1815,177,1976,205"/>
+<area shape="rect" id="node19" href="$_rsh_port_info_8h.html" title="Класс RshPortInfo и связанные с ним типы данных. " alt="" coords="2603,262,2721,290"/>
+<area shape="rect" id="node20" href="$_rsh_board_port_info_8h.html" title="Класс RshBoardPortInfo. " alt="" coords="2653,177,2816,205"/>
+<area shape="rect" id="node21" href="$_rsh_time_8h.html" title="Класс RshTime. " alt="" coords="251,262,349,290"/>
+<area shape="rect" id="node23" href="$_rsh_channel_8h.html" title="Класс RshChannel. " alt="" coords="1718,262,1839,290"/>
+<area shape="rect" id="node24" href="$_rsh_synchro_channel_8h.html" title="Класс RshSynchroChannel. " alt="" coords="2001,177,2180,205"/>
+<area shape="rect" id="node25" href="$_rsh_init_a_d_c_8h.html" title="Структура инициализации RshInitADC. " alt="" coords="1579,177,1693,205"/>
+<area shape="rect" id="node26" href="$_rsh_init_d_m_a_8h.html" title="Структура инициализации RshInitDMA. " alt="" coords="1351,99,1469,127"/>
+<area shape="rect" id="node27" href="$_rsh_init_memory_8h.html" title="Структура инициализации RshInitMemory. " alt="" coords="1596,99,1740,127"/>
+<area shape="rect" id="node28" href="$_rsh_init_d_a_c_8h.html" title="Структура инициализации RshInitDAC. " alt="" coords="373,262,488,290"/>
+<area shape="rect" id="node29" href="$_rsh_init_g_s_p_f_8h.html" title="Структура инициализации RshInitGSPF. " alt="" coords="513,262,636,290"/>
+<area shape="rect" id="node30" href="$_rsh_init_port_8h.html" title="Структура инициализации RshInitPort. " alt="" coords="661,262,776,290"/>
+<area shape="rect" id="node31" href="$_rsh_init_timer_8h.html" title="Структура инициализации RshInitTimer. " alt="" coords="801,262,927,290"/>
+<area shape="rect" id="node32" href="$_rsh_init_voltmeter_8h.html" title="Структура инициализации RshInitVoltmeter. " alt="" coords="952,262,1109,290"/>
+<area shape="rect" id="node33" href="$_rsh_device_key_8h.html" title="Класс RshDeviceKey. " alt="" coords="1133,262,1272,290"/>
+<area shape="rect" id="node34" href="$_rsh_dll_interface_key_8h.html" title="Вспомогательный класс, используемый совместно с RshDllClient. " alt="" coords="5,99,176,127"/>
+<area shape="rect" id="node7" href="$_rsh_consts___rsh_data_types_8h.html" title="Константы типов данных Rsh SDK. " alt="" coords="2133,502,2360,530"/>
+<area shape="rect" id="node11" href="$_rsh_consts___common_8h.html" title="Общие константы Rsh SDK. " alt="" coords="2814,425,3001,453"/>
+<area shape="rect" id="node18" href="$_rsh_consts___device_interface_types_8h.html" title="Константы типов интерфейсов устройств Rsh SDK. " alt="" coords="1864,254,2083,298"/>
+</map>

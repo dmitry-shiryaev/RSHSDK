@@ -1,0 +1,6 @@
+<map id="RshInitADC" name="RshInitADC">
+<area shape="rect" id="node2" href="$struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="295,99,415,127"/>
+<area shape="rect" id="node7" href="$class_rsh_buffer_type.html" title="RshBufferType\&lt; RshChannel,\l rshBufferTypeChannel \&gt;" alt="" coords="111,334,347,378"/>
+<area shape="rect" id="node8" href="$struct_rsh_channel.html" title="Параметры аналогового канала " alt="" coords="423,209,529,237"/>
+<area shape="rect" id="node9" href="$class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. " alt="" coords="5,209,259,237"/>
+</map>

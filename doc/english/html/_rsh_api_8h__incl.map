@@ -1,0 +1,43 @@
+<map id="G:/SDK2/HEADERS/Include/RshApi.h" name="G:/SDK2/HEADERS/Include/RshApi.h">
+<area shape="rect" id="node2" href="$_rsh_8h.html" title="SDK version definitions. " alt="" coords="5,99,67,127"/>
+<area shape="rect" id="node3" href="$_rsh_def_chk_8h.html" title="Operating system, compiler and plain data type definitions. " alt="" coords="748,579,863,607"/>
+<area shape="rect" id="node7" href="$_rsh_macro_8h.html" title="Macros and templates used in SDK. " alt="" coords="2678,99,2785,127"/>
+<area shape="rect" id="node11" href="$_rsh_types_8h.html" title="This file includes RSH SDK types and definitions. " alt="" coords="1616,99,1723,127"/>
+<area shape="rect" id="node37" href="$_rsh_consts_8h.html" title="This file includes all RSH SDK constant headers. " alt="" coords="4131,254,4244,282"/>
+<area shape="rect" id="node45" href="$_rsh_functions_8h.html" title="Global functions prototypes. " alt="" coords="444,339,577,367"/>
+<area shape="rect" id="node46" href="$_i_rsh_factory_8h.html" title="IRshFactory interface &#45; abstract class factory. " alt="" coords="287,425,408,453"/>
+<area shape="rect" id="node47" href="$_i_rsh_device_8h.html" title="IRshDevice interface. " alt="" coords="3132,254,3247,282"/>
+<area shape="rect" id="node48" href="$_rsh_dll_client_8h.html" title="Dll client class. " alt="" coords="199,339,319,367"/>
+<area shape="rect" id="node50" href="$_rsh_error_8h.html" title="Error process class and data structures connected. " alt="" coords="4881,254,4980,282"/>
+<area shape="rect" id="node12" href="$_rsh_base_type_8h.html" title="RshBaseType class and dependent types declaration. " alt="" coords="1918,502,2052,530"/>
+<area shape="rect" id="node14" href="$_rsh_scalar_type_8h.html" title="RshScalarType template class. " alt="" coords="826,339,968,367"/>
+<area shape="rect" id="node15" href="$_rsh_buffer_type_8h.html" title="RshBufferType class and dependent types declaration. " alt="" coords="970,425,1112,453"/>
+<area shape="rect" id="node17" href="$_rsh_register_8h.html" title="RshRegister class. " alt="" coords="2268,339,2391,367"/>
+<area shape="rect" id="node18" href="$_rsh_device_base_info_8h.html" title="RshDeviceBaseInfo class and dependent types declaration. " alt="" coords="1340,339,1513,367"/>
+<area shape="rect" id="node19" href="$_rsh_device_full_info_8h.html" title="RshDeviceFullInfo class and dependent types declaration. " alt="" coords="1622,254,1783,282"/>
+<area shape="rect" id="node21" href="$_rsh_port_info_8h.html" title="RshPortInfo class and dependent types declaration. " alt="" coords="2074,339,2192,367"/>
+<area shape="rect" id="node22" href="$_rsh_board_port_info_8h.html" title="RshBoardPortInfo class. " alt="" coords="2063,254,2225,282"/>
+<area shape="rect" id="node23" href="$_rsh_time_8h.html" title="RshTime class. " alt="" coords="652,339,751,367"/>
+<area shape="rect" id="node25" href="$_rsh_channel_8h.html" title="RshChannel class. " alt="" coords="1143,339,1264,367"/>
+<area shape="rect" id="node26" href="$_rsh_synchro_channel_8h.html" title="RshSynchroChannel class. " alt="" coords="1807,254,1987,282"/>
+<area shape="rect" id="node27" href="$_rsh_init_a_d_c_8h.html" title="RshInitADC initialization structure. " alt="" coords="1381,254,1496,282"/>
+<area shape="rect" id="node28" href="$_rsh_init_d_m_a_8h.html" title="RshInitDMA initialization structure. " alt="" coords="1454,177,1572,205"/>
+<area shape="rect" id="node29" href="$_rsh_init_memory_8h.html" title="RshInitMemory initialization structure. " alt="" coords="1597,177,1741,205"/>
+<area shape="rect" id="node30" href="$_rsh_init_d_a_c_8h.html" title="RshInitDAC initialization structure. " alt="" coords="2415,339,2529,367"/>
+<area shape="rect" id="node31" href="$_rsh_init_g_s_p_f_8h.html" title="RshInitGSPF initialization structure. " alt="" coords="2554,339,2677,367"/>
+<area shape="rect" id="node32" href="$_rsh_init_port_8h.html" title="RshInitPort initialization structures. " alt="" coords="2703,339,2817,367"/>
+<area shape="rect" id="node33" href="$_rsh_init_timer_8h.html" title="RshInitTimer initialization structure. " alt="" coords="993,339,1119,367"/>
+<area shape="rect" id="node34" href="$_rsh_init_voltmeter_8h.html" title="RshInitVoltmeter initialization structure. " alt="" coords="1791,339,1948,367"/>
+<area shape="rect" id="node35" href="$_rsh_device_key_8h.html" title="RshDeviceKey class. " alt="" coords="2841,339,2980,367"/>
+<area shape="rect" id="node36" href="$_rsh_dll_interface_key_8h.html" title="Helper class used with RshDllClient. " alt="" coords="433,425,604,453"/>
+<area shape="rect" id="node13" href="$_rsh_consts___rsh_data_types_8h.html" title="Type ID constants enum for Rsh SDK. " alt="" coords="1872,579,2099,607"/>
+<area shape="rect" id="node16" href="$_rsh_consts___common_8h.html" title="Common constants for Rsh SDK. " alt="" coords="2994,502,3181,530"/>
+<area shape="rect" id="node20" href="$_rsh_consts___device_interface_types_8h.html" title="Device interface types constants enum for Rsh SDK. " alt="" coords="3207,331,3425,375"/>
+<area shape="rect" id="node38" href="$_rsh_consts___connect_modes_8h.html" title="Device connect modes constants for Rsh SDK. " alt="" coords="3705,339,3935,367"/>
+<area shape="rect" id="node39" href="$_rsh_consts___init_modes_8h.html" title="Device init modes constants for Rsh SDK. " alt="" coords="3959,339,4149,367"/>
+<area shape="rect" id="node40" href="$_rsh_consts___get_data_modes_8h.html" title="GetData flags constants for Rsh SDK. " alt="" coords="3450,339,3680,367"/>
+<area shape="rect" id="node41" href="$_rsh_consts___language_8h.html" title="Language constants for Rsh SDK. " alt="" coords="4721,339,4913,367"/>
+<area shape="rect" id="node42" href="$_rsh_consts___get_codes_8h.html" title="Get codes constants enum for Rsh SDK. " alt="" coords="4453,339,4645,367"/>
+<area shape="rect" id="node43" href="$_rsh_consts___caps_codes_8h.html" title="CAPS codes constants enum for Rsh SDK. " alt="" coords="4225,339,4428,367"/>
+<area shape="rect" id="node44" href="$_rsh_consts___status_codes_8h.html" title="This file defines all the status codes for RSH SDK. " alt="" coords="4938,339,5152,367"/>
+</map>

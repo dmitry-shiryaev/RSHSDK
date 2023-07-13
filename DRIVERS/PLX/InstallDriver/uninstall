@@ -1,0 +1,28 @@
+#!bin/bash
+
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root. Terminated."
+   exit 1
+fi
+
+#remove directories
+echo "Remove driver files"
+rm -rf /var/local/plx
+
+
+#remove drivers
+echo "Remove drivers"
+rm -f /etc/modprobe.d/plx9054.conf
+rm -f /etc/modprobe.d/plx9050.conf
+
+#edit modules file
+echo "Edit /etc/modules file for plx9054"
+grep -v "plx9054"  /etc/modules_temp1 > /etc/modules
+rm -f /etc/modules_temp1
+
+echo "Edit /etc/modules file for plx9050"
+grep -v "plx9050"  /etc/modules_temp1 > /etc/modules
+rm -f /etc/modules_temp1
+
+exit 0
+

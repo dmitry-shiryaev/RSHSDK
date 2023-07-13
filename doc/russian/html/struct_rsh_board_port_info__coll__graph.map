@@ -1,0 +1,6 @@
+<map id="RshBoardPortInfo" name="RshBoardPortInfo">
+<area shape="rect" id="node2" href="$struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="213,99,333,127"/>
+<area shape="rect" id="node5" href="$class_rsh_buffer_type.html" title="RshBufferType\&lt; RshPortInfo,\l rshBufferTypePortInfo \&gt;" alt="" coords="195,302,429,346"/>
+<area shape="rect" id="node6" href="$struct_rsh_port_info.html" title="Информация о цифровом порте " alt="" coords="437,193,541,221"/>
+<area shape="rect" id="node10" href="$class_rsh_buffer_type.html" title="Шаблонный класс для конструирования буферов данных. " alt="" coords="108,193,361,221"/>
+</map>

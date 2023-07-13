@@ -1,0 +1,4 @@
+<map id="RshError::PrintError" name="RshError::PrintError">
+<area shape="rect" id="node2" href="$class_rsh_error.html#a53cfc9cfab2c91bd75861e7bd7ff6748" title="Получение сообщения об ошибке по коду из Rsh Api в формате UTF&#45;16. " alt="" coords="219,5,458,33"/>
+<area shape="rect" id="node3" href="$class_rsh_error.html#ac424f8a12661746e1f70a438f88a4998" title="Получение описания по системному коду ошибки в формате UTF&#45;16. " alt="" coords="231,57,446,101"/>
+</map>

@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Rsh API: Структура RshSynchroChannel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="rsh.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Rsh API
+   &#160;<span id="projectnumber">SDK 2.1</span>
+   </div>
+   <div id="projectbrief">Документация по программированию</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="page__examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="struct_rsh_synchro_channel-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура RshSynchroChannel</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Параметры канала внешней синхронизации  
+ <a href="struct_rsh_synchro_channel.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rsh_synchro_channel_8h_source.html">RshSynchroChannel.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RshSynchroChannel:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel__inherit__graph.png" border="0" usemap="#_rsh_synchro_channel_inherit__map" alt="Inheritance graph"/></div>
+<map name="_rsh_synchro_channel_inherit__map" id="_rsh_synchro_channel_inherit__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="28,6,148,34"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RshSynchroChannel:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel__coll__graph.png" border="0" usemap="#_rsh_synchro_channel_coll__map" alt="Collaboration graph"/></div>
+<map name="_rsh_synchro_channel_coll__map" id="_rsh_synchro_channel_coll__map">
+<area shape="rect" id="node2" href="struct_rsh_base_type.html" title="Базовый класс для всех классов SDK. " alt="" coords="101,99,221,127"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a06e3b68809075422733616aa8ed2c11f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11f">Control</a> { <br/>
+&#160;&#160;<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5">FilterOff</a> = 0x0, 
+<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367">Resist1MOhm</a> = 0x0, 
+<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21">DC</a> = 0x0, 
+<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e">FilterLow</a> = 0x1, 
+<br/>
+&#160;&#160;<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3">FilterHigh</a> = 0x2, 
+<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a">AC</a> = 0x4, 
+<a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6">Resist50Ohm</a> = 0x8
+<br/>
+ }</td></tr>
+<tr class="memdesc:a06e3b68809075422733616aa8ed2c11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список опций для канала  <a href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a06e3b68809075422733616aa8ed2c11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad1c0d18a9c0efbfe0d1d2bd47d6793f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ad1c0d18a9c0efbfe0d1d2bd47d6793f0">RshSynchroChannel</a> ()</td></tr>
+<tr class="separator:ad1c0d18a9c0efbfe0d1d2bd47d6793f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505adb8c07a24172203c3f6cde8db013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a505adb8c07a24172203c3f6cde8db013">operator=</a> (const <a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;obj)</td></tr>
+<tr class="separator:a505adb8c07a24172203c3f6cde8db013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac766c8506d66b309b6713658240d0d4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ac766c8506d66b309b6713658240d0d4b">operator==</a> (<a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;obj) const </td></tr>
+<tr class="separator:ac766c8506d66b309b6713658240d0d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb67a813793b9b6de667029377560958"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#aeb67a813793b9b6de667029377560958">operator!=</a> (<a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;obj) const </td></tr>
+<tr class="separator:aeb67a813793b9b6de667029377560958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ff1d3fd41bb15b227add24971f3166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#af8ff1d3fd41bb15b227add24971f3166">SetDefaultPatameters</a> ()</td></tr>
+<tr class="memdesc:af8ff1d3fd41bb15b227add24971f3166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить параметры канала по умолчанию  <a href="#af8ff1d3fd41bb15b227add24971f3166">Подробнее...</a><br/></td></tr>
+<tr class="separator:af8ff1d3fd41bb15b227add24971f3166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72b0401005d8e3139c185d9516c74f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ac72b0401005d8e3139c185d9516c74f4">SetFilterLow</a> (bool on=true)</td></tr>
+<tr class="memdesc:ac72b0401005d8e3139c185d9516c74f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a>.  <a href="#ac72b0401005d8e3139c185d9516c74f4">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac72b0401005d8e3139c185d9516c74f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d454d838540bd14c9cbe93cd1aa67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ad9d454d838540bd14c9cbe93cd1aa67f">SetFilterHigh</a> (bool on=true)</td></tr>
+<tr class="memdesc:ad9d454d838540bd14c9cbe93cd1aa67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a>.  <a href="#ad9d454d838540bd14c9cbe93cd1aa67f">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad9d454d838540bd14c9cbe93cd1aa67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf3b0c9b343259481555e630a5c9c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#aeaf3b0c9b343259481555e630a5c9c46">SetInputAC</a> (bool on=true)</td></tr>
+<tr class="memdesc:aeaf3b0c9b343259481555e630a5c9c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>.  <a href="#aeaf3b0c9b343259481555e630a5c9c46">Подробнее...</a><br/></td></tr>
+<tr class="separator:aeaf3b0c9b343259481555e630a5c9c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38fbfed1bd07d254404aa4fcc87a9a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ad38fbfed1bd07d254404aa4fcc87a9a6">SetInputDC</a> (bool on=true)</td></tr>
+<tr class="memdesc:ad38fbfed1bd07d254404aa4fcc87a9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>.  <a href="#ad38fbfed1bd07d254404aa4fcc87a9a6">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad38fbfed1bd07d254404aa4fcc87a9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f2c0798bb6bf4e506a98b80cfa01b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ac8f2c0798bb6bf4e506a98b80cfa01b3">SetResist50Ohm</a> (bool on=true)</td></tr>
+<tr class="memdesc:ac8f2c0798bb6bf4e506a98b80cfa01b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>.  <a href="#ac8f2c0798bb6bf4e506a98b80cfa01b3">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac8f2c0798bb6bf4e506a98b80cfa01b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7b72320f87dbee75b7ceb3d19bd82f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#adb7b72320f87dbee75b7ceb3d19bd82f">SetResist1MOhm</a> (bool on=true)</td></tr>
+<tr class="memdesc:adb7b72320f87dbee75b7ceb3d19bd82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>.  <a href="#adb7b72320f87dbee75b7ceb3d19bd82f">Подробнее...</a><br/></td></tr>
+<tr class="separator:adb7b72320f87dbee75b7ceb3d19bd82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6020c7333569b9d67e7ee4ac242e1950"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a6020c7333569b9d67e7ee4ac242e1950">IsFilterHighActive</a> () const </td></tr>
+<tr class="memdesc:a6020c7333569b9d67e7ee4ac242e1950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага RshChannel::FilterHigh.  <a href="#a6020c7333569b9d67e7ee4ac242e1950">Подробнее...</a><br/></td></tr>
+<tr class="separator:a6020c7333569b9d67e7ee4ac242e1950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5b044f95ad098442bd34284f8d9c0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a2f5b044f95ad098442bd34284f8d9c0c">IsFilterLowActive</a> () const </td></tr>
+<tr class="memdesc:a2f5b044f95ad098442bd34284f8d9c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага RshChannel::FilterLow.  <a href="#a2f5b044f95ad098442bd34284f8d9c0c">Подробнее...</a><br/></td></tr>
+<tr class="separator:a2f5b044f95ad098442bd34284f8d9c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e8d6196dc44b781a862e1ac5334f44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a42e8d6196dc44b781a862e1ac5334f44">IsInputACActive</a> () const </td></tr>
+<tr class="memdesc:a42e8d6196dc44b781a862e1ac5334f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ae07c02266bb6316aef1e935eb085b169" title="Установить состояние входа &quot;закрытый&quot;. ">RshChannel::AC</a>.  <a href="#a42e8d6196dc44b781a862e1ac5334f44">Подробнее...</a><br/></td></tr>
+<tr class="separator:a42e8d6196dc44b781a862e1ac5334f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023d9c803b8091f058d7f5c026443a48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a023d9c803b8091f058d7f5c026443a48">IsInputDCActive</a> () const </td></tr>
+<tr class="memdesc:a023d9c803b8091f058d7f5c026443a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769a0697a87cd110fb1efc9f2f7d379d659c" title="Установить состояние входа &quot;открытый&quot;. ">RshChannel::DC</a>.  <a href="#a023d9c803b8091f058d7f5c026443a48">Подробнее...</a><br/></td></tr>
+<tr class="separator:a023d9c803b8091f058d7f5c026443a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19662fe0bfdb36c103137759ebb64438"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a19662fe0bfdb36c103137759ebb64438">IsResist50OhmActive</a> () const </td></tr>
+<tr class="memdesc:a19662fe0bfdb36c103137759ebb64438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769afeb9444e6b75fb7f9869fb5d24f09a08" title="Установить входное сопротивление канала 50Ом ">RshChannel::Resist50Ohm</a>.  <a href="#a19662fe0bfdb36c103137759ebb64438">Подробнее...</a><br/></td></tr>
+<tr class="separator:a19662fe0bfdb36c103137759ebb64438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c26b3645e3dfbd4053329b312ca950"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#ad4c26b3645e3dfbd4053329b312ca950">IsResist1MOhmActive</a> () const </td></tr>
+<tr class="memdesc:ad4c26b3645e3dfbd4053329b312ca950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ac05972ba126b882a9c3a13ad31cfa14a" title="Установить входное сопротивление канала 1МОм ">RshChannel::Resist1MOhm</a>.  <a href="#ad4c26b3645e3dfbd4053329b312ca950">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad4c26b3645e3dfbd4053329b312ca950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#af965550d2b72863db870e01894846350">RshBaseType</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> type=<a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11da92056d50bfe18f306587535477d7bfe7">rshTypeUndefined</a>, const size_t typeSize=sizeof(<a class="el" href="struct_rsh_base_type.html">RshBaseType</a>))</td></tr>
+<tr class="memdesc:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="#af965550d2b72863db870e01894846350">Подробнее...</a><br/></td></tr>
+<tr class="separator:af965550d2b72863db870e01894846350 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a79c78fcf2b560f843c84303098c524c2">GetTypeName</a> () const </td></tr>
+<tr class="separator:a79c78fcf2b560f843c84303098c524c2 inherit pub_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aab4120bd3344f7a443c9330b84570971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#aab4120bd3344f7a443c9330b84570971">gain</a></td></tr>
+<tr class="memdesc:aab4120bd3344f7a443c9330b84570971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент усиления  <a href="#aab4120bd3344f7a443c9330b84570971">Подробнее...</a><br/></td></tr>
+<tr class="separator:aab4120bd3344f7a443c9330b84570971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd53e5994cba96221bc05415838ca71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a></td></tr>
+<tr class="memdesc:afbd53e5994cba96221bc05415838ca71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дополнительные флаги  <a href="#afbd53e5994cba96221bc05415838ca71">Подробнее...</a><br/></td></tr>
+<tr class="separator:afbd53e5994cba96221bc05415838ca71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#acb736f830c5d916de275eabf81127066">_typeSize</a></td></tr>
+<tr class="memdesc:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер структуры данных или класса.  <a href="#acb736f830c5d916de275eabf81127066">Подробнее...</a><br/></td></tr>
+<tr class="separator:acb736f830c5d916de275eabf81127066 inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a0993279e21dd4e2c15d0f8d0ebba76be">_type</a></td></tr>
+<tr class="memdesc:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор типа данных.  <a href="#a0993279e21dd4e2c15d0f8d0ebba76be">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0993279e21dd4e2c15d0f8d0ebba76be inherit pub_attribs_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a4d1bf1d97227ee60b26d0f718214236c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_synchro_channel.html#a4d1bf1d97227ee60b26d0f718214236c">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;obj)</td></tr>
+<tr class="separator:a4d1bf1d97227ee60b26d0f718214236c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_struct_rsh_base_type"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_rsh_base_type')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены inherited from <a class="el" href="struct_rsh_base_type.html">RshBaseType</a></td></tr>
+<tr class="memitem:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rsh_base_type.html#a350c4aea57828295b090ad6863f2c385">GetTypeName</a> (const <a class="el" href="_rsh_consts___rsh_data_types_8h.html#a48735d1efb5406a704a366c96c83d11d">RshDataTypes</a> typeCode)</td></tr>
+<tr class="memdesc:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение названия типа данных.  <a href="#a350c4aea57828295b090ad6863f2c385">Подробнее...</a><br/></td></tr>
+<tr class="separator:a350c4aea57828295b090ad6863f2c385 inherit pub_static_methods_struct_rsh_base_type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Параметры канала внешней синхронизации </p>
+<p>Данная структура похожа на структуру <a class="el" href="struct_rsh_channel.html" title="Параметры аналогового канала ">RshChannel</a>, но используется для настройки параметров канала внешней синхронизации. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a06e3b68809075422733616aa8ed2c11f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11f">RshSynchroChannel::Control</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список опций для канала </p>
+<p>Дополнительные параметры канала внешней синхронизации, которые могут быть заданы в поле <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71" title="Дополнительные флаги ">RshSynchroChannel::control</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5"></a>FilterOff</em>&nbsp;</td><td class="fielddoc">
+<p>Выключить фильтр для канала внешней синхронизации </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a> </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367"></a>Resist1MOhm</em>&nbsp;</td><td class="fielddoc">
+<p>Установить входное сопротивление канала внешней синхронизации 1МОм </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6" title="Установить входное сопротивление канала 50Ом ">RshSynchroChannel::Resist50Ohm</a> </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21"></a>DC</em>&nbsp;</td><td class="fielddoc">
+<p>Установить состояние входа "открытый". </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a> </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e"></a>FilterLow</em>&nbsp;</td><td class="fielddoc">
+<p>Включить фильтр низких частот для канала внешней синхронизации. </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5" title="Выключить фильтр для канала внешней синхронизации ">RshSynchroChannel::FilterOff</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a></p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a42cb2fa30a80c290cf5c912a66001285" title="Фильтр низких частот может быть включен для входа внешней синхронизации. ">RSH_CAPS_DEVICE_EXT_SYNC_FILTER_LOW</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3"></a>FilterHigh</em>&nbsp;</td><td class="fielddoc">
+<p>Включить фильтр высоких частот для канала внешней синхронизации </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5" title="Выключить фильтр для канала внешней синхронизации ">RshSynchroChannel::FilterOff</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a></p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_rsh_consts___caps_codes_8h.html#a7d002d179754641063bf0db5344f5866a6139d67568b35cfc2a7adde139fc1ec5" title="Фильтр высоких частот может быть включен для входа внешней синхронизации. ">RSH_CAPS_DEVICE_EXT_SYNC_FILTER_HIGH</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a"></a>AC</em>&nbsp;</td><td class="fielddoc">
+<p>Установить состояние входа "закрытый". </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21" title="Установить состояние входа &quot;открытый&quot;. ">RshSynchroChannel::DC</a> </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6"></a>Resist50Ohm</em>&nbsp;</td><td class="fielddoc">
+<p>Установить входное сопротивление канала 50Ом </p>
+<p>Взаимоисключающий с <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367" title="Установить входное сопротивление канала внешней синхронизации 1МОм ">RshSynchroChannel::Resist1MOhm</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ad1c0d18a9c0efbfe0d1d2bd47d6793f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RshSynchroChannel::RshSynchroChannel </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a6020c7333569b9d67e7ee4ac242e1950"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::IsFilterHighActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага RshChannel::FilterHigh. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3">FilterHigh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f5b044f95ad098442bd34284f8d9c0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::IsFilterLowActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага RshChannel::FilterLow. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e">FilterLow</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42e8d6196dc44b781a862e1ac5334f44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::IsInputACActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ae07c02266bb6316aef1e935eb085b169" title="Установить состояние входа &quot;закрытый&quot;. ">RshChannel::AC</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a">AC</a> и <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_synchro_channel.html#a023d9c803b8091f058d7f5c026443a48">IsInputDCActive()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_a42e8d6196dc44b781a862e1ac5334f44_icgraph.png" border="0" usemap="#struct_rsh_synchro_channel_a42e8d6196dc44b781a862e1ac5334f44_icgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_a42e8d6196dc44b781a862e1ac5334f44_icgraph" id="struct_rsh_synchro_channel_a42e8d6196dc44b781a862e1ac5334f44_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#a023d9c803b8091f058d7f5c026443a48" title="Проверка наличия флага RshChannel::DC. " alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a023d9c803b8091f058d7f5c026443a48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::IsInputDCActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769a0697a87cd110fb1efc9f2f7d379d659c" title="Установить состояние входа &quot;открытый&quot;. ">RshChannel::DC</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#a42e8d6196dc44b781a862e1ac5334f44">IsInputACActive()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_a023d9c803b8091f058d7f5c026443a48_cgraph.png" border="0" usemap="#struct_rsh_synchro_channel_a023d9c803b8091f058d7f5c026443a48_cgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_a023d9c803b8091f058d7f5c026443a48_cgraph" id="struct_rsh_synchro_channel_a023d9c803b8091f058d7f5c026443a48_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#a42e8d6196dc44b781a862e1ac5334f44" title="Проверка наличия флага RshChannel::AC. " alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4c26b3645e3dfbd4053329b312ca950"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::IsResist1MOhmActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769ac05972ba126b882a9c3a13ad31cfa14a" title="Установить входное сопротивление канала 1МОм ">RshChannel::Resist1MOhm</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#a19662fe0bfdb36c103137759ebb64438">IsResist50OhmActive()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_ad4c26b3645e3dfbd4053329b312ca950_cgraph.png" border="0" usemap="#struct_rsh_synchro_channel_ad4c26b3645e3dfbd4053329b312ca950_cgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_ad4c26b3645e3dfbd4053329b312ca950_cgraph" id="struct_rsh_synchro_channel_ad4c26b3645e3dfbd4053329b312ca950_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#a19662fe0bfdb36c103137759ebb64438" title="Проверка наличия флага RshChannel::Resist50Ohm. " alt="" coords="235,5,413,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a19662fe0bfdb36c103137759ebb64438"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::IsResist50OhmActive </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка наличия флага <a class="el" href="struct_rsh_channel.html#a0770ebc6c5151c5c36d8c1335c19b769afeb9444e6b75fb7f9869fb5d24f09a08" title="Установить входное сопротивление канала 50Ом ">RshChannel::Resist50Ohm</a>. </p>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6">Resist50Ohm</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_synchro_channel.html#ad4c26b3645e3dfbd4053329b312ca950">IsResist1MOhmActive()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_a19662fe0bfdb36c103137759ebb64438_icgraph.png" border="0" usemap="#struct_rsh_synchro_channel_a19662fe0bfdb36c103137759ebb64438_icgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_a19662fe0bfdb36c103137759ebb64438_icgraph" id="struct_rsh_synchro_channel_a19662fe0bfdb36c103137759ebb64438_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#ad4c26b3645e3dfbd4053329b312ca950" title="Проверка наличия флага RshChannel::Resist1MOhm. " alt="" coords="233,5,413,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb67a813793b9b6de667029377560958"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#ac766c8506d66b309b6713658240d0d4b">operator==()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_aeb67a813793b9b6de667029377560958_cgraph.png" border="0" usemap="#struct_rsh_synchro_channel_aeb67a813793b9b6de667029377560958_cgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_aeb67a813793b9b6de667029377560958_cgraph" id="struct_rsh_synchro_channel_aeb67a813793b9b6de667029377560958_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#ac766c8506d66b309b6713658240d0d4b" title="RshSynchroChannel::\loperator==" alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a505adb8c07a24172203c3f6cde8db013"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp; RshSynchroChannel::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#aab4120bd3344f7a443c9330b84570971">gain</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac766c8506d66b309b6713658240d0d4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RshSynchroChannel::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#aab4120bd3344f7a443c9330b84570971">gain</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_synchro_channel.html#aeb67a813793b9b6de667029377560958">operator!=()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_ac766c8506d66b309b6713658240d0d4b_icgraph.png" border="0" usemap="#struct_rsh_synchro_channel_ac766c8506d66b309b6713658240d0d4b_icgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_ac766c8506d66b309b6713658240d0d4b_icgraph" id="struct_rsh_synchro_channel_ac766c8506d66b309b6713658240d0d4b_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#aeb67a813793b9b6de667029377560958" title="RshSynchroChannel::\loperator!=" alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af8ff1d3fd41bb15b227add24971f3166"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetDefaultPatameters </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить параметры канала по умолчанию </p>
+<p>gain = 1; adjustment = 0.0; control = 0; </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_memroy_synchro_channel__r_u_8cpp-example.html#a2">RshInitMemroySynchroChannel_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#aab4120bd3344f7a443c9330b84570971">gain</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9d454d838540bd14c9cbe93cd1aa67f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetFilterHigh </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>Если передано значение true, флаг будет установлен, если false, то флаг будет снят. Установка флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a> приводит к снятию флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a>; снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a> приводит к снятию <b>СРАЗУ ДВУХ ФЛАГОВ</b><ul>
+<li><a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a>, что эквивалентно установке флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5" title="Выключить фильтр для канала внешней синхронизации ">RshSynchroChannel::FilterOff</a>. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_memroy_synchro_channel__r_u_8cpp-example.html#a5">RshInitMemroySynchroChannel_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a>, <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3">FilterHigh</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e">FilterLow</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac72b0401005d8e3139c185d9516c74f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetFilterLow </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>Если передано значение true, флаг будет установлен, если false, то флаг будет снят. Установка флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a> приводит к снятию флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a>; снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a> приводит к снятию СРАЗУ ДВУХ ФЛАГОВ - <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e" title="Включить фильтр низких частот для канала внешней синхронизации. ">RshSynchroChannel::FilterLow</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3" title="Включить фильтр высоких частот для канала внешней синхронизации ">RshSynchroChannel::FilterHigh</a>, что эквивалентно установке флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5" title="Выключить фильтр для канала внешней синхронизации ">RshSynchroChannel::FilterOff</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a>, <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11face336eda8b6dc0a609b4d30fce8784d3">FilterHigh</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa8bb316fd68853752652e38d270fa5b7e">FilterLow</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeaf3b0c9b343259481555e630a5c9c46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetInputAC </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>Если передано значение true, флаг будет установлен, если false, то флаг будет снят. Установка флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a> приводит к снятию флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21" title="Установить состояние входа &quot;открытый&quot;. ">RshSynchroChannel::DC</a>; снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a> приводит к установке флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21" title="Установить состояние входа &quot;открытый&quot;. ">RshSynchroChannel::DC</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_memroy_synchro_channel__r_u_8cpp-example.html#a4">RshInitMemroySynchroChannel_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a">AC</a> и <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_synchro_channel.html#ad38fbfed1bd07d254404aa4fcc87a9a6">SetInputDC()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_aeaf3b0c9b343259481555e630a5c9c46_icgraph.png" border="0" usemap="#struct_rsh_synchro_channel_aeaf3b0c9b343259481555e630a5c9c46_icgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_aeaf3b0c9b343259481555e630a5c9c46_icgraph" id="struct_rsh_synchro_channel_aeaf3b0c9b343259481555e630a5c9c46_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#ad38fbfed1bd07d254404aa4fcc87a9a6" title="Установка или снятие флага RshSynchroChannel::AC. " alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad38fbfed1bd07d254404aa4fcc87a9a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetInputDC </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>Если передано значение true, флаг будет установлен, если false, то флаг будет снят. Установка флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21" title="Установить состояние входа &quot;открытый&quot;. ">RshSynchroChannel::DC</a> приводит к снятию флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>; снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21" title="Установить состояние входа &quot;открытый&quot;. ">RshSynchroChannel::DC</a> приводит к установке флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#aeaf3b0c9b343259481555e630a5c9c46">SetInputAC()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_ad38fbfed1bd07d254404aa4fcc87a9a6_cgraph.png" border="0" usemap="#struct_rsh_synchro_channel_ad38fbfed1bd07d254404aa4fcc87a9a6_cgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_ad38fbfed1bd07d254404aa4fcc87a9a6_cgraph" id="struct_rsh_synchro_channel_ad38fbfed1bd07d254404aa4fcc87a9a6_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#aeaf3b0c9b343259481555e630a5c9c46" title="Установка или снятие флага RshSynchroChannel::AC. " alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adb7b72320f87dbee75b7ceb3d19bd82f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetResist1MOhm </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>Если передано значение true, флаг будет установлен, если false, то флаг будет снят. Установка флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367" title="Установить входное сопротивление канала внешней синхронизации 1МОм ">RshSynchroChannel::Resist1MOhm</a> приводит к снятию флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6" title="Установить входное сопротивление канала 50Ом ">RshSynchroChannel::Resist50Ohm</a>; снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367" title="Установить входное сопротивление канала внешней синхронизации 1МОм ">RshSynchroChannel::Resist1MOhm</a> приводит к установке флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6" title="Установить входное сопротивление канала 50Ом ">RshSynchroChannel::Resist50Ohm</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_memroy_synchro_channel__r_u_8cpp-example.html#a3">RshInitMemroySynchroChannel_RU.cpp</a>.</dd>
+</dl>
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#ac8f2c0798bb6bf4e506a98b80cfa01b3">SetResist50Ohm()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_adb7b72320f87dbee75b7ceb3d19bd82f_cgraph.png" border="0" usemap="#struct_rsh_synchro_channel_adb7b72320f87dbee75b7ceb3d19bd82f_cgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_adb7b72320f87dbee75b7ceb3d19bd82f_cgraph" id="struct_rsh_synchro_channel_adb7b72320f87dbee75b7ceb3d19bd82f_cgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#ac8f2c0798bb6bf4e506a98b80cfa01b3" title="Установка или снятие флага RshSynchroChannel::AC. " alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8f2c0798bb6bf4e506a98b80cfa01b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RshSynchroChannel::SetResist50Ohm </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка или снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa224b24412ed552bfd164274b1865391a" title="Установить состояние входа &quot;закрытый&quot;. ">RshSynchroChannel::AC</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>Если передано значение true, флаг будет установлен, если false, то флаг будет снят. Установка флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6" title="Установить входное сопротивление канала 50Ом ">RshSynchroChannel::Resist50Ohm</a> приводит к снятию флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367" title="Установить входное сопротивление канала внешней синхронизации 1МОм ">RshSynchroChannel::Resist1MOhm</a>; снятие флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6" title="Установить входное сопротивление канала 50Ом ">RshSynchroChannel::Resist50Ohm</a> приводит к установке флага <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367" title="Установить входное сопротивление канала внешней синхронизации 1МОм ">RshSynchroChannel::Resist1MOhm</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Перекрестные ссылки <a class="el" href="struct_rsh_synchro_channel.html#afbd53e5994cba96221bc05415838ca71">control</a> и <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa807b3616504b454a81c78e1e37d149b6">Resist50Ohm</a>.</p>
+
+<p>Используется в <a class="el" href="struct_rsh_synchro_channel.html#adb7b72320f87dbee75b7ceb3d19bd82f">SetResist1MOhm()</a>.</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_rsh_synchro_channel_ac8f2c0798bb6bf4e506a98b80cfa01b3_icgraph.png" border="0" usemap="#struct_rsh_synchro_channel_ac8f2c0798bb6bf4e506a98b80cfa01b3_icgraph" alt=""/></div>
+<map name="struct_rsh_synchro_channel_ac8f2c0798bb6bf4e506a98b80cfa01b3_icgraph" id="struct_rsh_synchro_channel_ac8f2c0798bb6bf4e506a98b80cfa01b3_icgraph">
+<area shape="rect" id="node2" href="struct_rsh_synchro_channel.html#adb7b72320f87dbee75b7ceb3d19bd82f" title="Установка или снятие флага RshSynchroChannel::AC. " alt="" coords="229,5,405,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a4d1bf1d97227ee60b26d0f718214236c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rsh_synchro_channel.html">RshSynchroChannel</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="afbd53e5994cba96221bc05415838ca71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshSynchroChannel::control</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дополнительные флаги </p>
+<p>Комбинация по 'ИЛИ' элементов перечисления <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11f" title="Список опций для канала ">RshSynchroChannel::Control</a>. Если установить флаг, который не поддерживается данным устройством, он будет проигнорирован (при этом, ошибки не возникнет).</p>
+<dl class="section remark"><dt>Прим.</dt><dd>По умолчанию, данный параметр равен нулю, что соответствует следующей комбинации флагов:<br/>
+ <b><a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fad6453c1be0547fb95fdbd1c88eb840c5" title="Выключить фильтр для канала внешней синхронизации ">RshSynchroChannel::FilterOff</a> | <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa154910d98b896011cc051c1e3a6f0367" title="Установить входное сопротивление канала внешней синхронизации 1МОм ">RshSynchroChannel::Resist1MOhm</a> | <a class="el" href="struct_rsh_synchro_channel.html#a06e3b68809075422733616aa8ed2c11fa3ddb1e88f3832a11b38a4d97f4bf9c21" title="Установить состояние входа &quot;открытый&quot;. ">RshSynchroChannel::DC</a></b> </dd></dl>
+
+<p>Используется в <a class="el" href="struct_rsh_synchro_channel.html#a6020c7333569b9d67e7ee4ac242e1950">IsFilterHighActive()</a>, <a class="el" href="struct_rsh_synchro_channel.html#a2f5b044f95ad098442bd34284f8d9c0c">IsFilterLowActive()</a>, <a class="el" href="struct_rsh_synchro_channel.html#a42e8d6196dc44b781a862e1ac5334f44">IsInputACActive()</a>, <a class="el" href="struct_rsh_synchro_channel.html#a19662fe0bfdb36c103137759ebb64438">IsResist50OhmActive()</a>, <a class="el" href="_rsh_synchro_channel_8cpp.html#a4d1bf1d97227ee60b26d0f718214236c">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_synchro_channel.html#a505adb8c07a24172203c3f6cde8db013">operator=()</a>, <a class="el" href="struct_rsh_synchro_channel.html#ac766c8506d66b309b6713658240d0d4b">operator==()</a>, <a class="el" href="struct_rsh_synchro_channel.html#af8ff1d3fd41bb15b227add24971f3166">SetDefaultPatameters()</a>, <a class="el" href="struct_rsh_synchro_channel.html#ad9d454d838540bd14c9cbe93cd1aa67f">SetFilterHigh()</a>, <a class="el" href="struct_rsh_synchro_channel.html#ac72b0401005d8e3139c185d9516c74f4">SetFilterLow()</a>, <a class="el" href="struct_rsh_synchro_channel.html#aeaf3b0c9b343259481555e630a5c9c46">SetInputAC()</a> и <a class="el" href="struct_rsh_synchro_channel.html#ac8f2c0798bb6bf4e506a98b80cfa01b3">SetResist50Ohm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab4120bd3344f7a443c9330b84570971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_rsh_def_chk_8h.html#a811024d35b9b8a41095b1f583b649e56">U32</a> RshSynchroChannel::gain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Коэффициент усиления </p>
+<p>Коэффициент усиления, который будет использован для канала внешней синхронизации</p>
+<dl class="section remark"><dt>Прим.</dt><dd>Получить список доступных коэффициентов усиления можно, вызвав метод <a class="el" href="struct_i_rsh_device.html#a8afa4c54b4302eca2d5827fe9d9c1468" title="Получение различной информации об устройстве и библиотеке абстракции. ">IRshDevice::Get()</a> с параметром <a class="el" href="_rsh_consts___get_codes_8h.html#a89a326bf9f936379d19de8e46e4c56d5a496a54d166138fae0b4e05ef7455d0ed" title="Список допустимых коэффициентов усиления для входа внешней синхронизации ">RSH_GET_DEVICE_EXT_SYNC_GAINLIST</a>. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="_rsh_init_memroy_synchro_channel__r_u_8cpp-example.html#a6">RshInitMemroySynchroChannel_RU.cpp</a>.</dd>
+</dl>
+<p>Используется в <a class="el" href="_rsh_synchro_channel_8cpp.html#a4d1bf1d97227ee60b26d0f718214236c">operator&lt;&lt;()</a>, <a class="el" href="struct_rsh_synchro_channel.html#a505adb8c07a24172203c3f6cde8db013">operator=()</a>, <a class="el" href="struct_rsh_synchro_channel.html#ac766c8506d66b309b6713658240d0d4b">operator==()</a> и <a class="el" href="struct_rsh_synchro_channel.html#af8ff1d3fd41bb15b227add24971f3166">SetDefaultPatameters()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_synchro_channel_8h_source.html">RshSynchroChannel.h</a></li>
+<li>G:/SDK2/HEADERS/Include/<a class="el" href="_rsh_synchro_channel_8cpp.html">RshSynchroChannel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Rsh API. Последние изменения: Ср 30 Дек 2015 12:21:34. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

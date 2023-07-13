@@ -1,0 +1,8 @@
+<map id="G:/SDK2/HEADERS/Include/RshError.cpp" name="G:/SDK2/HEADERS/Include/RshError.cpp">
+<area shape="rect" id="node2" href="$_rsh_error_8h.html" title="Класс для формирования сообщений об ошибках и связанные структуры данных. " alt="" coords="359,99,457,127"/>
+<area shape="rect" id="node10" href="$_rsh_error_description_8h.html" title="Простая структура для хранения кода ошибки и строковых констант с ее описанием. " alt="" coords="507,99,687,127"/>
+<area shape="rect" id="node11" href="$_rsh_macro_8h.html" title="Макросы и шаблоны, применяемые в SDK. " alt="" coords="679,177,787,205"/>
+<area shape="rect" id="node3" href="$_rsh_def_chk_8h.html" title="Определения констант операционных систем, компиляторов и простых типов данных. " alt="" coords="540,177,655,205"/>
+<area shape="rect" id="node7" href="$_rsh_consts___language_8h.html" title="Список языков Rsh SDK. " alt="" coords="84,177,276,205"/>
+<area shape="rect" id="node8" href="$_rsh_consts___status_codes_8h.html" title="В этом файле содержится описание возвращаемых кодов для RSH SDK. " alt="" coords="301,177,515,205"/>
+</map>

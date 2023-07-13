@@ -1,0 +1,27 @@
+#ifndef __DEVICE_NAMER__
+#define __DEVICE_NAMER__
+
+#define RSH_DEVICE_DIR "/dev/RSH/"
+
+#define SIRIUS_PID "c389"
+#define SIRIUS_SYMLINK_NAME "c389534b"
+
+#define LA20USB_PID "c373"
+#define LA20USB_SYMLINK_NAME "c373534b"
+
+#define LA2USB_PID "c371"
+#define LA2USB_SYMLINK_NAME "c371534b"
+
+#define LA50USB_PID "c376"
+#define LA50USB_SYMLINK_NAME "c376534b"
+
+#define LAN10_12USB_PID "c379"
+#define LAN10_12USB_SYMLINK_NAME "c379534b"
+
+#define LAI24USB_PID "c372"
+#define LAI24USB_SYMLINK_NAME "c372534b"
+
+#define GSPF053USB_PID "c35f"
+#define GSPF053USB_SYMLINK_NAME "c35f534b"
+
+#endif
